@@ -16,10 +16,10 @@ if (hasInterface) then {
 //Cop & Medic Radio disable
 enableRadio false;
 enableSentences false;
+StartProgress = true;
+
 
 //Custom Script
 [] execVM "admintools\loop.sqf";
 [] execVM "Custom\safezone.sqf";
 [] execVM "Custom\statusbar_loop.sqf";
-
-StartProgress = true;
