@@ -19,7 +19,7 @@ class CarShops {
     class civ_car {
         side = "civ";
         conditions = "";
-        vehicles[] = {
+        vehicles[] =  {
             { "B_Quadbike_01_F", "" },
             { "C_Hatchback_01_F", "" },
             { "C_Offroad_01_F", "" },
