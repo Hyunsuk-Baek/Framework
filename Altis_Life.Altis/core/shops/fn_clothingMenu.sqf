@@ -117,7 +117,7 @@ if (LIFE_SETTINGS(getNumber,"clothing_noTP") isEqualTo 1) then {
         if (_x != player) then {_x hideObject true;};
         true
     } count playableUnits;
-    
+
     if (LIFE_SETTINGS(getNumber,"clothing_box") isEqualTo 0) then {
         {
             if (_x != player && _x != _light) then {_x hideObject true;};
@@ -306,3 +306,4 @@ if ((life_clothing_purchase select 4) isEqualTo -1) then {
 
 life_clothing_purchase = [-1,-1,-1,-1,-1];
 [] call life_fnc_saveGear;
+

@@ -240,4 +240,111 @@ class CfgSpawnPoints {
 
     };
 
+    //Jackson
+    class Jackson_County {
+        class Civilian {
+            class Metrocity {
+                displayName = "메트로시티";
+                spawnMarker = "spawn_metro";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "!license_civ_rebel";
+            };
+
+            class LosDiablo {
+                displayName = "로스디아블로";
+                spawnMarker = "spawn_LosDiablo";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class Jonna {
+                displayName = "존나따마을";
+                spawnMarker = "spawn_jonna";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class MetroNew {
+                displayName = "메트로신도시";
+                spawnMarker = "spawn_newmetro";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class RebelGhost {
+                displayName = "Ghost Rebel Base";
+                spawnMarker = "Rebelop";
+                icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
+                conditions = "license_civ_rebel";
+            };
+        };
+
+        class Cop {
+            class MetroCityP {
+                displayName = "Metro HQ";
+                spawnMarker = "cop_spawn_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
+
+            class LosDiabloP {
+                displayName = "LosDiablo HQ";
+                spawnMarker = "cop_spawn_2";
+                icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
+                conditions = "";
+            };
+
+            class JonnaP {
+                displayName = "JonnaDda Prison Air HQ";
+                spawnMarker = "cop_spawn_3";
+                icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+                conditions = "";
+            };
+
+            class MetroNewP {
+                displayName = "NewMetro HQ";
+                spawnMarker = "cop_spawn_4";
+                icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
+                conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
+            };
+
+            class WesternHighwayP {
+                displayName = "Western Highway HQ";
+                spawnMarker = "cop_spawn_5";
+                icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
+                conditions = "call life_coplevel >= 3";
+            };
+        };
+
+        class Medic {
+            class MetroCityM {
+                displayName = "Metro Hospital";
+                spawnMarker = "medic_spawn_1";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class LosDiabloM {
+                displayName = "LosDiablo Hospital";
+                spawnMarker = "medic_spawn_2";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class JonnaM {
+                displayName = "Jonna Hospital";
+                spawnMarker = "medic_spawn_3";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class MetroNewM {
+                displayName = "New Metro Hospital Hospital";
+                spawnMarker = "medic_spawn_4";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+        };
+    };
+
 };

@@ -28,3 +28,5 @@
 #include "compensate.hpp"
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
+#include "AS_AdminMenu.hpp"     //admin panel
+#include "AS_Refund.hpp"        //admin panel

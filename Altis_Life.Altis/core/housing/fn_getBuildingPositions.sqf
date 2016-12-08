@@ -20,6 +20,12 @@ case "Land_i_House_Big_01_V3_F": {[2,3]};
 case "Land_i_Stone_HouseSmall_V1_F": {[0,1,3,4]};
 case "Land_i_Stone_HouseSmall_V2_F": {[0,1,3,4]};
 case "Land_i_Stone_HouseSmall_V3_F": {[0,1,3,4]};
+//AOSOUL Building
+case "Land_HouseA1_L": {[0,1,3,4]};
+case "Land_HouseA": {[0,1,3,4]};
+case "Land_Ranch_DED_Ranch_01_F": {[0,1,3,4]};
+case "Land_HouseDoubleAL": {[0,1,2,3,4]};
+case "land_pop_chalet": {[0,1,2,3,4]};
 default {[]};
 };
 

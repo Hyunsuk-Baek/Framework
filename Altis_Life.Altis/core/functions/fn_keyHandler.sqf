@@ -66,6 +66,7 @@ switch (_code) do {
     };
 
     //Space key for Jumping
+    /*
     case 57: {
         if (isNil "jumpActionTime") then {jumpActionTime = 0;};
         if (_shift && {!(animationState player isEqualTo "AovrPercMrunSrasWrflDf")} && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {speed player > 2} && {!life_is_arrested} && {((velocity player) select 2) < 2.5} && {time - jumpActionTime > 1.5}) then {
@@ -74,6 +75,7 @@ switch (_code) do {
             _handled = true;
         };
     };
+    */
 
     //Surrender (Shift + B)
     case 48: {
@@ -369,6 +371,279 @@ switch (_code) do {
             };
         };
     };
+
+    //Admin Menu Shift + `
+    case 41:
+    {
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                //createDialog "life_admin_menu";
+                closeDialog 0;[] spawn life_fnc_openMenu;
+            };
+        };
+    };
+
+    //Mobile open Shift + 1
+    case 2:
+    {
+        if(_shift) then {_handled = true;};
+        if (_shift) then
+        {
+            if(!_alt && !_ctrlKey && !dialog) then
+            {
+                createDialog "Life_cell_phone";
+            };
+        };
+    };
+
+    //손인사 높게 Shift + 2
+    case 3:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureHi";
+        };
+    };
+
+    //손인사 낮게 Shift + 3
+    case 4:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureHiC";
+        };
+    };
+
+    //노노 사인 Shift + 4
+    case 5:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureHiB";
+        };
+    };
+
+    //한번 끄덕이기 Shift + 5
+    case 6:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playAction "gestureNod";
+        };
+    };
+
+    //무술 Shifh + 6
+    case 7:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
+        };
+    };
+
+    //앉았다 느리게 일어나기 Shifh + 7
+    case 8:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["쪼그려뛰기 천천히!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+        };
+    };
+
+    //앉았다 일어나기 Shifh + 8
+    case 9:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["쪼그려뛰기 빠르게!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
+        };
+    };
+
+    //팔굽혀펴기 Shifh + 9
+    case 10:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format["팔굽혀펴기!!!"], "PLAIN DOWN"];
+            player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+        };
+    };
+
+    //A2댄스1 Shift + Num2
+    case 80:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_A2Dance1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_A2Dance1";
+            player playMoveNow "AOS_A2Dance1";
+        };
+    };
+
+    //A2댄스2 Shift + Num3
+    case 81:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_A2Dance2",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_A2Dance2";
+            player playMoveNow "AOS_A2Dance2";
+        };
+    };
+
+    //A2댄스3 Shift + Num4
+    case 75:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_A2Dance3",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_A2Dance3";
+            player playMoveNow "AOS_A2Dance3";
+        };
+    };
+
+    //City 댄스1 Shift + Num5
+    case 76:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_Normal_Dance",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Normal_Dance";
+            player playMoveNow "AOS_Normal_Dance";
+        };
+    };
+
+    //City 댄스2 Shift + Num6
+    case 77:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_Crazy_Dance",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Crazy_Dance";
+            player playMoveNow "AOS_Crazy_Dance";
+        };
+    };
+
+    //City 목긋기 Shift + Num7
+    case 71:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_Threaten",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Threaten";
+            player playMoveNow "AOS_Threaten";
+        };
+    };
+
+    //City 손가락 욕 Shift + Num8
+    case 72:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_Middlefinger",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Middlefinger";
+            player playMoveNow "AOS_Middlefinger";
+        };
+    };
+
+    //러시아 댄스 Shift + Num9
+    case 73:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_russiandance",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_russiandance";
+            player playMoveNow "AOS_russiandance";
+        };
+    };
+
+    //덥스텝 Shift + 0
+    case 11:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_Dubstep",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Dubstep";
+            player playMoveNow "AOS_Dubstep";
+        };
+    };
+
+    //덥스텝 팝 Shift + -
+    case 12:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_DubstepPop",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_DubstepPop";
+            player playMoveNow "AOS_DubstepPop";
+        };
+    };
+
+    //힙합댄스 Shift + =
+    case 13:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_hiphopdance",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_hiphopdance";
+            player playMoveNow "AOS_hiphopdance";
+        };
+    };
+
+    //나이트댄스 Shift + *
+    case 55:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_nightclubdance",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_nightclubdance";
+            player playMoveNow "AOS_nightclubdance";
+        };
+    };
+
+    //로봇댄스 Shift + Num-
+    case 74:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_robotdance",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_robotdance";
+            player playMoveNow "AOS_robotdance";
+        };
+    };
+
+
 };
 
 _handled;

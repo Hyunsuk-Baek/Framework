@@ -1,10 +1,39 @@
 disableChannels[] = {{0,true,true},{1,true,true},{2,true,true}};    // Disabled text and voice for global, side, and command channels. Syntax: disableChannels[] = {{channelID<number>, disableChat<bool>, disableVoice<bool>}};
 overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
 
+//Channel Number
+//0 = Global
+//1 = Side
+//2 = Command
+//3 = Group
+//4 = Vehicle
+//5 = Direct
+//6 = System
+
+//HUD Setting
+showHUD[] = {
+    true,   // Scripted HUD (same as showHUD command)
+    true,   // Vehicle + soldier info
+    true,   // Vehicle radar [HIDDEN]
+    true,   // Vehicle compass [HIDDEN]
+    true,   // Tank direction indicator
+    true,   // Commanding menu
+    false,  // Group Bar
+    true,    // HUD Weapon Cursors
+    true
+};
+
 #include "config\Config_SpyGlass.hpp"
 #include "CfgRemoteExec.hpp"
 #include "dialog\MasterHandler.hpp"
 #include "config\Config_Master.hpp"
+#include "AS_AdminMenu\spectating.hpp"
+
+//Heli Advanced
+forceRotorLibSimulation = 2;
+
+//Debug Console
+enableDebugConsole = 0;
 
 class CfgServer {
     DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
@@ -20,6 +49,7 @@ class RscTitles {
     #include "dialog\progress.hpp"
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
+    #include "dialog\statusBar.hpp"
 };
 
 class CfgFunctions {
@@ -171,3 +201,4 @@ class CfgNotifications {
         priority = 5;
     };
 };
+

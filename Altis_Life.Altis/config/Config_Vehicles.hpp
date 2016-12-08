@@ -101,7 +101,18 @@ class CarShops {
         };
     };
 
+    //Original Med heli list(Script spawn)
     class med_air_hs {
+        side = "med";
+        conditions = "";
+        vehicles[] = {
+            { "B_Heli_Light_01_F", "" },
+            { "O_Heli_Light_02_unarmed_F", "" }
+        };
+    };
+
+    //Additional Med air vehicle spawn point(AOS Custom)
+    class med_air_AOS {
         side = "med";
         conditions = "";
         vehicles[] = {
@@ -116,7 +127,7 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
-            { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
+            { "C_Hatchback_01_sport_F", "" },
             { "B_MRAP_01_F", "call life_coplevel >= 2" },
             { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }
         };
@@ -324,7 +335,7 @@ class LifeCfgVehicles {
 
     class C_Offroad_01_F {
         vItemSpace = 65;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 12500;
         textures[] = {
             { "Red", "civ", {
@@ -381,7 +392,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_sport_F {
         vItemSpace = 45;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 40000;
         textures[] = {
             { "Red", "civ", {
@@ -514,7 +525,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_SUV_01_F {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 30000;
         textures[] = {
             { "Dark Red", "civ", {

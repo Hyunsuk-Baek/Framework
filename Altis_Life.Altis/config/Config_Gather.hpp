@@ -18,21 +18,21 @@ class CfgGather {
             amount = 3;
             zones[] = { "heroin_1" };
             item = "";
-            zoneSize = 30;
+            zoneSize = 10;
         };
 
         class cocaine_unprocessed {
             amount = 3;
             zones[] = { "cocaine_1" };
             item = "";
-            zoneSize = 30;
+            zoneSize = 4;
         };
 
         class cannabis {
             amount = 3;
             zones[] = { "weed_1" };
             item = "";
-            zoneSize = 30;
+            zoneSize = 20;
         };
     };
 

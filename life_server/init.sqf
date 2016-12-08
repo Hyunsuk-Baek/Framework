@@ -162,7 +162,7 @@ cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
         uiSleep (30 * 60);
         {
             _x setVariable ["sellers",[],true];
-        } forEach [Dealer_1,Dealer_2,Dealer_3];
+        } forEach [Dealer_1];
     };
 };
 
@@ -178,10 +178,11 @@ publicVariable "TON_fnc_playtime_values_request";
 
 
 /* Setup the federal reserve building(s) */
-private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"]]] call TON_fnc_terrainSort;
+private _vaultHouse = [[["Altis", "Land_Research_house_V1_F"], ["Tanoa", "Land_Medevac_house_V1_F"], ["Jackson_County", "Land_Research_house_V1_F"]]] call TON_fnc_terrainSort;
 private _altisArray = [16019.5,16952.9,0];
 private _tanoaArray = [11074.2,11501.5,0.00137329];
-private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+private _jacksonArray = [5600.56,232.659,0.665315];
+private _pos = [[["Altis", _altisArray], ["Tanoa", _tanoaArray], ["Jackson_County", _jacksonArray]]] call TON_fnc_terrainSort;
 
 _dome = nearestObject [_pos,"Land_Dome_Big_F"];
 _rsb = nearestObject [_pos,_vaultHouse];

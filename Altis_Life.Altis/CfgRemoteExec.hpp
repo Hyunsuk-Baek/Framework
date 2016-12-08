@@ -144,6 +144,8 @@ class CfgRemoteExec {
         F(HC_fnc_wantedFetch,HC)
         F(HC_fnc_wantedProfUpdate,HC)
         F(HC_fnc_wantedRemove,HC)
+        F(TON_fnc_getActions,SERVER)
+        F(life_fnc_ASreceiver,SERVER)
 
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
@@ -161,6 +163,8 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
+        F(bis_fnc_setdate,ANYONE)
+        F(bis_fnc_setppeffecttemplate,ANYONE)
     };
 
     class Commands {

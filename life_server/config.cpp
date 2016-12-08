@@ -112,6 +112,13 @@ class CfgFunctions {
             class setPlayTime {};
             class getPlayTime {};
         };
+
+        class AS {
+            file = "\life_server\AS_AdminMenu";
+                class receiver {};
+                class config {};
+                class getActions {};
+        };
     };
 };
 

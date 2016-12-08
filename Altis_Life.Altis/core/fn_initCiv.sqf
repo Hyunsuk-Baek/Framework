@@ -8,7 +8,8 @@
 */
 private _altisArray = ["Land_i_Shop_01_V1_F","Land_i_Shop_01_V2_F","Land_i_Shop_01_V3_F","Land_i_Shop_02_V1_F","Land_i_Shop_02_V2_F","Land_i_Shop_02_V3_F"];
 private _tanoaArray = ["Land_House_Small_01_F"];
-private _spawnBuildings = [[["Altis", _altisArray], ["Tanoa", _tanoaArray]]] call TON_fnc_terrainSort;
+private _jacksonArray = [];
+private _spawnBuildings = [[["Altis", _altisArray], ["Tanoa", _tanoaArray], ["Jackson_County", _jacksonArray]]] call TON_fnc_terrainSort;
 
 civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", _spawnBuildings,350];
 civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", _spawnBuildings,350];
@@ -39,3 +40,5 @@ if (life_is_alive && !life_is_arrested) then {
 };
 life_is_alive = true;
 player addRating 9999999;
+[] execVM "Custom\FlareGun.sqf";    //SuperFlare
+[] execVM "Custom\AntiVoice.sqf";   //AntiSideVoice

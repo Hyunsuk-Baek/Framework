@@ -150,7 +150,31 @@ private _tanoaPositions = [
     [11637.2,13052.8,-0.228891]
 ];
 
-private _stationPositions = [[["Altis", _altisPositions], ["Tanoa", _tanoaPositions]]] call TON_fnc_terrainSort;
+private _jacksonPositions = [
+    [4611.83,9454.13,0],
+    [9318.43,9348.99,0],
+    [8835.27,7482.18,0],
+    [8272.95,6333.31,0],
+    [8347.4,4958.24,0],
+    [9080.18,3727.2,0],
+    [9628.76,2508.8,0],
+    [6215.16,2358.84,0],
+    [6908.09,4053.5,0],
+    [6760.79,5145.26,0],
+    [5903.79,8266.16,0],
+    [5179.54,1323.26,0],
+    [4691.71,233.673,0],
+    [5153.01,2766.6,0],
+    [3462.55,7576.94,0],
+    [3483.45,2761.09,0],
+    [1965.07,986.516,0],
+    [1975.44,1091.27,0],
+    [672.377,2093.48,0],
+    [873.595,5413.85,0],
+    [923.26,5406.11,0]
+];
+
+private _stationPositions = [[["Altis", _altisPositions], ["Tanoa", _tanoaPositions], ["Jackson_County", _jacksonPositions]]] call TON_fnc_terrainSort;
 
 {
     private _pump = nearestObjects [_x,["Land_fs_feed_F","Land_FuelStation_01_pump_F","Land_FuelStation_02_pump_F"],5] select 0;
