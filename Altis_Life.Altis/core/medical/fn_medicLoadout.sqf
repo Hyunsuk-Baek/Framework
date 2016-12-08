@@ -16,6 +16,7 @@ player addItem "FirstAidKit";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
+player linkItem "ItemGPS";
 
 [] call life_fnc_playerSkins;
 [] call life_fnc_saveGear;

@@ -101,4 +101,4 @@ else
 	};
 };
 
-ctrlSetText[_cName, format["Focus: %1 %2", _name, _role]];	
+ctrlSetText[_cName, format ["Focus: %1 %2", _name, _role]];	

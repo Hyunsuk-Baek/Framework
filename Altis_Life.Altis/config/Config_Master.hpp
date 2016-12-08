@@ -18,17 +18,17 @@ class Life_Settings {
 /* Database Related Settings */
     /* Player Data Saving */
     save_virtualItems = true; //Save Virtual items (all sides)?
-    saved_virtualItems[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" }; //Array of virtual items that can be saved on your player.
+    saved_virtualItems[] = {"apple", "blastingcharge", "boltcutter", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "coffee", "copper_refined", "copper_unrefined", "defusekit", "diamond_cut", "diamond_uncut", "donuts", "fuelEmpty", "fuelFull", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "iron_refined", "iron_unrefined", "lockpick", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "peach", "pickaxe", "rabbit", "rabbit_raw", "redgull", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "salt_refined", "salt_unrefined", "sand", "sheep", "sheep_raw", "spikeStrip", "tbacon", "tuna", "tuna_raw", "turtle_raw", "turtle_soup", "waterBottle", "toolkit", "toolkit_infinite", "defibrillator", "storageSmall", "storageBig", "bomul", "chainsaw", "broadcastmic"}; //Array of virtual items that can be saved on your player.
     save_playerStats = true; //Save food, water and damage (all sides)?
     save_civilian_weapons = true; //Allow civilians to save weapons on them?
     save_civilian_position = true; //Save civilian location?
-    save_civilian_position_restart = true; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
+    save_civilian_position_restart = false; //Save civilian location only between restarts. After a server restart you'll have to spawn again.
     /* !!!TO SAVE POSITION BETWEEN RESTARTS save_civilian_position MUST BE TRUE!!! */
-    save_civilian_positionStrict = false; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
+    save_civilian_positionStrict = true; //Strip the player if possible combat-log?  WARNING: Server crashes and lack of reliable syncing can trigger this.
 
     /* Vehicle Data Saving */
     save_vehicle_virtualItems = true; //Save virtual items inside the vehicle (all sides)(-- See defined items on next line --)
-    save_vehicle_items[] = { "pickaxe","fuelEmpty","fuelFull", "spikeStrip", "lockpick", "defuseKit","storageSmall","storageBig","redgull","coffee","waterBottle","apple","peach","tbacon","donuts","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle_soup","hen","rooster","sheep","goat","defibrillator","toolkit" };
+    save_vehicle_items[] = {"apple", "blastingcharge", "boltcutter", "cannabis", "catshark", "catshark_raw", "cement", "cocaine_processed", "cocaine_unprocessed", "coffee", "copper_refined", "copper_unrefined", "defusekit", "diamond_cut", "diamond_uncut", "donuts", "fuelEmpty", "fuelFull", "glass", "goat", "goat_raw", "goldbar", "hen", "hen_raw", "heroin_processed", "heroin_unprocessed", "iron_refined", "iron_unrefined", "lockpick", "mackerel", "mackerel_raw", "marijuana", "mullet", "mullet_raw", "oil_processed", "oil_unprocessed", "ornate", "ornate_raw", "peach", "pickaxe", "rabbit", "rabbit_raw", "redgull", "rock", "rooster", "rooster_raw", "salema", "salema_raw", "salt_refined", "salt_unrefined", "sand", "sheep", "sheep_raw", "spikeStrip", "tbacon", "tuna", "tuna_raw", "turtle_raw", "turtle_soup", "waterBottle", "toolkit", "toolkit_infinite", "defibrillator", "storageSmall", "storageBig", "bomul", "chainsaw", "broadcastmic"};// define which virtual items to save in vehicles.
     save_vehicle_inventory = true; //Save Arma inventory of vehicle to the database
     save_vehicle_fuel = true; //Save vehicle fuel level to the database (Impounded/Garaged).
     save_vehicle_damage = false; //Save vehicle damage to the database.
@@ -38,8 +38,8 @@ class Life_Settings {
 /* System Settings */
     /* ATM & Federal Reserve System Configurations */
     global_ATM = true; //Allow users to access any ATM on the map (Marked & Unmarked).
-    noatm_timer = 10; //Time in minutes that players cannot deposit money after selling stolen gold.
-    minimum_cops = 2; //Minimum cops required online to rob the Federal Reserve
+    noatm_timer = 15; //Time in minutes that players cannot deposit money after selling stolen gold.
+    minimum_cops = 3; //Minimum cops required online to rob the Federal Reserve
 
     /*Death settings*/
     drop_weapons_onDeath = false; //Set true to enable weapon dropping on death. False (default) will delete player weapons on death, allowing them to be revived with them instead
@@ -47,19 +47,19 @@ class Life_Settings {
     /* Basic System Configurations */
     donor_level = true; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = true; //Set to false to disable the ARMA 3 fatigue system.
-    total_maxWeight = 28; //Static variable for the maximum weight allowed without having a backpack
-    respawn_timer = 30; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
+    total_maxWeight = 30; //Static variable for the maximum weight allowed without having a backpack
+    respawn_timer = 30; //How many seconds a player should wait, before being able to respawn.
 
     /* Channel 7 News Station Configurations */
-    news_broadcast_cost = 150000; //Cost for a player to send a news station broadcast.
-    news_broadcast_cooldown = 20; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
-    news_broadcast_header_length = 60; //Number of characters that a header can consist of. Anything over this may clip. This depends on the font size and various other factors. Adjust with caution.
+    news_broadcast_cost = 50000; //Cost for a player to send a news station broadcast.
+    news_broadcast_cooldown = 3; //Time in minutes that is required between news station broadcasts. (Default = 20 minutes)
+    news_broadcast_header_length = 70; //Number of characters that a header can consist of. Anything over this may clip. This depends on the font size and various other factors. Adjust with caution.
 
     /* Clothing System Configurations */
-    civ_skins = false; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
-    cop_extendedSkins = false; //Enable or disable cop skins by level. Before enabling, you must add all the EIGHT files to textures folder. (It must be named as: cop_uniform.jpg + cop_uniform_1.jpg, cop_uniform_2.jpg...cop_uniform_6.jpg, cop_uniform_7.jpg; meaning cop_uniform = life_coplevel=0, cop_uniform_1 = life_coplevel=1, cop_uniform_2 = life_coplevel=2, etc...)
-    clothing_noTP = false;  //Disable clothing preview teleport? (true = no teleport. false = teleport)
-    clothing_box = true; //true = teleport to a black box. false = teleport to somewhere on map. (It only affects the game if clothing_noTP is set as false)
+    civ_skins = true; //Enable or disable civilian skins. Before enabling, you must add all the SEVEN files to textures folder. (It must be named as: civilian_uniform_1.jpg, civilian_uniform_2.jpg...civilian_uniform_6.jpg, civilian_uniform_7.jpg)
+    cop_extendedSkins = true; //Enable or disable cop skins by level. Before enabling, you must add all the EIGHT files to textures folder. (It must be named as: cop_uniform.jpg + cop_uniform_1.jpg, cop_uniform_2.jpg...cop_uniform_6.jpg, cop_uniform_7.jpg; meaning cop_uniform = life_coplevel=0, cop_uniform_1 = life_coplevel=1, cop_uniform_2 = life_coplevel=2, etc...)
+    clothing_noTP = true;  //Disable clothing preview teleport? (true = no teleport. false = teleport)
+    clothing_box = false; //true = teleport to a black box. false = teleport to somewhere on map. (It only affects the game if clothing_noTP is set as false)
     clothing_masks[] = { "H_Shemag_olive", "H_Shemag_khk", "H_Shemag_tan", "H_Shemag_olive_hs", "H_ShemagOpen_khk", "H_ShemagOpen_tan", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Bandanna_aviator", "G_Bandanna_beast", "G_Bandanna_blk", "G_Bandanna_khk", "G_Bandanna_oli", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_tan", "U_O_GhillieSuit", "U_I_GhillieSuit", "U_B_GhillieSuit", "H_RacingHelmet_1_black_F", "H_RacingHelmet_1_red_F", "H_RacingHelmet_1_white_F", "H_RacingHelmet_1_blue_F", "H_RacingHelmet_1_yellow_F", "H_RacingHelmet_1_green_F", "H_RacingHelmet_1_F", "H_RacingHelmet_2_F", "H_RacingHelmet_3_F", "H_RacingHelmet_4_F" };
 
     /* Escape Menu Configuration */
@@ -68,14 +68,14 @@ class Life_Settings {
     escapeMenu_displayText = "Thanks for playing!"; //Text displayed in the escape menu. Make it short.. around 20 characters.
 
     /* Fuel System Configurations */
-    pump_service = true; //Allow users to use pump service on the map. Default = false
-    fuel_cost = 80; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
-    service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
+    pump_service = false; //Allow users to use pump service on the map. Default = false
+    fuel_cost = 120; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
+    service_chopper = 2000; //Cost to service chopper at chopper service station(Repair/Refuel).
     fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
-    gang_price = 75000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
-    gang_upgradeBase = 10000; //The base cost for purchasing additional slots in a gang
+    gang_price = 990000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
+    gang_upgradeBase = 990000; //The base cost for purchasing additional slots in a gang
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
@@ -88,11 +88,11 @@ class Life_Settings {
     animaltypes_hunting[] = { "Sheep_random_F", "Goat_random_F", "Hen_random_F", "Cock_random_F", "Rabbit_F" }; //Classnames of aniamls you can hunt/gut
 
     /* Item-related Restrictions */
-    restrict_medic_weapons = true; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
-    restrict_clothingPickup = true; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
+    restrict_medic_weapons = false; //Set to false to allow medics to use any weapon --true will remove ANY weapon they attempt to use (primary,secondary,launcher)
+    restrict_clothingPickup = false; //Set to false to allow civilians to pickup/take any uniform (ground/crates/vehicles)
     restrict_weaponPickup = false; //Set to false to allow civilians to pickup/take any weapon (ground/crates/vehicles)
-    restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
-    restricted_weapons[] = { "hgun_P07_snds_F", "arifle_MX_F", "arifle_MXC_F" };
+    restricted_uniforms[] = { "U_Rangemaster", "U_B_CombatUniform_mcam", "U_Competitor", "U_B_CombatUniform_mcam_tshirt", "U_B_CombatUniform_mcam_worn", "U_B_survival_uniform" };
+    restricted_weapons[] = { "" };
 
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
@@ -104,60 +104,60 @@ class Life_Settings {
     revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_civ = false; //true to enable civs the ability to revive everyone or false for only medics/ems or medic/ems/cops.
     revive_east = false; //true to enable opfor the ability to revive everyone or false for only medics/ems or medic/ems/cops.
-    revive_fee = 1500; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
-    hospital_heal_fee = 100; //Fee to heal at a hospital NPC
+    revive_fee = 100000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
+    hospital_heal_fee = 6000; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 700000; //Amount of cash in bank for new cops
-    bank_civ = 300000; //Amount of cash in bank for new civillians
-    bank_med = 650000; //Amount of cash in bank for new medics
+    bank_cop = 100000; //Amount of cash in bank for new cops
+    bank_civ = 100000; //Amount of cash in bank for new civillians
+    bank_med = 100000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 50000; //Payment for cops
-    paycheck_civ = 35000; //Payment for civillians
-    paycheck_med = 45000; //Payment for medics
+    paycheck_cop = 30000; //Payment for cops
+    paycheck_civ = 15000; //Payment for civillians
+    paycheck_med = 20000; //Payment for medics
 
-    paycheck_period = 5; //Scaled in minutes
-    bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
+    paycheck_period = 30; //Scaled in minutes
+    bank_transferTax = .02; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
 
     /* Player Job System Configurations */
-    delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
-    fuelTank_winMultiplier = 1; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
+    delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25", "dp_26", "dp_27" };
+    fuelTank_winMultiplier = 5; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
 
     /* Search & Seizure System Configurations */
-    seize_exempt[] = { "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg" }; //Arma items that will not get seized from player inventories
+    seize_exempt[] = { "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg", "hgun_P07_snds_F", "hgun_Pistol_heavy_02_F", "hgun_ACPC2_F", "hgun_PDW2000_F" }; //Arma items that will not get seized from player inventories
     seize_uniform[] = { "U_Rangemaster" }; //Any specific uniforms you want to be seized from players
-    seize_vest[] = { "V_TacVest_blk_POLICE" }; //Any specific vests you want to be seized from players
+    seize_vest[] = { "V_TacVest_blk_POLICE", "V_HarnessOGL_gry" }; //Any specific vests you want to be seized from players
     seize_headgear[] = { "H_Cap_police" }; //Any hats or helmets you want seized from players
     seize_minimum_rank = 2; //Required minimum CopLevel to be able to seize items from players
 
     /* Vehicle System Configurations */
     chopShop_vehicles[] = { "Car", "Air" }; //Vehicles that can be chopped. (Can add: "Ship" and possibly more -> look at the BI wiki...)
-    vehicle_infiniteRepair[] = {false, false, true, false}; //Set to true for unlimited repairs with 1 toolkit. False will remove toolkit upon use. civilian, west, independent, east
-    vehicleShop_rentalOnly[] = { "B_MRAP_01_hmg_F", "B_G_Offroad_01_armed_F", "B_Boat_Armed_01_minigun_F" }; //Vehicles that can only be rented and not purchased. (Last only for the session)
-    vehicleShop_3D = false; //Add preview 3D inside Shop vehicle.       Default : False
+    vehicle_infiniteRepair[] = {false, false, false, false}; //Set to true for unlimited repairs with 1 toolkit. False will remove toolkit upon use. civilian, west, independent, east
+    vehicleShop_rentalOnly[] = { "B_G_Offroad_01_armed_F" }; //Vehicles that can only be rented and not purchased. (Last only for the session)
+    vehicleShop_3D = true; //Add preview 3D inside Shop vehicle.       Default : False
 
     /* Vehicle Purchase Prices */
     vehicle_purchase_multiplier_CIVILIAN = 1; //Civilian Vehicle Buy Price = Config_Vehicle price * multiplier
-    vehicle_purchase_multiplier_COP = .5; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
-    vehicle_purchase_multiplier_MEDIC = .75; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_COP = 0.8; //Cop Vehicle Buy Price = Config_Vehicle price * multiplier
+    vehicle_purchase_multiplier_MEDIC = 0.8; //Medic Vehicle Buy Price = Config_Vehicle price * multiplier
     vehicle_purchase_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Rental Prices */
-    vehicle_rental_multiplier_CIVILIAN = .80; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_COP = .3; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
-    vehicle_rental_multiplier_MEDIC = .55; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_CIVILIAN = .4; //Civilian Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_COP = .4; //Cop Vehicle Rental Price = Config_Vehicle price * multiplier
+    vehicle_rental_multiplier_MEDIC = .4; //Medic Vehicle Rental Price = Config_Vehicle price * multiplier
     vehicle_rental_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* Vehicle Sell Prices */
-    vehicle_sell_multiplier_CIVILIAN = .5; //Civilian Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
-    vehicle_sell_multiplier_COP = .5; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
-    vehicle_sell_multiplier_MEDIC = .5; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_CIVILIAN = .4; //Civilian Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_COP = .4; //Cop Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
+    vehicle_sell_multiplier_MEDIC = .4; //Medic Vehicle Garage Sell Price = Vehicle Buy Price * multiplier
     vehicle_sell_multiplier_OPFOR = -1; // -- NOT IN USE -- Simply left in for east support.
 
     /* "Other" Vehicle Prices */
-    vehicle_chopShop_multiplier = .25; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
-    vehicle_storage_fee_multiplier = .2; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
-    vehicle_cop_impound_multiplier = .1; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+    vehicle_chopShop_multiplier = .3; //Chop Shop price for vehicles. TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
+    vehicle_storage_fee_multiplier = .02; //Pull from garage cost --> Cost takes the playersides Buy Price * multiplier
+    vehicle_cop_impound_multiplier = .04; //TO AVOID EXPLOITS NEVER SET HIGHER THAN A PURCHASE/RENTAL multipler!   Payout = Config_vehicle Price * multiplier
 
     disableCommanderView = true; //false - Group leaders can access the commander view. true [default] - Group leaders cannot access the commander view.
                                  //Commander/tactical view is accessed via pressing . [NUM] by default. It raises the camera significantly higher and steeper above the player in order to give a boarder tactical view of the surrounding area.
@@ -165,50 +165,50 @@ class Life_Settings {
     /* Wanted System Settings *
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {
-        {"STR_Crime_187V","650","187V"},
-        {"STR_Crime_187","2000","187"},
-        {"STR_Crime_901","450","901"},
-        {"STR_Crime_215","200","215"},
-        {"STR_Crime_213","1000","213"},
-        {"STR_Crime_211","100","211"},
-        {"STR_Crime_207","350","207"},
-        {"STR_Crime_207A","200","207A"},
-        {"STR_Crime_390","1500","390"},
-        {"STR_Crime_487","150","487"},
-        {"STR_Crime_488","70","488"},
-        {"STR_Crime_480","100","480"},
-        {"STR_Crime_481","100","481"},
-        {"STR_Crime_482","500","482"},
-        {"STR_Crime_483","950","483"},
-        {"STR_Crime_459","650","459"},
-        {"STR_Crime_666","200","666"},
-        {"STR_Crime_667","4500","667"},
-        {"STR_Crime_668","1500","668"},
-        {"STR_Crime_1","250","1"},
-        {"STR_Crime_2","200","2"},
-        {"STR_Crime_3","150","3"},
-        {"STR_Crime_4","250","4"},
-        {"STR_Crime_5","100","5"},
-        {"STR_Crime_6","80","6"},
-        {"STR_Crime_7","150","7"},
-        {"STR_Crime_8","5000","8"},
-        {"STR_Crime_9","5000","9"},
-        {"STR_Crime_10","15000","10"},
-        {"STR_Crime_11","10000","11"},
-        {"STR_Crime_12","2500","12"},
-        {"STR_Crime_13","1500","13"},
-        {"STR_Crime_14","500","14"},
-        {"STR_Crime_15","2500","15"},
-        {"STR_Crime_16","1500","16"},
-        {"STR_Crime_17","100","17"},
-        {"STR_Crime_18","1500","18"},
-        {"STR_Crime_19","2500","19"},
-        {"STR_Crime_20","500","20"},
-        {"STR_Crime_21","500","21"},
-        {"STR_Crime_22","2000","22"},
-        {"STR_Crime_23","5000","23"},
-        {"STR_Crime_24","10000","24"},
-        {"STR_Crime_25","20000","25"}
+        {"STR_Crime_187V","180000","187V"}, //로드킬
+        {"STR_Crime_187","180000","187"}, //살인
+        {"STR_Crime_901","100000","901"}, //탈옥
+        {"STR_Crime_215","5000","215"}, //차량절도시도
+        {"STR_Crime_213","60000","213"}, //불법폭탄물사용
+        {"STR_Crime_211","30000","211"}, //강도
+        {"STR_Crime_207","40000","207"}, //납치
+        {"STR_Crime_207A","20000","207A"}, //납치미수
+        {"STR_Crime_390","15000","390"}, //마약흡입
+        {"STR_Crime_487","40000","487"}, //절도
+        {"STR_Crime_488","10000","488"}, //절도 잡범
+        {"STR_Crime_480","5000","480"}, //폭행 도주
+        {"STR_Crime_481","20000","481"}, //불법물품소지
+        {"STR_Crime_482","5000","482"}, // 공갈
+        {"STR_Crime_483","100000","483"}, // 마약 밀매
+        {"STR_Crime_459","65000","459"}, //빈집 털이
+        {"STR_Crime_666","20000","666"}, //탈세
+        {"STR_Crime_667","300000","667"}, //테러범
+        {"STR_Crime_668","65000","668"}, //밀렵
+        {"STR_Crime_1","5000","1"}, // 무면허운전
+        {"STR_Crime_2","2000","2"},//비도로운전
+        {"STR_Crime_3","1500","3"},//신호위반
+        {"STR_Crime_4","10000","4"},//과속
+        {"STR_Crime_5","10000","5"}, //야간주행 헤드라이트 미사용
+        {"STR_Crime_6","8000","6"}, //헬멧미착용-카트
+        {"STR_Crime_7","5000","7"}, //불법주차
+        {"STR_Crime_8","25000","8"}, //반군차량소지
+        {"STR_Crime_9","25000","9"}, //시민차량절도
+        {"STR_Crime_10","75000","10"}, //경찰차량절도
+        {"STR_Crime_11","100000","11"},//무장차량소지
+        {"STR_Crime_12","25000","12"},//무허가 마을상공 비행
+        {"STR_Crime_13","15000","13"}, //욕설 비속어 사용
+        {"STR_Crime_14","15000","14"}, //마을내 무기 소지
+        {"STR_Crime_15","50000","15"}, //반군무기 소지
+        {"STR_Crime_16","15000","16"}, //불법 의상 착용
+        {"STR_Crime_17","5000","17"}, //닉네임숨김(가면)
+        {"STR_Crime_18","20000","18"}, //공무집행 협조거부
+        {"STR_Crime_19","15000","19"},//폭행 도주
+        {"STR_Crime_20","5000","20"}, //시민모욕
+        {"STR_Crime_21","30000","21"}, //경찰모욕
+        {"STR_Crime_22","100000","22"}, //마약판매
+        {"STR_Crime_23","500000","23"}, //연방은행절도
+        {"STR_Crime_24","180000","24"}, //시민살인
+        {"STR_Crime_25","200000","25"} // 경찰살인
     };
 };
 

@@ -192,14 +192,14 @@ switch (_listboxActions lbText (lbCurSel _listboxActions)) do
 				if(player distance _veh < 8) then {
 					_door = [_veh] call life_fnc_nearestDoor;
 					if(_door == 0) exitWith {hint localize "STR_House_Door_NotNear"};
-					_locked = _veh getVariable [format["bis_disabled_Door_%1",_door],0];
+					_locked = _veh getVariable [format ["bis_disabled_Door_%1",_door],0];
 					if(_locked == 0) then {
-						_veh setVariable[format["bis_disabled_Door_%1",_door],1,true];
-						_veh animate [format["door_%1_rot",_door],0];
+						_veh setVariable[format ["bis_disabled_Door_%1",_door],1,true];
+						_veh animate [format ["door_%1_rot",_door],0];
 						systemChat localize "STR_House_Door_Lock";
 					} else {
-						_veh setVariable[format["bis_disabled_Door_%1",_door],0,true];
-						_veh animate [format["door_%1_rot",_door],1];
+						_veh setVariable[format ["bis_disabled_Door_%1",_door],0,true];
+						_veh animate [format ["door_%1_rot",_door],1];
 						systemChat localize "STR_House_Door_Unlock";
 					};
 				};

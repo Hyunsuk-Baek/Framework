@@ -9,7 +9,7 @@ private ["_Source", "_debugPlayer", "_cName", "_cCamera", "_KEGs_cs"];
 //	_debugPlayer=player;
 //};
 //_debugPlayer groupchat format ["CameraMenuHandler Source: %1", _Source]; 
-//_msg = format["CameraMenuHandler Source: %1", _Source];
+//_msg = format ["CameraMenuHandler Source: %1", _Source];
 //if ( f_var_debugMode == 1 ) then { diag_log  _msg; };
 
 _cName = 55004;
@@ -130,5 +130,5 @@ _cCamera = 55002;
 	};
 
 
-ctrlSetText[_cCamera, format["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
+ctrlSetText[_cCamera, format ["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
 KEGs_camSelLast = lbCurSel KEGs_cLBCameras; 

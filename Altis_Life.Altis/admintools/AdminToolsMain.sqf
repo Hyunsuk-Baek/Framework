@@ -36,29 +36,29 @@ if ((getPlayerUID player) in ["76561197996862052","76561198027776492"]) then { /
 ModToolsMenu =
 [
 	["",true],
-		["Open Arsenal", [2],  "", -5, [["expression", format[_EXECscript1,"OpenArsenal.sqf"]]], "1", "1"],
-		["Light Bullet", [3], "", -5, [["expression", format[_EXECscript1, "LightBullet.sqf"]]], "1", "1"],
-		["Add RocketPackBag", [4], "", -5, [["expression", format[_EXECscript1, "JetPack.sqf"]]], "1", "1"],
-		["Add GliderBag", [5], "", -5, [["expression", format[_EXECscript1, "Glider.sqf"]]], "1", "1"],
+		["Open Arsenal", [2],  "", -5, [["expression", format [_EXECscript1,"OpenArsenal.sqf"]]], "1", "1"],
+		["Light Bullet", [3], "", -5, [["expression", format [_EXECscript1, "LightBullet.sqf"]]], "1", "1"],
+		["Add RocketPackBag", [4], "", -5, [["expression", format [_EXECscript1, "JetPack.sqf"]]], "1", "1"],
+		["Add GliderBag", [5], "", -5, [["expression", format [_EXECscript1, "Glider.sqf"]]], "1", "1"],
 		["Exit", [7], "", -3, [["expression", ""]], "1", "1"]
 ];
 //customise to fit
 AdminToolsMenu =
 [
 	["",true],
-		["Open Arsenal", [2],  "", -5, [["expression", format[_EXECscript1,"OpenArsenal.sqf"]]], "1", "1"],
-		["Light Bullet", [3], "", -5, [["expression", format[_EXECscript1, "LightBullet.sqf"]]], "1", "1"],
-		["Add RocketPackBag", [4], "", -5, [["expression", format[_EXECscript1, "JetPack.sqf"]]], "1", "1"],
-		["Add GliderBag", [5], "", -5, [["expression", format[_EXECscript1, "Glider.sqf"]]], "1", "1"],
+		["Open Arsenal", [2],  "", -5, [["expression", format [_EXECscript1,"OpenArsenal.sqf"]]], "1", "1"],
+		["Light Bullet", [3], "", -5, [["expression", format [_EXECscript1, "LightBullet.sqf"]]], "1", "1"],
+		["Add RocketPackBag", [4], "", -5, [["expression", format [_EXECscript1, "JetPack.sqf"]]], "1", "1"],
+		["Add GliderBag", [5], "", -5, [["expression", format [_EXECscript1, "Glider.sqf"]]], "1", "1"],
 		["Exit", [7], "", -3, [["expression", ""]], "1", "1"]
 ];
 ToolsMenu =
 [
 	["",true],
-		["Open Arsenal", [2],  "", -5, [["expression", format[_EXECscript1,"OpenArsenal.sqf"]]], "1", "1"],
-		["Light Bullet", [3], "", -5, [["expression", format[_EXECscript1, "LightBullet.sqf"]]], "1", "1"],
-		["Add RocketPackBag", [4], "", -5, [["expression", format[_EXECscript1, "JetPack.sqf"]]], "1", "1"],
-		["Add GliderBag", [5], "", -5, [["expression", format[_EXECscript1, "Glider.sqf"]]], "1", "1"],
+		["Open Arsenal", [2],  "", -5, [["expression", format [_EXECscript1,"OpenArsenal.sqf"]]], "1", "1"],
+		["Light Bullet", [3], "", -5, [["expression", format [_EXECscript1, "LightBullet.sqf"]]], "1", "1"],
+		["Add RocketPackBag", [4], "", -5, [["expression", format [_EXECscript1, "JetPack.sqf"]]], "1", "1"],
+		["Add GliderBag", [5], "", -5, [["expression", format [_EXECscript1, "Glider.sqf"]]], "1", "1"],
 		["Exit", [7], "", -3, [["expression", ""]], "1", "1"]
 ];
 showCommandingMenu "#USER:adminmenu";

@@ -125,5 +125,12 @@ Example 2:
             mined[] = { "oil_unprocessed" };
             zoneSize = 30;
         };
+        class wood {
+            amount = 1;
+            zones[] = { "wood_1", "wood_2" };
+            item = "chainsaw";
+            mined[] = { "wood" };
+            zoneSize = 40;
+        };
     };
 };

@@ -1,6 +1,6 @@
 // "for Spectating Script";
 // "Handles events such as keyboard keypresses";
-// "by Kegetys <kegetys [ät] dnainternet.net>";
+// "by Kegetys <kegetys [ï¿½t] dnainternet.net>";
 
 _type = _this select 0;
 _param = _this select 1;
@@ -376,7 +376,7 @@ switch (_type) do
 						VM_CurrentCameraView = ""; 
 						//_debugPlayer globalchat "key 1"; 
 						lbSetCurSel[KEGs_cLBCameras, KEGs_cameraIdx]; 
-						ctrlSetText[_cCamera, format["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]]; 
+						ctrlSetText[_cCamera, format ["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]]; 
 						["Specta_Events"] spawn CameraMenuHandler;
 					};				
 			
@@ -385,7 +385,7 @@ switch (_type) do
 						VM_CurrentCameraView = ""; 
 						//_debugPlayer globalchat "key 2"; 
 						lbSetCurSel[KEGs_cLBCameras, KEGs_cameraIdx]; 
-						ctrlSetText[_cCamera, format["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
+						ctrlSetText[_cCamera, format ["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
 						["Specta_Events"] spawn CameraMenuHandler;
 					};				
 			
@@ -394,7 +394,7 @@ switch (_type) do
 						VM_CurrentCameraView = ""; 
 						//_debugPlayer globalchat "key 3"; 
 						lbSetCurSel[KEGs_cLBCameras, KEGs_cameraIdx]; 
-						ctrlSetText[_cCamera, format["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
+						ctrlSetText[_cCamera, format ["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
 						["Specta_Events"] spawn CameraMenuHandler;
 					};
 			
@@ -403,7 +403,7 @@ switch (_type) do
 						VM_CurrentCameraView = ""; 
 						//_debugPlayer globalchat "key 4"; 
 						lbSetCurSel[KEGs_cLBCameras, KEGs_cameraIdx]; 
-						ctrlSetText[_cCamera, format["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
+						ctrlSetText[_cCamera, format ["Camera: %1", KEGs_cameraNames select KEGs_cameraIdx]];	
 						["Specta_Events"] spawn CameraMenuHandler;
 					};					
 		
@@ -694,7 +694,7 @@ switch (_type) do
 			_a = _param select 4;
 			_o = (getpos _u) nearestObject _a;
 			
-			_type = getText(configFile >> "CfgAmmo" >> format["%1", typeOf _o] >> "simulation");
+			_type = getText(configFile >> "CfgAmmo" >> format ["%1", typeOf _o] >> "simulation");
 			
 			if(_type == "shotBullet") then {
 				_bar = "KEGspect_bar_yellow";				
@@ -720,17 +720,17 @@ switch (_type) do
 			_len = (speed _o)/15;
 			KEGs_dir = getdir _o;
 			// "Marker for shot effect (stationary circle)";
-			_m2 = createMarkerLocal[format["KEGsMarkerFired%1", random 10000], getpos _o];
+			_m2 = createMarkerLocal[format ["KEGsMarkerFired%1", random 10000], getpos _o];
 			_m2 setMarkerColorLocal "ColorYellow";
 			_m2 setMarkerSizeLocal[0.45, 0.45];
 			_m2 setMarkerTypeLocal "Select";
 			
-			_type = getText(configFile >> "CfgAmmo" >> format["%1", typeOf _o] >> "simulation");
-			_name = getText(configFile >> "CfgWeapons" >> format["%1", _w] >> "displayName");
+			_type = getText(configFile >> "CfgAmmo" >> format ["%1", typeOf _o] >> "simulation");
+			_name = getText(configFile >> "CfgWeapons" >> format ["%1", _w] >> "displayName");
 			
 			// "Marker for round itself, for bullet display line, everything else a named marker";
 			if(_type == "shotMissile" OR _type == "shotRocket" OR _type == "shotShell" OR _type == "shotTimeBomb" OR _type == "shotPipeBomb" OR _type == "shotMine" OR _type == "shotSmoke") then {
-				_m = createMarkerLocal[format["KEGsMarkerFired%1", random 10000], [(getpos _o select 0)+(sin KEGs_dir)*_len, (getpos _o select 1)+(cos KEGs_dir)*_len, 0]];
+				_m = createMarkerLocal[format ["KEGsMarkerFired%1", random 10000], [(getpos _o select 0)+(sin KEGs_dir)*_len, (getpos _o select 1)+(cos KEGs_dir)*_len, 0]];
 				_m setMarkerTypeLocal "mil_dot";
 				_m setMarkerColorLocal "ColorWhite";
 				_m setMarkerSizeLocal[0.25,0.5];
@@ -749,7 +749,7 @@ switch (_type) do
 					deleteMarkerLocal _m;
 				};
 			} else {
-				_m = createMarkerLocal[format["KEGsMarkerFired%1", random 10000], [(getpos _o select 0)+(sin KEGs_dir)*_len, (getpos _o select 1)+(cos KEGs_dir)*_len, 0]];
+				_m = createMarkerLocal[format ["KEGsMarkerFired%1", random 10000], [(getpos _o select 0)+(sin KEGs_dir)*_len, (getpos _o select 1)+(cos KEGs_dir)*_len, 0]];
 				_m setMarkerShapeLocal "RECTANGLE";
 				_m setMarkerSizeLocal[0.25,_len];
 				_m setMarkerDirLocal (getdir _o);
@@ -771,8 +771,8 @@ switch (_type) do
 			_a = _param select 4;
 			_o = (getpos _u) nearestObject _a;
 			
-			_type = getText(configFile >> "CfgAmmo" >> format["%1", typeOf _o] >> "simulation");
-			_name = getText(configFile >> "CfgWeapons" >> format["%1", _w] >> "displayName");
+			_type = getText(configFile >> "CfgAmmo" >> format ["%1", typeOf _o] >> "simulation");
+			_name = getText(configFile >> "CfgWeapons" >> format ["%1", _w] >> "displayName");
 			
 			if(_u == vehicle KEGs_target and (_type == "shotMissile" or _type == "shotRocket") and !KEGsMissileCamActive) then 
 			{

@@ -129,9 +129,13 @@ life_copLevel = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
+/*
 life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
 life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
+*/
+life_radio_west = radioChannelCreate [[255, 0, 0, 0.8], "EmergencyChannel", "%UNIT_NAME", []];
+life_radio_indep = radioChannelCreate [[255, 0, 0, 0.8], "EmergencyChannel", "%UNIT_NAME", []];
 
 /* Set the amount of gold in the federal reserve at mission start */
 fed_bank setVariable ["safe",count playableUnits,true];
@@ -198,8 +202,10 @@ _rsb allowDamage false;
 life_server_isReady = true;
 publicVariable "life_server_isReady";
 
-/* Initialize hunting zone(s) */
-aiSpawn = ["hunting_zone",30] spawn TON_fnc_huntingZone;
+/* Initialize hunting/fishing zone(s) */
+aiSpawn = ["hunting_zone",40] spawn TON_fnc_huntingZone;
+aiSpawn2 = ["fishing_zone",50] spawn TON_fnc_fishingZone;
+aiSpawn3 = ["fishing_zone2",50] spawn TON_fnc_fishingZone2;
 
 // We create the attachment point to be used for objects to attachTo load virtually in vehicles.
 life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];

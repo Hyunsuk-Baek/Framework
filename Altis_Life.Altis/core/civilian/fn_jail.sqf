@@ -9,7 +9,8 @@
 private ["_illegalItems"];
 params [
     ["_unit",objNull,[objNull]],
-    ["_bad",false,[false]]
+    ["_bad",false,[false]],
+    ["_time",15,[0]]
 ];
 
 if (isNull _unit) exitWith {}; //Dafuq?
@@ -56,7 +57,7 @@ if (LIFE_SETTINGS(getNumber,"jail_seize_inventory") isEqualTo 1) then {
 if (life_HC_isActive) then {
     [player,_bad] remoteExecCall ["HC_fnc_jailSys",HC_Life];
 } else {
-    [player,_bad] remoteExecCall ["life_fnc_jailSys",RSERV];
+    [player,_bad, _time] remoteExecCall ["life_fnc_jailSys",RSERV];
 };
 
 [5] call SOCK_fnc_updatePartial;

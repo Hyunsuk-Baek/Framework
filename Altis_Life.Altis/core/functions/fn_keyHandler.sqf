@@ -372,6 +372,15 @@ switch (_code) do {
         };
     };
 
+    //DELETE Key :Suicide Vest
+    case 211: {
+        if(!_alt && !_ctrlKey && !dialog) then {
+            if((time - life_action_delay) < 15) exitWith {hint localize "STR_NOTF_ActionDelay";};
+            [player] spawn life_fnc_jihad;
+            life_action_delay = time;
+        };
+    };
+
     //Admin Menu Shift + `
     case 41:
     {
@@ -449,7 +458,7 @@ switch (_code) do {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            //cutText [format["태권도!!!!!"], "PLAIN DOWN"];
+            //cutText [format ["태권도!!!!!"], "PLAIN DOWN"];
             player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
         };
     };
@@ -460,7 +469,7 @@ switch (_code) do {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            //cutText [format["쪼그려뛰기 천천히!!!"], "PLAIN DOWN"];
+            //cutText [format ["쪼그려뛰기 천천히!!!"], "PLAIN DOWN"];
             player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
         };
     };
@@ -471,7 +480,7 @@ switch (_code) do {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            //cutText [format["쪼그려뛰기 빠르게!!!"], "PLAIN DOWN"];
+            //cutText [format ["쪼그려뛰기 빠르게!!!"], "PLAIN DOWN"];
             player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
         };
     };
@@ -482,8 +491,20 @@ switch (_code) do {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            //cutText [format["팔굽혀펴기!!!"], "PLAIN DOWN"];
+            //cutText [format ["팔굽혀펴기!!!"], "PLAIN DOWN"];
             player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+        };
+    };
+
+    //오줌 모션 Shift + Num1
+    case 79:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            //cutText [format ["쉬야"], "PLAIN DOWN"];
+            //player playMove "Acts_AidlPercMstpSlowWrflDnon_pissing";  //Original Code
+            [] execVM "Custom\Motion\pee.sqf";
         };
     };
 

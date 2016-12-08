@@ -73,7 +73,7 @@ _Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
 
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
-_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction; closeDialog 0;";
+_Btn6 buttonSetAction "closeDialog 0; [] call life_fnc_showArrestDialog;";
 _Btn6 ctrlEnable false;
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
@@ -86,5 +86,5 @@ _Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_seizePlayerAction;
 if (FETCH_CONST(life_coplevel) < _seizeRank) then {_Btn8 ctrlEnable false;};
 
 {
-    if ((player distance (getMarkerPos _x) <30)) exitWith { _Btn6 ctrlEnable true;};
+    if ((player distance (getMarkerPos _x) <60)) exitWith { _Btn6 ctrlEnable true;};
 } forEach LIFE_SETTINGS(getArray,"sendtoJail_locations");

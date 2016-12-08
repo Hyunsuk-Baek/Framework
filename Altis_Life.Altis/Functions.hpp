@@ -61,6 +61,8 @@ class Life_Client_Core {
         class surrender {};
         class ticketAction {};
         class unrestrain {};
+        class processCasinoSlots {}; //Casino process
+        class JetRocket {}; //JetPack
     };
 
     class Admin {
@@ -132,6 +134,8 @@ class Life_Client_Core {
         class ticketPrompt {};
         class vehInvSearch {};
         class wantedGrab {};
+        class showArrestDialog {};//구속시간설정
+        class arrestDialog_Arrest {};//구속시간설정
     };
 
     class Dialog_Controls {
@@ -208,6 +212,10 @@ class Life_Client_Core {
         class tazeSound {};
         class teleport {};
         class whereAmI {};
+        class jihad {}; //자살조끼
+        class autoSetPolice {};//캅오토셋
+        class slotMachineRewards {};  //Casino
+        class slotMachineRandomizer {};  //Casino
     };
 
     class Gangs {
@@ -260,6 +268,7 @@ class Life_Client_Core {
         class placestorage {};
         class spikeStrip {};
         class storageBox {};
+        class weed {};
     };
 
     class Medical_System {
@@ -342,6 +351,10 @@ class Life_Client_Core {
         class weaponShopMags {};
         class weaponShopMenu {};
         class weaponShopSelection {};
+        class blackjack {};  //BlackJack
+        class BJbet {};  //BlackJack
+        class BJhit {};  //BlackJack
+        class BJstay {};  //BlackJack
     };
 
     class Vehicle {

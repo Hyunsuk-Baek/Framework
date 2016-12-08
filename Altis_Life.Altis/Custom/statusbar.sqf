@@ -4,7 +4,7 @@ disableSerialization;
 
 _rscLayer = "statusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["statusBar","PLAIN"];
-systemChat format["Welcome to AOSOUL Life Server", _rscLayer];
+systemChat format ["Welcome to AOSOUL Life Server", _rscLayer];
 
 [] spawn {
 	sleep 5;
@@ -16,7 +16,7 @@ systemChat format["Welcome to AOSOUL Life Server", _rscLayer];
 		sleep 1;
 		_counter = _counter - 1;
 		_statusText = "";	//Left Message
-		((uiNamespace getVariable "statusBar")displayCtrl 1000)ctrlSetText format[
+		((uiNamespace getVariable "statusBar")displayCtrl 1000)ctrlSetText format [
 		"%6 | Cop : %1 | Medic : %2 | Civ: %3 | Cash: %4 | Bank: %5", 
 		west countSide playableUnits, independent countSide playableUnits, civilian countSide playableUnits, [CASH] call life_fnc_numberText,[BANK] call life_fnc_numberText, _statusText, _counter];
 	}; 

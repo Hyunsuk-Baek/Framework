@@ -8,11 +8,11 @@
     on distance between A->B
 */
 private ["_dp","_dis","_price"];
-_dp = [_this,0,objNull,[objNull]] call BIS_fnc_param;
+_dp = param [0,objNull,[objNull]];
 life_delivery_in_progress = false;
 life_dp_point = nil;
 _dis = round((getPos life_dp_start) distance (getPos _dp));
-_price = round(1.7 * _dis);
+_price = round(1.7 * _dis * 5);// dp price // 5 times upgrage by soulfucker
 
 ["DeliverySucceeded",[format [(localize "STR_NOTF_Earned_1"),[_price] call life_fnc_numberText]]] call bis_fnc_showNotification;
 life_cur_task setTaskState "Succeeded";

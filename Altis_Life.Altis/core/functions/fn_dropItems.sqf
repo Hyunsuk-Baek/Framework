@@ -96,7 +96,7 @@ _unit = _this select 0;
                 _obj setVariable ["item",["money",missionNamespace getVariable [_item,0]],true];
                 _obj setPos _pos;
                 [_obj] remoteExecCall ["life_fnc_simDisable",RANY];
-                missionNamespace setVariable ["CASH",0];
+                missionNamespace setVariable ["life_cash",0];
             };
         };
 

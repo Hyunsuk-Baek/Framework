@@ -35,7 +35,7 @@ if (isNil {["B_Soldier_A_F"] call VAS2_fnc_fetchCfgDetails}) then {
 			11: acc_Optics
 			12: acc_Muzzles*/
 
-		private["_entity","_cfg","_ret","_type","_acc_p","_acc_o","_acc_m","_scope","_displayName","_picture","_config","_itemInfo","_muzzles","_magazines","_desc"];
+		private ["_entity","_cfg","_ret","_type","_acc_p","_acc_o","_acc_m","_scope","_displayName","_picture","_config","_itemInfo","_muzzles","_magazines","_desc"];
 		_entity = _this select 0;
 		_acc_p = [];
 		_acc_m = [];
@@ -106,7 +106,7 @@ if (isNil {["B_Soldier_A_F"] call VAS2_fnc_fetchCfgDetails}) then {
 				_magazines = getArray(_config >> "magazines");
 				if(!isNil {_muzzles}) then
 				{
-					private["_tmp","_base"];
+					private ["_tmp","_base"];
 					_base = inheritsFrom (configFile >> "CfgWeapons" >> _entity);
 					{
 						if(_x != "this") then

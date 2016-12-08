@@ -28,5 +28,8 @@
 #include "compensate.hpp"
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
+#include "jail_time.hpp"
+#include "slotmachine.hpp"
+#include "blackjack.hpp"
 #include "AS_AdminMenu.hpp"     //admin panel
 #include "AS_Refund.hpp"        //admin panel

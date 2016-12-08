@@ -7,14 +7,16 @@
     Sends the query request to the database, if an array is returned then it creates
     the vehicle if it's not in use or dead.
 */
-private ["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_servIndex","_damage","_wasIllegal","_location","_thread"];
-_vid = [_this,0,-1,[0]] call BIS_fnc_param;
-_pid = [_this,1,"",[""]] call BIS_fnc_param;
-_sp = [_this,2,[],[[],""]] call BIS_fnc_param;
-_unit = [_this,3,objNull,[objNull]] call BIS_fnc_param;
-_price = [_this,4,0,[0]] call BIS_fnc_param;
-_dir = [_this,5,0,[0]] call BIS_fnc_param;
-_spawntext = _this select 6;
+private ["_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_servIndex","_damage","_wasIllegal","_location","_thread"];
+params [
+  ["_vid",-1,[0]],
+  ["_pid","",[""]],
+  ["_sp",[],[[],""]],
+  ["_unit",objNull,[objNull]],
+  ["_price",0,[0]],
+  ["_dir",0,[0]],
+  ["_spawntext","",[""]]
+];
 _unit_return = _unit;
 _name = name _unit;
 _side = side _unit;
@@ -129,8 +131,8 @@ if (LIFE_SETTINGS(getNumber,"save_vehicle_virtualItems") isEqualTo 1) then {
 
         _query = format ["UPDATE vehicles SET blacklist='0' WHERE id='%1' AND pid='%2'",_vid,_pid];
         _thread = [_query,1] call DB_fnc_asyncCall;
-    };   
-} else {
+        };
+    }else {
     _vehicle setVariable ["Trunk",[[],0],true];
 };
 
@@ -173,11 +175,11 @@ if ((_vInfo select 1) isEqualTo "civ" && (_vInfo select 2) isEqualTo "B_Heli_Lig
     [_vehicle,"civ_littlebird",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if ((_vInfo select 1) isEqualTo "cop" && ((_vInfo select 2)) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_Heli_Light_01_F","B_Heli_Transport_01_F"]) then {
+if ((_vInfo select 1) isEqualTo "cop" && (_vInfo select 2) in ["C_Offroad_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","B_MRAP_01_F","B_Truck_01_Repair_F","I_Truck_02_covered_F","B_Truck_01_ammo_F","I_MRAP_03_F","B_MRAP_01_hmg_F","O_MRAP_02_hmg_F","I_MRAP_03_hmg_F","B_Heli_Light_01_F","B_Heli_Transport_03_unarmed_F","B_Heli_Transport_01_F","O_Heli_Light_02_unarmed_F","I_Heli_Transport_02_F","O_Heli_Transport_04_F","I_Heli_light_03_F","O_Heli_Light_02_v2_F","B_Heli_Light_01_armed_F","B_Heli_Attack_01_F","O_Heli_Attack_02_black_F"]) then {
     [_vehicle,"cop_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 
-if ((_vInfo select 1) isEqualTo "med" && (_vInfo select 2) isEqualTo "C_Offroad_01_F") then {
+if ( (_vInfo select 1) isEqualTo "med" && (_vInfo select 2) in ["C_Offroad_01_F","C_SUV_01_F","C_Hatchback_01_sport_F","C_Hatchback_01_F","C_Van_01_box_F","I_Truck_02_medical_F","B_Truck_01_medical_F","I_MRAP_03_F","B_MRAP_01_F","B_Heli_Light_01_F","O_Heli_Light_02_unarmed_F","B_Heli_Transport_03_unarmed_F","I_Heli_Transport_02_F","O_Heli_Transport_04_F"] ) then {
     [_vehicle,"med_offroad",true] remoteExecCall ["life_fnc_vehicleAnimate",_unit];
 };
 

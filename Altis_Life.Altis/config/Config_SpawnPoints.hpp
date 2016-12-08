@@ -277,6 +277,12 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
+            class Extreme_Zone {
+                displayName = "Extreme Zone";
+                spawnMarker = "extreme_spawn_1";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "";
+            };
         };
 
         class Cop {
@@ -341,6 +347,20 @@ class CfgSpawnPoints {
             class MetroNewM {
                 displayName = "New Metro Hospital Hospital";
                 spawnMarker = "medic_spawn_4";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+            
+            class Emergency1 {
+                displayName = "Emergency Center 1";
+                spawnMarker = "medic_spawn_4";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+
+            class Emergency2 {
+                displayName = "Emergency Center 2";
+                spawnMarker = "medic_spawn_5";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };

@@ -254,7 +254,7 @@ KEGs_tbase = 0.1;
 // Initialize the arrays and the listboxes.
 	CheckNewUnits =
 		{
-			private["_vm_CheckNewUnitsNumber"];
+			private ["_vm_CheckNewUnitsNumber"];
 			CheckNewUnitsReady = false;
 			RefreshListReady = false;
 			_vm_CheckNewUnitsNumber = vm_count;
@@ -314,7 +314,7 @@ KEGs_tbase = 0.1;
 					if ( isNil "_markers" ) then { diag_log format ["spectator script: '_markers' error for unit [%1]", _x]; };
 
 					// Create marker
-					_m = createMarkerLocal[format["KEGsMarker%1", count _markers], (player modelToWorld [0,0,0]) ];
+					_m = createMarkerLocal[format ["KEGsMarker%1", count _markers], (player modelToWorld [0,0,0]) ];
 					_m setMarkerTypeLocal "mil_dot";
 					_m setMarkerSizeLocal[0.4, 0.4];
 					_markers set [(count _markers),_m];
@@ -536,7 +536,7 @@ KEGs_fnc_MovementCameraLoop =
 				// Create markers
 				{
 					// Create marker
-					_m = createMarkerLocal[format["KEGsMarker%1", count _markers], (player modelToWorld [0,0,0]) ];
+					_m = createMarkerLocal[format ["KEGsMarker%1", count _markers], (player modelToWorld [0,0,0]) ];
 					_m setMarkerTypeLocal "mil_dot";
 					_m setMarkerSizeLocal[0.4, 0.4];
 					_markers set [(count _markers),_m];
@@ -657,7 +657,7 @@ while{ dialog } do
 										};
 									};
 									case 2: {	// Types
-										_m setMarkerTextLocal getText (configFile >> "CfgVehicles" >> format["%1", typeOf (vehicle _u)] >> "DisplayName");
+										_m setMarkerTextLocal getText (configFile >> "CfgVehicles" >> format ["%1", typeOf (vehicle _u)] >> "DisplayName");
 									};
 								};
 							}

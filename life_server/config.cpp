@@ -5,7 +5,7 @@ class CfgPatches {
         weapons[] = {};
         requiredAddons[] = {"A3_Data_F","A3_Soft_F","A3_Soft_F_Offroad_01","A3_Characters_F"};
         fileName = "life_server.pbo";
-        author = "Tonic";
+        author = "SoulFucker";
     };
 };
 
@@ -45,6 +45,8 @@ class CfgFunctions {
         class Jail_Sys {
             file = "\life_server\Functions\Jail";
             class jailSys {};
+            class jailTimer {};
+            class jailPlayer {};
         };
 
         class Client_Code {
@@ -56,9 +58,11 @@ class CfgFunctions {
         tag = "TON";
         class Systems {
             file = "\life_server\Functions\Systems";
-            class managesc {};
+            class manageSC {};
             class cleanup {};
             class huntingZone {};
+            class fishingZone {};
+            class fishingZone2 {};
             class getID {};
             class vehicleCreate {};
             class spawnVehicle {};
@@ -74,7 +78,7 @@ class CfgFunctions {
             class setObjVar {};
             class keyManagement {};
             class vehicleUpdate {};
-            class recupkeyforHC {};
+            class recupkeyForHC {};
             class handleBlastingCharge {};
             class terrainSort {};
         };

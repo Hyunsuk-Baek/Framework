@@ -7,9 +7,11 @@
     Blocks the unit from taking something they should not have.
 */
 private ["_unit","_item","_restrictedClothing","_restrictedWeapons"];
-_unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;
-_container = [_this,1,objNull,[objNull]] call BIS_fnc_param;
-_item = [_this,2,"",[""]] call BIS_fnc_param;
+params [
+  ["_unit",objNull,[objNull]],
+  ["_container",objNull,[objNull]],
+  ["_item","",[""]]
+];
 
 if (isNull _unit || _item isEqualTo "") exitWith {}; //Bad thingies?
 _restrictedClothing = LIFE_SETTINGS(getArray,"restricted_uniforms");
@@ -18,7 +20,7 @@ _restrictedWeapons = LIFE_SETTINGS(getArray,"restricted_weapons");
 switch (playerSide) do
 {
     case west: {
-        if (_item in ["U_Rangemaster"]) then {
+        if (_item in ["U_Rangemaster","U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_worn","U_B_CTRG_1"]) then {
             [] call life_fnc_playerSkins;
         };
     };
@@ -38,7 +40,7 @@ switch (playerSide) do
         };
     };
     case independent: {
-        if (_item in ["U_Rangemaster"]) then {
+        if (_item in ["U_Rangemaster","U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_worn","U_Competitor"]) then {
             [] call life_fnc_playerSkins;
         };
     };
