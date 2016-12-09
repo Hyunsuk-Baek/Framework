@@ -1,2 +1,2 @@
-//[Fire Object, °¹¼ö]
-[player,1] execvm "Custom\Firework\alias_fireworks.sqf";
+//[Fire Object, ????]
+[fireObj,1] execvm "Custom\Firework\alias_fireworks.sqf";

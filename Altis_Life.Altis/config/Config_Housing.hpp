@@ -380,7 +380,7 @@ class Housing {
             numberCrates = 3;
             restrictedPos[] = {0,1,3,4};
             canGarage = true;
-            garageSpawnPos[] = {-4,-13,1};
+            garageSpawnPos[] = {-4,-13,0.2};
             garageSpawnDir = -90;
             garageBlacklists[] = {};
             lightPos[] = {0,1,1.5};
@@ -395,7 +395,7 @@ class Housing {
             numberCrates = 3;
             restrictedPos[] = {0,1,3,4};
             canGarage = true;
-            garageSpawnPos[] = {4,-13,1};
+            garageSpawnPos[] = {4,-13,0.2};
             garageSpawnDir = -90;
             garageBlacklists[] = {};
             lightPos[] = {0,1,3};
@@ -412,7 +412,7 @@ class Housing {
             numberCrates = 4;
             restrictedPos[] = {0,1,3,4};
             canGarage = true;
-            garageSpawnPos[] = {-10,-13,1};
+            garageSpawnPos[] = {-8,10,0.2};
             garageSpawnDir = -90;
             garageBlacklists[] = {};
             lightPos[] = {0,1,3};
@@ -421,22 +421,22 @@ class Housing {
         class Land_Ranch_DED_Ranch_02_F : Land_Ranch_DED_Ranch_01_F{};
 
         //오스트레일리아 2층 차고 있는 집
-        class Land_HouseDoubleAL {
-            price = 8000000;
+        class Land_HouseDoubleAL2 {
+            price =10000000;
             numberCrates = 6;
             restrictedPos[] = {0,1,3,4};
             canGarage = true;
-            garageSpawnPos[] = {-4,-13,1};
+            garageSpawnPos[] = {-6,-16,0.2};
             garageSpawnDir = -90;
             garageBlacklists[] = {};
             lightPos[] = {0,1,3.5};
         };
 
-        class Land_House_DoubleAL2 : Land_HouseDoubleAL{};
+        class Land_House_DoubleAL : Land_HouseDoubleAL2{};
 
         //두바위리조또 초호화 복층 빌라
         class land_pop_chalet {
-            price = 10000000;
+            price = 20000000;
             numberCrates = 8;
             restrictedPos[] = {0,1,2,3,4};
             canGarage = false;

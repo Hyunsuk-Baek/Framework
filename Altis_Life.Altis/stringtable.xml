@@ -866,7 +866,7 @@
             <Polish>Wymagana jest kilof</Polish>
         </Key>
         <Key ID="STR_NOTF_Chainsqw">
-            <Original>전기톱이 필요합니다.</Original>          
+            <Original>전기톱이 필요합니다.</Original>
         </Key>
         <Key ID="STR_NOTF_isrestrained">
             <Original>당신은 체포되었습니다.</Original>
@@ -5701,7 +5701,7 @@
             <Polish>Odblokowałeś drzwi.</Polish>
         </Key>
         <Key ID="STR_House_Door_Lock">
-            <Original>문을 잠구었습니다.</Original>
+            <Original>문을 잠궜습니다.</Original>
             <Czech>Jste zamkli dveře.</Czech>
             <Spanish>Has cerrado con llave la puerta.</Spanish>
             <Russian></Russian>
@@ -7111,7 +7111,7 @@
             <Italian>Licenza possesso Casa</Italian>
             <Portuguese>Licença de Casas</Portuguese>
             <Polish>Zarządca nieruchomości</Polish>
-        </Key>		
+        </Key>
         <Key ID="STR_License_Plywood">
             <Original>Plywood License</Original>
         </Key>
@@ -7793,7 +7793,7 @@
             <Portuguese>Você trasformou %1 em %2 por R$%3</Portuguese>
             <Polish>Przetworzyłeś %1 na % za $%3</Polish>
         </Key>
-		
+
         <Key ID="STR_Process_plywood">
             <Original>Making Plywood</Original>
         </Key>
@@ -9645,6 +9645,15 @@
             <Portuguese>Loja de Carros</Portuguese>
             <Polish>Salon samochodowy</Polish>
         </Key>
+        <Key ID="STR_MAR_Addon_Car_Shop">
+            <Original>Addon Car Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_Lux_Car_Shop">
+            <Original>Luxury Car Shop</Original>
+        </Key>
+        <Key ID="STR_MAR_Donator_Car_Shop">
+            <Original>Donator Car Shop</Original>
+        </Key>
         <Key ID="STR_MAR_Hospital_Clinic">
             <Original>Hospital/Clinic</Original>
             <Czech>Nemocnice / Klinika</Czech>
@@ -10240,7 +10249,7 @@
             <Italian>Servizio Aereo</Italian>
         </Key>
         <Key ID="STR_MAR_Clothing_Store">
-            <Original>Clothing Store</Original>
+            <Original>Addon Clothing Store</Original>
             <Czech>Obchod s oblečením</Czech>
             <French>Friperie</French>
             <Spanish>Tienda de Ropa</Spanish>
@@ -10249,6 +10258,9 @@
             <Portuguese>Loja de Roupas</Portuguese>
             <Polish>Sklep odzieżowy</Polish>
             <Italian>Vestiario</Italian>
+        </Key>
+        <Key ID="STR_MAR_Addon_Clothing_Store">
+            <Original>Clothing Store</Original>
         </Key>
         <Key ID="STR_MAR_Medical_Assistance">
             <Original>Medical Assistance</Original>
@@ -10523,13 +10535,13 @@
         <Key ID="STR_MAR_Cop_Autoset">
             <Original>Cop AutoSet</Original>
         </Key>
-		
+
         <Key ID="STR_MAR_Master_Weapon_Shop">
             <Original>Master Weapon Shop</Original>
         </Key>
         <Key ID="STR_MAR_Donator_Weapon_Shop">
             <Original>Donator Weapon Shop</Original>
-        </Key>		
+        </Key>
 		<Key ID="STR_MAR_Wood_Field">
             <Original>Wood Field</Original>
         </Key>
