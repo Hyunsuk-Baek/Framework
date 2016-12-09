@@ -1,4 +1,4 @@
-While{true} do 
+While{true} do
 {
     "dynamicBlur" ppEffectEnable true; // enables ppeffect
     "dynamicBlur" ppEffectAdjust [0]; // enables normal vision
@@ -13,7 +13,7 @@ While{true} do
     (getpos (nearestObject [getpos player, "SmokeShellRed"]) select 2 < 0.5)
     };
 
-    if (headgear player != "H_CrewHelmetHeli_I") then
+    if (headgear player != "H_ALFR_Gasmask") then
     {
         "dynamicBlur" ppEffectEnable true; // enables ppeffect
         "dynamicBlur" ppEffectAdjust [20]; // intensity of blur
@@ -24,6 +24,6 @@ While{true} do
         5 fadeSound 0.1;     // fades the sound to 10% in 5 seconds
 
     };
-    
+
     sleep 5;
 };

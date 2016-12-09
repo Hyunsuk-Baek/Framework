@@ -10249,7 +10249,7 @@
             <Italian>Servizio Aereo</Italian>
         </Key>
         <Key ID="STR_MAR_Clothing_Store">
-            <Original>Addon Clothing Store</Original>
+            <Original>Clothing Store</Original>
             <Czech>Obchod s oblečením</Czech>
             <French>Friperie</French>
             <Spanish>Tienda de Ropa</Spanish>
@@ -10260,7 +10260,7 @@
             <Italian>Vestiario</Italian>
         </Key>
         <Key ID="STR_MAR_Addon_Clothing_Store">
-            <Original>Clothing Store</Original>
+            <Original>Addon Clothing Store</Original>
         </Key>
         <Key ID="STR_MAR_Medical_Assistance">
             <Original>Medical Assistance</Original>

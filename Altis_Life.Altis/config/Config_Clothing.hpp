@@ -782,7 +782,7 @@ class Clothing {
             { "H_Shemag_olive", "", 48500, "" },
             { "H_MilCap_oucamo", "", 12000, "" },
             { "H_HelmetO_ocamo", "", 25000, "" },
-            { "H_CrewHelmetHeli_I", "Gas Mask", 990000, "" }
+            { "H_ALFR_Gasmask", "Gas Mask", 990000, "" }
             //{ "H_HelmetO_ViperSP_hex_F", "특수목적hex[1회]", 990000, "" }
         };
         goggles[] = {
