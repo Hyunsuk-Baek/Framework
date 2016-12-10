@@ -975,7 +975,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Hatchback_01_F {
         vItemSpace = 40;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 100000;
         textures[] = {
             { "Ferrari", "civ", {"textures\civ\ferrari_hatchback.paa"}, "" },
@@ -1083,7 +1083,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_SUV_01_F {
         vItemSpace = 70;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 120000;
         textures[] = {
             { "Sticker", "civ", {"textures\civ\sticker.paa"}, "" },
@@ -1126,7 +1126,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Van_01_box_F {
         vItemSpace = 120;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {license_med_mAir}";
         price = 200000;
         textures[] = {
             { "White", "civ", { "\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa"}, "" },
@@ -1480,7 +1480,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class shounka_a3_508banalise {
         vItemSpace = 70;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 230000;
         textures[] = {};
     };
@@ -1506,7 +1506,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class max_BP_charger {
         vItemSpace = 70;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 190000;
         textures[] = {};
     };
@@ -2285,7 +2285,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //페라리 f430 스파이더
     class shounka_f430_spider {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 7700000;
         textures[] = {};
     };
@@ -2366,7 +2366,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //람보르기니 우라칸 // huracan
     class mrshounka_huracan_c {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 8700000;
         textures[] = {};
     };
@@ -2448,7 +2448,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //파가니 huayra
     class Mrshounka_pagani_c {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 5700000;
         textures[] = {};
     };
@@ -2531,7 +2531,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class bv_gtr_spec_v_cop_patrol {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 500000;
         textures[] = {};
     };
@@ -2590,7 +2590,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class ivory_m3 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 800000;
         textures[] = {};
     };
@@ -2601,7 +2601,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class ivory_suburban {
         vItemSpace = 75;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 800000;
         textures[] = {};
     };
@@ -2612,7 +2612,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class ivory_isf {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 800000;
         textures[] = {};
     };
@@ -2630,7 +2630,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class ivory_evox {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 700000;
         textures[] = {};
     };
