@@ -202,10 +202,8 @@ _rsb allowDamage false;
 life_server_isReady = true;
 publicVariable "life_server_isReady";
 
-/* Initialize hunting/fishing zone(s) */
+/* Initialize hunting zone(s) */
 aiSpawn = ["hunting_zone",40] spawn TON_fnc_huntingZone;
-aiSpawn2 = ["fishing_zone",50] spawn TON_fnc_fishingZone;
-aiSpawn3 = ["fishing_zone2",50] spawn TON_fnc_fishingZone2;
 
 // We create the attachment point to be used for objects to attachTo load virtually in vehicles.
 life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];

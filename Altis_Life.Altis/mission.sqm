@@ -8,11 +8,11 @@ class EditorData
 	toggles=109;
 	class ItemIDProvider
 	{
-		nextID=5292;
+		nextID=5306;
 	};
 	class MarkerIDProvider
 	{
-		nextID=44;
+		nextID=47;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5594.458,226.84843,4837.5581};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={1913.0223,36.116665,331.51776};
+		dir[]={-0.80148149,-0.46047309,0.38161492};
+		up[]={-0.41576356,0.88766259,0.19796036};
+		aside[]={0.42990169,-2.6123598e-007,0.90289503};
 	};
 };
 binarizationWanted=0;
@@ -630,22 +630,22 @@ class Mission
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
 		year=2012;
 		day=3;
 		minute=-7;
-		startFogDecay=0.014;
+		startFogDecay=0;
 		forecastFogDecay=0.014;
 	};
 	class Entities
 	{
-		items=1746;
+		items=1757;
 		class Item0
 		{
 			dataType="Marker";
@@ -1168,13 +1168,12 @@ class Mission
 		class Item49
 		{
 			dataType="Marker";
-			position[]={4717.8262,-6.326307e-026,1151.814};
+			position[]={1828.8262,5.1758833,1801.778};
 			name="dp_16";
 			text="DP 16";
 			type="mil_box";
 			colorName="ColorYellow";
 			id=1206;
-			atlOffset=-54.970001;
 		};
 		class Item50
 		{
@@ -1184,7 +1183,7 @@ class Mission
 			text="DP 17";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=179.66699;
+			angle=179.66698;
 			id=1207;
 			atlOffset=-4.0405464;
 		};
@@ -1202,26 +1201,25 @@ class Mission
 		class Item52
 		{
 			dataType="Marker";
-			position[]={8987.4785,-6.326307e-026,1862.746};
+			position[]={9450.75,5.125,2036.25};
 			name="dp_18";
 			text="DP 18";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=179.84398;
+			angle=179.84396;
 			id=1209;
-			atlOffset=-5.1758833;
+			atlOffset=-0.050883293;
 		};
 		class Item53
 		{
 			dataType="Marker";
-			position[]={609.48602,-6.3243349e-026,583.46503};
+			position[]={1883.902,5.1758833,346.008};
 			name="dp_13";
 			text="DP 13";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=178.68999;
+			angle=132.68999;
 			id=1210;
-			atlOffset=-5.1758833;
 		};
 		class Item54
 		{
@@ -1253,7 +1251,7 @@ class Mission
 			text="DP 15";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=178.70699;
+			angle=178.70697;
 			id=1213;
 			atlOffset=-6.2661095;
 		};
@@ -1276,7 +1274,7 @@ class Mission
 			text="DP 22";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=180.42398;
+			angle=180.42397;
 			id=1215;
 			atlOffset=-72.409073;
 		};
@@ -1288,7 +1286,7 @@ class Mission
 			text="DP 24";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=179.38799;
+			angle=179.38797;
 			id=1216;
 			atlOffset=-152.82797;
 		};
@@ -1300,7 +1298,7 @@ class Mission
 			text="DP 23";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=181.47299;
+			angle=181.47298;
 			id=1217;
 			atlOffset=-140.575;
 		};
@@ -1345,7 +1343,7 @@ class Mission
 			text="DP 9";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=86.108994;
+			angle=86.108986;
 			id=1221;
 			atlOffset=-95.547806;
 		};
@@ -1357,7 +1355,7 @@ class Mission
 			text="DP 8";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=122.01799;
+			angle=122.01797;
 			id=1222;
 			atlOffset=-113.02032;
 		};
@@ -1402,7 +1400,7 @@ class Mission
 			text="DP 25";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=177.55598;
+			angle=177.55597;
 			id=1226;
 			atlOffset=-253.87276;
 		};
@@ -2070,25 +2068,26 @@ class Mission
 		class Item134
 		{
 			dataType="Marker";
-			position[]={672.92987,218.40497,7433.9116};
+			position[]={5433.125,-6.2611508e-032,9794.125};
 			name="hunting_zone";
 			markerType="ELLIPSE";
 			type="Empty";
-			colorName="ColorWhite";
-			a=300;
-			b=300;
+			colorName="ColorOrange";
+			alpha=0.34828326;
+			a=500;
+			b=500;
 			id=1321;
+			atlOffset=-201.7646;
 		};
 		class Item135
 		{
 			dataType="Marker";
-			position[]={672.92993,215.60938,7433.9116};
+			position[]={5433.5,201.73224,9794.375};
 			name="hunting_marker";
 			text="@STR_MAR_Hunting_Grounds";
 			type="mil_join";
 			colorName="ColorRed";
 			id=1322;
-			atlOffset=-2.7955933;
 		};
 		class Item136
 		{
@@ -2308,7 +2307,7 @@ class Mission
 			};
 			id=1338;
 			type="Land_CargoBox_V1_F";
-			atlOffset=0.043317318;
+			atlOffset=0.039286613;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2598,7 +2597,7 @@ class Mission
 			};
 			id=1372;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5481567;
+			atlOffset=3.546402;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2932,7 +2931,7 @@ class Mission
 			};
 			id=1432;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5748596;
+			atlOffset=3.5743103;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7281,8 +7280,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={609.5484,5.6773224,583.4389};
-						angles[]={0,0.91115057,0};
+						position[]={1884,5.2514391,346.04999};
+						angles[]={0,0.10829912,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -7295,6 +7294,7 @@ class Mission
 					};
 					id=1667;
 					type="C_man_polo_3_F";
+					atlOffset=0.074116707;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7424,7 +7424,6 @@ class Mission
 					};
 					id=1670;
 					type="C_man_polo_3_F";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8189,8 +8188,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4717.8525,54.971439,1151.8647};
-						angles[]={0,4.2265711,0};
+						position[]={1828.625,5.1772957,1804.05};
+						angles[]={0,4.9945164,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -8203,6 +8202,7 @@ class Mission
 					};
 					id=1693;
 					type="C_man_polo_3_F";
+					atlOffset=-2.5749207e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8459,8 +8459,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8987.4941,5.6773224,1862.8351};
-						angles[]={0,3.472002,0};
+						position[]={9449,5.2514391,2037.425};
+						angles[]={0,3.2451096,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -8473,6 +8473,7 @@ class Mission
 					};
 					id=1699;
 					type="C_man_polo_3_F";
+					atlOffset=0.074116707;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10440,7 +10441,7 @@ class Mission
 					};
 					id=2048;
 					type="B_RangeMaster_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11189,7 +11190,6 @@ class Mission
 					};
 					id=1711;
 					type="B_RangeMaster_F";
-					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16042,7 +16042,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4721.375,57.14959,1153.786};
+				position[]={1832.375,7.3553686,1803.75};
 			};
 			side="Empty";
 			flags=5;
@@ -16052,6 +16052,7 @@ class Mission
 			};
 			id=2164;
 			type="Land_LampDecor_F";
+			atlOffset=-0.00010204315;
 		};
 		class Item358
 		{
@@ -40585,6 +40586,173 @@ class Mission
 			id=5139;
 			type="Land_Pier_Box_F";
 			atlOffset=261.13;
+		};
+		class Item1746
+		{
+			dataType="Marker";
+			position[]={9929.75,0,3333};
+			name="marker_47";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=300;
+			b=300;
+			id=5293;
+			atlOffset=-94.025253;
+		};
+		class Item1747
+		{
+			dataType="Marker";
+			position[]={1200.625,111.375,9843.875};
+			name="marker_49";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=700;
+			b=400;
+			id=5295;
+			atlOffset=-0.042938232;
+		};
+		class Item1748
+		{
+			dataType="Marker";
+			position[]={9970.625,153.89209,8450};
+			name="marker_50";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=600;
+			b=600;
+			id=5296;
+			atlOffset=-12.714157;
+		};
+		class Item1749
+		{
+			dataType="Marker";
+			position[]={2072.0559,-2.156401e-024,5060.2441};
+			name="marker_51";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=300;
+			b=300;
+			id=5297;
+			atlOffset=-5.1758833;
+		};
+		class Item1750
+		{
+			dataType="Marker";
+			position[]={3891.5208,292.40063,3779.7681};
+			name="marker_52";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=300;
+			b=300;
+			id=5298;
+			atlOffset=-5.043335;
+		};
+		class Item1751
+		{
+			dataType="Marker";
+			position[]={7206.9888,-1.2004438e-034,2158.51};
+			name="marker_53";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=100;
+			b=100;
+			id=5300;
+			atlOffset=-111.00658;
+		};
+		class Item1752
+		{
+			dataType="Marker";
+			position[]={8447.25,5.125,1901.5};
+			name="marker_54";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=700;
+			b=700;
+			angle=90;
+			id=5301;
+			atlOffset=-0.050883293;
+		};
+		class Item1753
+		{
+			dataType="Marker";
+			position[]={7593.2222,-0.014025029,9459.6406};
+			name="marker_48";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=200;
+			b=200;
+			id=5302;
+			atlOffset=-236.22682;
+		};
+		class Item1754
+		{
+			dataType="Marker";
+			position[]={5241,15.625,636.25};
+			name="marker_55";
+			markerType="RECTANGLE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=600;
+			b=900;
+			angle=89.999992;
+			id=5303;
+			atlOffset=-0.046980858;
+		};
+		class Item1755
+		{
+			dataType="Marker";
+			position[]={2991.25,112.75,10043};
+			name="marker_56";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=200;
+			b=200;
+			id=5304;
+			atlOffset=0.071388245;
+		};
+		class Item1756
+		{
+			dataType="Marker";
+			position[]={552.875,5.125,719};
+			name="marker_57";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=600;
+			b=600;
+			id=5305;
+			atlOffset=-0.050883293;
 		};
 	};
 };
