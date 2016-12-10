@@ -27,6 +27,7 @@ if (BANK > _reviveCost) then {
 } else {
     BANK = 0;
 };
+[1] call SOCK_fnc_updatePartial;
 
 //Bring me back to life.
 player setDir _dir;
