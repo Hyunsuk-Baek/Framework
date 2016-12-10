@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={782.72839,30.175884,1897.3572};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={8962.9365,49.926373,5316.9717};
+		dir[]={-0.67737031,-0.36641738,0.63793576};
+		up[]={-0.26675737,0.93044126,0.2512264};
+		aside[]={0.68561864,4.9851951e-007,0.72800493};
 	};
 };
 binarizationWanted=0;
@@ -1490,7 +1490,7 @@ class Mission
 			position[]={8475.8096,4.1525359,6925.8813};
 			name="cop_car_1";
 			type="Empty";
-			angle=112.96869;
+			angle=112.96867;
 			id=1238;
 		};
 		class Item78
@@ -8572,19 +8572,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8711.9316,0.51885915,5484.7959};
-						angles[]={0,3.5330887,0};
+						position[]={8711.9316,0.51888537,5484.7959};
+						angles[]={0,3.5330875,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
+						init="this allowDamage false;  " \n "removeallWeapons this;  " \n "this enableSimulation false;  " \n "this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""];  " \n "this addAction[localize""STR_Shops_Diving_Gun"",life_fnc_weaponShopMenu,""DivingGun"",0,false,false,"""",' license_civ_gun && playerSide isEqualTo civilian'];  " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
 						disableSimulation=1;
 					};
 					id=1687;
 					type="B_diver_F";
+					atlOffset=2.6226044e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8606,7 +8607,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item34
@@ -9654,6 +9674,7 @@ class Mission
 					};
 					id=1713;
 					type="O_Soldier_F";
+					atlOffset=0.15140533;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13543,19 +13564,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={794.54303,1.5020753,2496.0186};
-						angles[]={0,1.6830397,0};
+						position[]={794.54303,1.5016506,2496.019};
+						angles[]={0,1.6830385,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
+						init="this allowDamage false;  " \n "removeallWeapons this;  " \n "this enableSimulation false;  " \n "this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""];  " \n "this addAction[localize""STR_Shops_Diving_Gun"",life_fnc_weaponShopMenu,""DivingGun"",0,false,false,"""",' license_civ_gun && playerSide isEqualTo civilian'];  " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
 						disableSimulation=1;
 					};
 					id=2469;
 					type="B_diver_F";
+					atlOffset=22.538;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13577,7 +13598,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item136
@@ -17844,19 +17884,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={9658.1035,2.8374846,1033.844};
-						angles[]={0,2.7019777,0};
+						position[]={9658.1035,2.837199,1033.844};
+						angles[]={0,2.7019789,0};
 					};
 					side="Civilian";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
+						init="this allowDamage false;  " \n "removeallWeapons this;  " \n "this enableSimulation false;  " \n "this addAction[localize""STR_MAR_Diving_Shop"",life_fnc_clothingMenu,""dive""];  " \n "this addAction[localize""STR_Shops_Diving_Gun"",life_fnc_weaponShopMenu,""DivingGun"",0,false,false,"""",' license_civ_gun && playerSide isEqualTo civilian'];  " \n "this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""displayName"")),[(getNumber(missionConfigFile >> ""Licenses"" >> ""dive"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide isEqualTo civilian '];";
 						disableSimulation=1;
 					};
 					id=2427;
 					type="B_diver_F";
+					atlOffset=11.351001;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17878,7 +17919,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -17886,6 +17946,7 @@ class Mission
 			{
 			};
 			id=2426;
+			atlOffset=11.351001;
 		};
 		class Item453
 		{

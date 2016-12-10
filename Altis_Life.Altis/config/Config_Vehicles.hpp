@@ -95,10 +95,13 @@ class CarShops {
             { "I_C_Boat_Transport_02_F", "" },
 
             { "B_CBS_WaterShadow730_F", "" },    //addon
-            { "mr_max_freighter", "" },
-            { "COREV_O_FishingBoat", "" },
-            { "POP_Speed_yatch", "" },
-            { "Mattaust_Fisher", "" }
+            { "BirdKTM_BambooRaft", ""},    //대나무
+            { "COREV_O_SmallBoat", ""}, //소형모터보트
+            { "Lexx_Jetboat_H", ""},    //소형 스피드보트
+            { "COREV_O_FishingBoat", "" },  //낚시배
+            { "POP_Speed_yatch", "" },  //요트
+            { "Mattaust_Fisher", "" },  //중형배
+            { "mr_max_freighter", "" }  //거대배
         };
     };
 
@@ -1700,10 +1703,24 @@ will modify the virtual space and the price of the vehicle, but other informatio
         textures[] = {};
     };
 
-    class mr_max_freighter {
-        vItemSpace = 500;
+    class BirdKTM_BambooRaft {
+        vItemSpace = 100;
         conditions = "license_civ_boat";
-        price = 5600000;
+        price = 50000;
+        textures[] = {};
+    };
+
+    class COREV_O_SmallBoat {
+        vItemSpace = 180;
+        conditions = "license_civ_boat";
+        price = 500000;
+        textures[] = {};
+    };
+
+    class Lexx_Jetboat_H {
+        vItemSpace = 150;
+        conditions = "license_civ_boat";
+        price = 2500000;
         textures[] = {};
     };
 
@@ -1725,6 +1742,13 @@ will modify the virtual space and the price of the vehicle, but other informatio
         vItemSpace = 600;
         conditions = "license_civ_boat";
         price = 10000000;
+        textures[] = {};
+    };
+
+    class mr_max_freighter {
+        vItemSpace = 500;
+        conditions = "license_civ_boat";
+        price = 5600000;
         textures[] = {};
     };
 

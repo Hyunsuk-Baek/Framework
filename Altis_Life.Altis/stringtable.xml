@@ -116,6 +116,9 @@
             <Portuguese>Armas de fogo Billy Joe</Portuguese>
             <Polish>Broń palna Billy Joe</Polish>
         </Key>
+        <Key ID="STR_Shops_Diving_Gun">
+            <Original>다이빙 용품점</Original>
+        </Key>
         <Key ID="STR_Shops_C_Kart">
             <Original>Bobby's Kart-Racing Outfits</Original>
             <Czech>Billy Joe Střelné zbraně</Czech>

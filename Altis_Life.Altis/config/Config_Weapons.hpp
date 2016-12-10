@@ -6,7 +6,7 @@
 *            in any combination. For example:
 *                "call life_coplevel && license_civ_someLicense"
 *            This will also let you call any other function.
-*            
+*
 *
 *    ARRAY FORMAT:
 *        0: STRING (Classname): Item Classname
@@ -240,6 +240,20 @@ class WeaponShops {
 			{ "30Rnd_545x39_Mag_Green_F", "", 100000, -1, "" },
 			{ "30Rnd_545x39_Mag_Tracer_F", "", 100000, -1, "" }
 
+        };
+        accs[] = {
+        };
+    };
+
+    class DivingGun {
+        name = "Water Gay's Weapon Shop";
+        side = "";
+        conditions = "license_civ_gun";
+        items[] = {
+            { "Sasimi_Water", "", 100000, 500, "" }
+        };
+        mags[] = {
+            { "Sasimi_Mag", "", 100000, -1, "" }
         };
         accs[] = {
         };
