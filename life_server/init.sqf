@@ -63,9 +63,9 @@ if (life_server_extDB_notLoaded isEqualType []) exitWith {};
 
 /* Run stored procedures for SQL side cleanup */
 ["CALL resetLifeVehicles",1] call DB_fnc_asyncCall;
-["CALL deleteDeadVehicles",1] call DB_fnc_asyncCall;
 ["CALL deleteOldHouses",1] call DB_fnc_asyncCall;
 ["CALL deleteOldGangs",1] call DB_fnc_asyncCall;
+["CALL deleteDeadVehicles",1] call DB_fnc_asyncCall;
 
 _timeStamp = diag_tickTime;
 diag_log "----------------------------------------------------------------------------------------------------";
