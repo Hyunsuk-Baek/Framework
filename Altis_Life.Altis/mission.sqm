@@ -8,11 +8,11 @@ class EditorData
 	toggles=109;
 	class ItemIDProvider
 	{
-		nextID=5306;
+		nextID=5329;
 	};
 	class MarkerIDProvider
 	{
-		nextID=47;
+		nextID=60;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1913.0223,36.116665,331.51776};
-		dir[]={-0.80148149,-0.46047309,0.38161492};
-		up[]={-0.41576356,0.88766259,0.19796036};
-		aside[]={0.42990169,-2.6123598e-007,0.90289503};
+		pos[]={5157.502,436.20978,9578.6221};
+		dir[]={0.7829293,-0.52435917,0.33482423};
+		up[]={0.482135,0.85148692,0.20618676};
+		aside[]={0.39321116,-2.9493822e-007,-0.91946656};
 	};
 };
 binarizationWanted=0;
@@ -89,13 +89,14 @@ addons[]=
 	"A3L_Court",
 	"Land_escenario",
 	"A3_Structures_F_Training",
-	"A3_Structures_F_Exp_A_VR_Blocks"
+	"A3_Structures_F_Exp_A_VR_Blocks",
+	"A3_Air_F_Heli_Light_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=44;
+		items=45;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -347,6 +348,13 @@ class AddonsMetaData
 		{
 			className="A3_Structures_F_Exp_A";
 			name="Arma 3 Nexus Update - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item44
+		{
+			className="A3_Air_F";
+			name="Arma 3 Alpha - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
@@ -645,7 +653,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1757;
+		items=1768;
 		class Item0
 		{
 			dataType="Marker";
@@ -1183,7 +1191,7 @@ class Mission
 			text="DP 17";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=179.66698;
+			angle=179.66696;
 			id=1207;
 			atlOffset=-4.0405464;
 		};
@@ -1206,7 +1214,7 @@ class Mission
 			text="DP 18";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=179.84396;
+			angle=179.84392;
 			id=1209;
 			atlOffset=-0.050883293;
 		};
@@ -1251,7 +1259,7 @@ class Mission
 			text="DP 15";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=178.70697;
+			angle=178.70692;
 			id=1213;
 			atlOffset=-6.2661095;
 		};
@@ -1286,7 +1294,7 @@ class Mission
 			text="DP 24";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=179.38797;
+			angle=179.38789;
 			id=1216;
 			atlOffset=-152.82797;
 		};
@@ -1298,7 +1306,7 @@ class Mission
 			text="DP 23";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=181.47298;
+			angle=181.47295;
 			id=1217;
 			atlOffset=-140.575;
 		};
@@ -1355,7 +1363,7 @@ class Mission
 			text="DP 8";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=122.01797;
+			angle=122.01795;
 			id=1222;
 			atlOffset=-113.02032;
 		};
@@ -1483,7 +1491,7 @@ class Mission
 			position[]={8475.8096,4.1525359,6925.8813};
 			name="cop_car_1";
 			type="Empty";
-			angle=112.96867;
+			angle=112.96863;
 			id=1238;
 		};
 		class Item78
@@ -2307,7 +2315,7 @@ class Mission
 			};
 			id=1338;
 			type="Land_CargoBox_V1_F";
-			atlOffset=0.039286613;
+			atlOffset=0.043317318;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2597,7 +2605,7 @@ class Mission
 			};
 			id=1372;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.546402;
+			atlOffset=3.5481567;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2931,7 +2939,7 @@ class Mission
 			};
 			id=1432;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5743103;
+			atlOffset=3.5748596;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7424,6 +7432,7 @@ class Mission
 					};
 					id=1670;
 					type="C_man_polo_3_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8202,7 +8211,7 @@ class Mission
 					};
 					id=1693;
 					type="C_man_polo_3_F";
-					atlOffset=-2.5749207e-005;
+					atlOffset=-2.6702881e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10441,7 +10450,7 @@ class Mission
 					};
 					id=2048;
 					type="B_RangeMaster_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11190,6 +11199,7 @@ class Mission
 					};
 					id=1711;
 					type="B_RangeMaster_F";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -40720,7 +40730,7 @@ class Mission
 			fillName="DiagGrid";
 			a=600;
 			b=900;
-			angle=89.999992;
+			angle=89.999947;
 			id=5303;
 			atlOffset=-0.046980858;
 		};
@@ -40753,6 +40763,260 @@ class Mission
 			b=600;
 			id=5305;
 			atlOffset=-0.050883293;
+		};
+		class Item1757
+		{
+			dataType="Trigger";
+			position[]={0,0,0};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player setdamage 1;";
+				sizeA=20;
+				sizeB=20;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+			};
+			id=5306;
+			type="EmptyDetector";
+			atlOffset=1.49436;
+		};
+		class Item1758
+		{
+			dataType="Trigger";
+			position[]={0.125,0,0};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="hint ""위험 지역에 접근 하였습니다. 지금 당장 돌아가세요"";";
+				sizeA=200;
+				sizeB=200;
+				repeatable=1;
+				activationBy="ANY";
+				effectSound="Alarm";
+			};
+			id=5311;
+			type="EmptyDetector";
+			atlOffset=1.49436;
+		};
+		class Item1759
+		{
+			dataType="Marker";
+			position[]={0.125,7.1782402e+021,0};
+			name="marker_58";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			a=200;
+			b=200;
+			id=5312;
+			atlOffset=7.1782402e+021;
+		};
+		class Item1760
+		{
+			dataType="Marker";
+			position[]={-3.5,4.1414601e+037,0.125};
+			name="marker_dan";
+			text="접근금지";
+			type="mil_box";
+			colorName="ColorRed";
+			id=5313;
+			atlOffset=4.1414601e+037;
+		};
+		class Item1761
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={357.5,101.87644,405.04999};
+						angles[]={0,3.9095378,0};
+					};
+					side="Civilian";
+					flags=2;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=5316;
+					type="C_man_1_1_F";
+					atlOffset=96.706161;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={357.5,101.87644,405.04999};
+						angles[]={0,3.9095378,0};
+					};
+					side="Civilian";
+					class Attributes
+					{
+					};
+					id=5317;
+					type="C_man_1_1_F";
+					atlOffset=96.706161;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=5316;
+						item1=5315;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=5317;
+						item1=5315;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=5314;
+			atlOffset=96.706161;
+		};
+		class Item1762
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={357.49963,102.47919,404.01962};
+				angles[]={0,3.9095378,0};
+			};
+			side="Civilian";
+			flags=2;
+			class Attributes
+			{
+			};
+			id=5315;
+			type="C_Heli_Light_01_civil_F";
+			atlOffset=96.706161;
+		};
+		class Item1763
+		{
+			dataType="Trigger";
+			position[]={4954.75,-11.499994,-513.125};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player setDamage 1;";
+				sizeA=6000;
+				sizeB=100;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+				effectSound="Alarm";
+			};
+			id=5318;
+			type="EmptyDetector";
+			atlOffset=31.738005;
+		};
+		class Item1764
+		{
+			dataType="Trigger";
+			position[]={5054.25,-35.5,10912.125};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player setDamage 1;";
+				sizeA=6000;
+				sizeB=100;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+				effectSound="Alarm";
+			};
+			id=5319;
+			type="EmptyDetector";
+			atlOffset=14.5;
+		};
+		class Item1765
+		{
+			dataType="Trigger";
+			position[]={-879.625,-158.125,5175.5};
+			angle=1.5707964;
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player setDamage 1;";
+				sizeA=6000;
+				sizeB=100;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+				effectSound="Alarm";
+			};
+			id=5320;
+			type="EmptyDetector";
+			atlOffset=-0.007522583;
+		};
+		class Item1766
+		{
+			dataType="Trigger";
+			position[]={10928.25,-23.25,5145.625};
+			angle=1.5707964;
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="player setDamage 1;";
+				sizeA=6000;
+				sizeB=100;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+				effectSound="Alarm";
+			};
+			id=5321;
+			type="EmptyDetector";
+			atlOffset=26.834381;
+		};
+		class Item1767
+		{
+			dataType="Trigger";
+			position[]={5128.375,320.24969,5104.25};
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onDeactivation="hint ""위험 지역에 접근 하였습니다. 지금 당장 돌아가세요"";";
+				sizeA=5150;
+				sizeB=5150;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+			};
+			id=5324;
+			type="EmptyDetector";
+			atlOffset=-0.04598999;
 		};
 	};
 };
