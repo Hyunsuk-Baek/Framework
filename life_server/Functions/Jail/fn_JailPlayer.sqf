@@ -11,6 +11,6 @@ _time = ceil _time; //to be sure
 
 _player = owner _player;
 
-_query = format ["UPDATE players SET arrested='1', jail_time='%1' WHERE playerid='%2'", _time, _playeruid];
+_query = format ["UPDATE players SET arrested='1', jail_time='%1' WHERE pid='%2'", _time, _playeruid];
 
 [_query,1] call DB_fnc_asyncCall;

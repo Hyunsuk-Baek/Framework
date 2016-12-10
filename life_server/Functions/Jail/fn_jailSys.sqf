@@ -13,12 +13,12 @@ _bad = param [1,false,[false]];
 _time = param [2,15,[0]];
 
 if(_bad) then {//Load time from database
-    _query = format ["SELECT jail_time FROM players WHERE playerid='%2'", _time, getPlayerUID _unit];
+    _query = format ["SELECT jail_time FROM players WHERE pid='%2'", _time, getPlayerUID _unit];
     _result = [_query,2] call DB_fnc_asyncCall;
     _result = (_result select 0);
     _time = _result;
 } else {
-    _query = format ["UPDATE players SET jail_time='%1' WHERE playerid='%2'", _time, getPlayerUID _unit];
+    _query = format ["UPDATE players SET jail_time='%1' WHERE pid='%2'", _time, getPlayerUID _unit];
     _result = [_query,1] call DB_fnc_asyncCall;
 };
 _id = owner _unit;
