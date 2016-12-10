@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8962.9365,49.926373,5316.9717};
-		dir[]={-0.67737031,-0.36641738,0.63793576};
-		up[]={-0.26675737,0.93044126,0.2512264};
-		aside[]={0.68561864,4.9851951e-007,0.72800493};
+		pos[]={3457.241,25,7657.126};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -1067,13 +1067,13 @@ class Mission
 		class Item39
 		{
 			dataType="Marker";
-			position[]={8537.209,-5.3677979e+017,6914.5132};
-			name="Police HQ_1";
+			position[]={8537.209,-1.6913926e-034,6914.5132};
+			name="police_hq_1";
 			text="@STR_MAR_Police_HQ";
 			type="b_support";
 			colorName="Color4_FD_F";
 			id=1193;
-			atlOffset=-5.3677979e+017;
+			atlOffset=-4.1525359;
 		};
 		class Item40
 		{
@@ -1365,7 +1365,7 @@ class Mission
 			colorName="ColorYellow";
 			angle=122.0182;
 			id=1222;
-			atlOffset=3.7398987;
+			atlOffset=3.3288345;
 		};
 		class Item66
 		{
@@ -1490,7 +1490,7 @@ class Mission
 			position[]={8475.8096,4.1525359,6925.8813};
 			name="cop_car_1";
 			type="Empty";
-			angle=112.96867;
+			angle=112.96865;
 			id=1238;
 		};
 		class Item78
@@ -7682,6 +7682,7 @@ class Mission
 						angles[]={0,1.8784513,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -7691,7 +7692,6 @@ class Mission
 					};
 					id=1660;
 					type="C_man_polo_3_F";
-					atlOffset=0.41114807;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9674,7 +9674,6 @@ class Mission
 					};
 					id=1713;
 					type="O_Soldier_F";
-					atlOffset=0.15140533;
 					class CustomAttributes
 					{
 						class Attribute0

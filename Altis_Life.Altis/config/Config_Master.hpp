@@ -63,7 +63,7 @@ class Life_Settings {
     clothing_masks[] = { "H_Shemag_olive", "H_Shemag_khk", "H_Shemag_tan", "H_Shemag_olive_hs", "H_ShemagOpen_khk", "H_ShemagOpen_tan", "G_Balaclava_blk", "G_Balaclava_combat", "G_Balaclava_lowprofile", "G_Balaclava_oli", "G_Bandanna_aviator", "G_Bandanna_beast", "G_Bandanna_blk", "G_Bandanna_khk", "G_Bandanna_oli", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_tan", "U_O_GhillieSuit", "U_I_GhillieSuit", "U_B_GhillieSuit", "H_RacingHelmet_1_black_F", "H_RacingHelmet_1_red_F", "H_RacingHelmet_1_white_F", "H_RacingHelmet_1_blue_F", "H_RacingHelmet_1_yellow_F", "H_RacingHelmet_1_green_F", "H_RacingHelmet_1_F", "H_RacingHelmet_2_F", "H_RacingHelmet_3_F", "H_RacingHelmet_4_F" };
 
     /* Escape Menu Configuration */
-    escapeMenu_timer = 5; //Time required to pass before you can click the abort button in the escape menu.
+    escapeMenu_timer = 10; //Time required to pass before you can click the abort button in the escape menu.
     escapeMenu_displayExtras = true; //Display the players UID & serverName specified below in the escape menu.
     escapeMenu_displayText = "Thanks for playing!"; //Text displayed in the escape menu. Make it short.. around 20 characters.
 
@@ -97,7 +97,7 @@ class Life_Settings {
     /* Jail System Configurations */
     jail_seize_vItems[] = { "spikeStrip","lockpick","goldbar","blastingcharge","boltcutter","defusekit","heroin_unprocessed","heroin_processed","cannabis","marijuana","cocaine_unprocessed","cocaine_processed","turtle_raw" }; //Define VIRTUAL items you want to be removed from players upon jailing here. Use "jail_seize_inventory" for Arma inventory items.
     jail_seize_inventory = false; //Set to true to run the cop seize script on inmates. False will remove only weapons and magazines otherwise. (Basically used in case cops forget to seize items). [See Lines 106-111 below]
-    sendtoJail_locations[] = { "police_hq_1", "police_hq_2", "cop_spawn_3", "cop_spawn_5", "Correctional_Facility" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
+    sendtoJail_locations[] = { "police_hq_1","police_hq_2","cop_spawn_1", "cop_spawn_2", "cop_spawn_3", "cop_spawn_4", "cop_spawn_5" }; //Enter the variableName from the mission.sqm here to allow cops to send a person to jail at these locations.
     jail_forceWalk = true;
 
     /* Medical System Configurations */

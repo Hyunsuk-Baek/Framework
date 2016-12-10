@@ -277,6 +277,7 @@ class CfgSpawnPoints {
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
+
             class Extreme_Zone {
                 displayName = "Extreme Zone";
                 spawnMarker = "extreme_spawn_1";
@@ -311,14 +312,14 @@ class CfgSpawnPoints {
                 displayName = "NewMetro HQ";
                 spawnMarker = "cop_spawn_4";
                 icon = "\a3\ui_f\data\map\Markers\NATO\b_air.paa";
-                conditions = "call life_coplevel >= 2 && {license_cop_cAir}";
+                conditions = "";
             };
 
             class WesternHighwayP {
                 displayName = "Western Highway HQ";
                 spawnMarker = "cop_spawn_5";
                 icon = "\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa";
-                conditions = "call life_coplevel >= 3";
+                conditions = "";
             };
         };
 
