@@ -54,3 +54,4 @@ if (_ctrl == "money") then {
         hint localize "STR_NOTF_InvFull";
     };
 };
+[3] call SOCK_fnc_updatePartial;

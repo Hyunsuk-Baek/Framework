@@ -58,3 +58,4 @@ if (LIFE_SETTINGS(getNumber,"save_vehicle_virtualItems") isEqualTo 1) then {
         };
     };
 };
+[3] call SOCK_fnc_updatePartial;

@@ -30,4 +30,5 @@ if (LIFE_SETTINGS(getNumber,"save_vehicle_inventory") isEqualTo 1) then {
         };
     };
 };
+[3] call SOCK_fnc_updatePartial;
 [] call SOCK_fnc_updateRequest;

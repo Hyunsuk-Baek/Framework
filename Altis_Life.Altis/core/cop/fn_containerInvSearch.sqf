@@ -39,3 +39,5 @@ if (_value > 0) then {
 } else {
     hint localize "STR_Cop_NoIllegalContainer";
 };
+[3] call SOCK_fnc_updatePartial;
+
