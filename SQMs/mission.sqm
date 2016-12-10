@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3457.241,25,7657.126};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={4869.1724,28.985331,2941.9014};
+		dir[]={-0.83422589,-0.55097151,-0.024502501};
+		up[]={-0.55076361,0.8344968,-0.016176473};
+		aside[]={-0.029358607,-7.7561708e-009,0.99962425};
 	};
 };
 binarizationWanted=0;
@@ -8798,8 +8798,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8522.6631,4.1539745,6920.0327};
-						angles[]={0,5.6776609,0};
+						position[]={8538.25,8.3764381,6930.9248};
+						angles[]={0,3.2865601,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -8812,6 +8812,7 @@ class Mission
 					};
 					id=1691;
 					type="B_RangeMaster_F";
+					atlOffset=0.010000229;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38366,11 +38367,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={7016.75,-24.125473,4490.75};
+				position[]={7016.75,-6.75,4490.75};
 				angles[]={0,1.6406095,0};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 				init="this allowdamage false;";
@@ -38378,7 +38379,7 @@ class Mission
 			};
 			id=3957;
 			type="Land_pop_dubai";
-			atlOffset=-0.034000397;
+			atlOffset=17.341473;
 		};
 		class Item1598
 		{
