@@ -34,7 +34,7 @@ showHUD[] = {
 #include "AS_AdminMenu\spectating.hpp"
 
 //Heli Advanced
-forceRotorLibSimulation = 2;
+forceRotorLibSimulation = 1;
 
 //Debug Console
 enableDebugConsole = 0;
