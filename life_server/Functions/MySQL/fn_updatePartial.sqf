@@ -7,11 +7,10 @@
     less network intensive towards data flowing through it for updates.
 */
 private ["_uid","_side","_value","_value1","_value2","_mode","_query"];
-params [
-  ["_uid","",[""]],
-  ["_side",sideUnknown,[civilian]]
-];
-_mode = param [3,-1,[0]];
+_uid = [_this,0,"",[""]] call BIS_fnc_param;
+_side = [_this,1,sideUnknown,[civilian]] call BIS_fnc_param;
+_mode = [_this,3,-1,[0]] call BIS_fnc_param;
+
 
 if (_uid isEqualTo "" || _side isEqualTo sideUnknown) exitWith {}; //Bad.
 _query = "";
