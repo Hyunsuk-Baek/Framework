@@ -129,11 +129,7 @@ life_copLevel = 0;
 CONST(JxMxE_PublishVehicle,"false");
 
 /* Setup radio channels for west/independent/civilian */
-/*
-life_radio_west = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-life_radio_civ = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-life_radio_indep = radioChannelCreate [[0, 0.95, 1, 0.8], "Side Channel", "%UNIT_NAME", []];
-*/
+
 life_radio_west = radioChannelCreate [[255, 0, 0, 0.8], "EmergencyChannel", "%UNIT_NAME", []];
 life_radio_indep = radioChannelCreate [[255, 0, 0, 0.8], "EmergencyChannel", "%UNIT_NAME", []];
 
@@ -203,7 +199,7 @@ life_server_isReady = true;
 publicVariable "life_server_isReady";
 
 /* Initialize hunting zone(s) */
-aiSpawn = ["hunting_zone",10] spawn TON_fnc_huntingZone;
+aiSpawn = ["hunting_zone",30] spawn TON_fnc_huntingZone;
 
 // We create the attachment point to be used for objects to attachTo load virtually in vehicles.
 life_attachment_point = "Land_HelipadEmpty_F" createVehicle [0,0,0];

@@ -19,10 +19,8 @@
     3: Handgun
 */
 private ["_item","_type","_tmp","_ret","_weaponArray"];
-params [
-  ["_item","",[""]],
-  ["_type",0,[0]]
-];
+_item = [_this,0,"",[""]] call BIS_fnc_param;
+_type = [_this,1,0,[0]] call BIS_fnc_param;
 if (_item isEqualTo "" || _type isEqualTo 0) exitWith {0};
 _ret = 0;
 

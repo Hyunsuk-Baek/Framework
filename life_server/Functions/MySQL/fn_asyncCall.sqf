@@ -12,11 +12,9 @@
         3: BOOL (True to return a single array, false to return multiple entries mainly for garage).
 */
 private ["_queryStmt","_mode","_multiarr","_queryResult","_key","_return","_loop"];
-params [
-  ["_queryStmt","",[""]],
-  ["_mode",1,[0]],
-  ["_multiarr",false,[false]]
-];
+_queryStmt = [_this,0,"",[""]] call BIS_fnc_param;
+_mode = [_this,1,1,[0]] call BIS_fnc_param;
+_multiarr = [_this,2,false,[false]] call BIS_fnc_param;
 
 _key = EXTDB format ["%1:%2:%3",_mode,FETCH_CONST(life_sql_id),_queryStmt];
 

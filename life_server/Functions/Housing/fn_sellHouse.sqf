@@ -7,7 +7,7 @@
     stored procedure on restart.
 */
 private ["_house","_houseID","_ownerID","_housePos","_query","_radius","_containers"];
-_house = param [0,objNull,[objNull]];
+_house = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _house) exitWith {systemChat ":SERVER:sellHouse: House is null";};
 
 _houseID = _house getVariable ["house_id",-1];

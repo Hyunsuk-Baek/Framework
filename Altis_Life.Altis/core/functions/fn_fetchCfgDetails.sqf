@@ -27,10 +27,8 @@
     14: New compatibleItems Structure
 */
 private ["_className","_section","_type","_accPointer","_accMuzzle","_accOptic","_classes","_itemInfo","_magazines","_scope","_config","_displayName"];
-params [
-  ["_className","",[""]],
-  ["_section","",[""]]
-];
+_className = [_this,0,"",[""]] call BIS_fnc_param;
+_section = [_this,1,"",[""]] call BIS_fnc_param;
 if (_className isEqualTo "") exitWith {[]};
 
 _type = -1;

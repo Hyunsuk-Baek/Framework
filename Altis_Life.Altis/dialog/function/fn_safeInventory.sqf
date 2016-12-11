@@ -7,7 +7,7 @@
     Fills up the safes inventory.
 */
 private ["_safe","_tInv","_pInv","_safeInfo","_str","_shrt","_icon"];
-_safe = param [0,objNull,[objNull]];
+_safe = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _safe) exitWith {closeDialog 0;};
 disableSerialization;
 

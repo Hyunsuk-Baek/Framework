@@ -10,11 +10,9 @@
     false - No units near
 */
 private ["_faction","_position","_radius","_ret"];
-params [
-  ["_faction",sideUnknown,[sideUnknown]],
-  ["_position",(getPos player),[[]]],
-  ["_radius",30,[0]]
-];
+_faction = [_this,0,sideUnknown,[sideUnknown]] call BIS_fnc_param;
+_position = [_this,1,(getPos player),[[]]] call BIS_fnc_param;
+_radius = [_this,2,30,[0]] call BIS_fnc_param;
 _ret = false;
 
 //Error check

@@ -6,7 +6,7 @@
     Description: Attaches the desired person(_unit) to the player(player) and "escorts them".
 */
 private ["_unit"];
-_unit = param [0,objNull,[objNull]];
+_unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 
 if (!isNull(player getVariable ["escortingPlayer",objNull])) exitWith {};
 if (isNil "_unit" || isNull _unit || !isPlayer _unit) exitWith {};

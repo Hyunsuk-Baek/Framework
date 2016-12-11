@@ -6,7 +6,7 @@
     Update inventory "y" in container
 */
 private ["_house"];
-_container = param [0,objNull,[objNull]];
+_container = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _container) exitWith {};
 
 _trunkData = _container getVariable ["Trunk",[[],0]];

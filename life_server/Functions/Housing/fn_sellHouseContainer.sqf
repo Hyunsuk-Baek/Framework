@@ -7,7 +7,7 @@
     stored procedure on restart.
 */
 private ["_house","_houseID","_ownerID","_housePos","_query","_radius","_containers"];
-_container = param [0,objNull,[objNull]];
+_container = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _container) exitWith {};
 
 _containerID = _container getVariable ["container_id",-1];

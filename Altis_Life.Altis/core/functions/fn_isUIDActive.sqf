@@ -10,7 +10,7 @@
     True if there was a match, false if not in server.
 */
 private ["_uid","_ret"];
-_uid = param [0,"",[""]];
+_uid = [_this,0,"",[""]] call BIS_fnc_param;
 if (_uid isEqualTo "") exitWith {false}; //Bad UID
 _ret = false;
 {

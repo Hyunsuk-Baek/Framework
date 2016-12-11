@@ -6,7 +6,7 @@
     Calculates Vehicle Weight.
 */
 private ["_vehicle","_weight","_used"];
-_vehicle = param [0,objNull,[objNull]];
+_vehicle = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 if (isNull _vehicle) exitWith {};
 
 _weight = -1;
