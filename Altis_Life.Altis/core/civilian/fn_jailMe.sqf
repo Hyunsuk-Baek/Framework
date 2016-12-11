@@ -16,7 +16,7 @@ params [
 //디컨한놈 남은 시간 * 2 
 if (_bad) then { _time = time + ( 2 * _time * 60); } else { _time = time + (_time * 60); };
 
-if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 1500; };
+if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 50000; };
 _esc = false;
 _bail = false;
 
@@ -36,6 +36,13 @@ if(_time <= 0) then {
     life_canpay_bail = true;
 };
 
+life_oldClothes = uniform player;
+if (!(player isUniformAllowed "mgsr_civ_01_uniform")) then {
+	player forceAddUniform "mgsr_civ_01_uniform";
+} else {
+	player addUniform "mgsr_civ_01_uniform";
+};
+
 for "_i" from 0 to 1 step 0 do {
     if ((round(_time - time)) > 0) then {
         _countDown = [(_time - time),"MM:SS.MS"] call BIS_fnc_secondsToString;
@@ -46,6 +53,8 @@ for "_i" from 0 to 1 step 0 do {
         player forceWalk true;
     };
 
+	player allowDamage false;
+	
     private _escDist = [[["Altis", 60], ["Tanoa", 145], ["Jackson_County", 80]]] call TON_fnc_terrainSort;
 
     if (player distance (getMarkerPos "jail_marker") > _escDist) exitWith {
@@ -75,8 +84,9 @@ switch (true) do {
         } else {
             [getPlayerUID player] remoteExecCall ["life_fnc_wantedRemove",RSERV];
         };
-
-        [5] call SOCK_fnc_updatePartial;
+		
+        removeUniform player;
+        player addUniform life_oldClothes;
     };
 
     case (_esc): {
@@ -89,8 +99,12 @@ switch (true) do {
         } else {
             [getPlayerUID player,profileName,"901"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
-
-        [5] call SOCK_fnc_updatePartial;
+		
+		if (!(player isUniformAllowed "mgsr_robe_dirty")) then {
+            player forceAddUniform "mgsr_robe_dirty";
+        } else {
+            player addUniform "mgsr_robe_dirty";
+        };
     };
 
     case (alive player && !_esc && !_bail): {
@@ -104,8 +118,12 @@ switch (true) do {
         };
 
         player setPos (getMarkerPos "jail_release");
-        [5] call SOCK_fnc_updatePartial;
+
+		removeUniform player;
+        player addUniform life_oldClothes;
     };
 };
-
+[5] call SOCK_fnc_updatePartial;
+[3] call SOCK_fnc_updatePartial;
 player forceWalk false; // Enable running & jumping
+player allowDamage true;
