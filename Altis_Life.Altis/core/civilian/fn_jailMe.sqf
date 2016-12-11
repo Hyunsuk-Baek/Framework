@@ -41,7 +41,7 @@ for "_i" from 0 to 1 step 0 do {
 		};
 	};
 	
-	if(player distance (getMarkerPos "jail_marker") > 60) exitWith {
+	if(player distance (getMarkerPos "jail_marker") > 80) exitWith {
 		_esc = true;
 	};
 	
