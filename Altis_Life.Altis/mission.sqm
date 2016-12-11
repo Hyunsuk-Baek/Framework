@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5102.8633,493.90253,9538.6172};
-		dir[]={0.7829293,-0.52435917,0.33482423};
-		up[]={0.482135,0.85148692,0.20618676};
-		aside[]={0.39321116,-2.9493822e-007,-0.91946656};
+		pos[]={6271.3076,751.82721,8936.6299};
+		dir[]={-0.92293322,-0.38478398,-0.012710688};
+		up[]={-0.38475183,0.92300344,-0.0052983728};
+		aside[]={-0.013770346,1.4618672e-007,0.99991703};
 	};
 };
 binarizationWanted=0;
@@ -366,6 +366,7 @@ class ScenarioData
 	author="AOS";
 	respawnDialog=0;
 	disabledAI=1;
+	respawn=3;
 	class Header
 	{
 		gameType="RPG";
@@ -506,7 +507,7 @@ class CustomAttributes
 							"SCALAR"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -644,11 +645,13 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2012;
+		year=2035;
+		month=8;
 		day=3;
-		minute=-7;
+		hour=6;
+		minute=0;
 		startFogDecay=0;
-		forecastFogDecay=0.014;
+		forecastFogDecay=0.017681215;
 	};
 	class Entities
 	{
@@ -1490,7 +1493,7 @@ class Mission
 			position[]={8475.8096,4.1525359,6925.8813};
 			name="cop_car_1";
 			type="Empty";
-			angle=112.96862;
+			angle=112.96861;
 			id=1238;
 		};
 		class Item78
@@ -2314,7 +2317,7 @@ class Mission
 			};
 			id=1338;
 			type="Land_CargoBox_V1_F";
-			atlOffset=0.039286613;
+			atlOffset=0.043317318;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2604,7 +2607,7 @@ class Mission
 			};
 			id=1372;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.546402;
+			atlOffset=3.5481567;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2938,7 +2941,7 @@ class Mission
 			};
 			id=1432;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5743103;
+			atlOffset=3.5748596;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7431,6 +7434,7 @@ class Mission
 					};
 					id=1670;
 					type="C_man_polo_3_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10450,7 +10454,7 @@ class Mission
 					};
 					id=2048;
 					type="B_RangeMaster_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11199,6 +11203,7 @@ class Mission
 					};
 					id=1711;
 					type="B_RangeMaster_F";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
