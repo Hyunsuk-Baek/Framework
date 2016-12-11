@@ -20,7 +20,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5157.502,436.20978,9578.6221};
+		pos[]={5102.8633,493.90253,9538.6172};
 		dir[]={0.7829293,-0.52435917,0.33482423};
 		up[]={0.482135,0.85148692,0.20618676};
 		aside[]={0.39321116,-2.9493822e-007,-0.91946656};
@@ -366,7 +366,6 @@ class ScenarioData
 	author="AOS";
 	respawnDialog=0;
 	disabledAI=1;
-	respawn=3;
 	class Header
 	{
 		gameType="RPG";
@@ -1491,7 +1490,7 @@ class Mission
 			position[]={8475.8096,4.1525359,6925.8813};
 			name="cop_car_1";
 			type="Empty";
-			angle=112.96863;
+			angle=112.96862;
 			id=1238;
 		};
 		class Item78
@@ -2315,7 +2314,7 @@ class Mission
 			};
 			id=1338;
 			type="Land_CargoBox_V1_F";
-			atlOffset=0.043317318;
+			atlOffset=0.039286613;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2605,7 +2604,7 @@ class Mission
 			};
 			id=1372;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5481567;
+			atlOffset=3.546402;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2939,7 +2938,7 @@ class Mission
 			};
 			id=1432;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5748596;
+			atlOffset=3.5743103;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7060,7 +7059,6 @@ class Mission
 						angles[]={0,1.8784513,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -7070,6 +7068,7 @@ class Mission
 					};
 					id=1660;
 					type="C_man_polo_3_F";
+					atlOffset=0.41114807;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7432,7 +7431,6 @@ class Mission
 					};
 					id=1670;
 					type="C_man_polo_3_F";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7837,6 +7835,7 @@ class Mission
 					};
 					id=1681;
 					type="C_man_polo_3_F";
+					atlOffset=0.20101166;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -8631,6 +8630,7 @@ class Mission
 					};
 					id=1713;
 					type="O_Soldier_F";
+					atlOffset=0.15140533;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10450,7 +10450,7 @@ class Mission
 					};
 					id=2048;
 					type="B_RangeMaster_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11199,7 +11199,6 @@ class Mission
 					};
 					id=1711;
 					type="B_RangeMaster_F";
-					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15450,7 +15449,7 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 			id=2075;
-			atlOffset=38.209129;
+			atlOffset=48.694229;
 		};
 		class Item325
 		{
@@ -15529,6 +15528,7 @@ class Mission
 			};
 			id=2117;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.20101166;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15569,6 +15569,7 @@ class Mission
 			};
 			id=2119;
 			type="A3L_HospitalBed2015";
+			atlOffset=0.20101166;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15609,6 +15610,7 @@ class Mission
 			};
 			id=2124;
 			type="A3L_HospitalBed";
+			atlOffset=0.20079803;
 		};
 		class Item334
 		{
@@ -15626,6 +15628,7 @@ class Mission
 			};
 			id=2126;
 			type="A3L_HospitalBed";
+			atlOffset=0.18959808;
 		};
 		class Item335
 		{
@@ -15643,6 +15646,7 @@ class Mission
 			};
 			id=2127;
 			type="A3L_HospitalBed";
+			atlOffset=0.1932373;
 		};
 		class Item336
 		{
@@ -15660,6 +15664,7 @@ class Mission
 			};
 			id=2128;
 			type="A3L_HospitalBed";
+			atlOffset=0.19988251;
 		};
 		class Item337
 		{
@@ -15677,6 +15682,7 @@ class Mission
 			};
 			id=2129;
 			type="A3L_HospitalBed";
+			atlOffset=0.20101166;
 		};
 		class Item338
 		{
@@ -15694,6 +15700,7 @@ class Mission
 			};
 			id=2130;
 			type="A3L_HospitalBed";
+			atlOffset=0.20101166;
 		};
 		class Item339
 		{
@@ -15711,6 +15718,7 @@ class Mission
 			};
 			id=2131;
 			type="A3L_HospitalBed";
+			atlOffset=0.20101166;
 		};
 		class Item340
 		{
@@ -15728,6 +15736,7 @@ class Mission
 			};
 			id=2132;
 			type="A3L_HospitalBed";
+			atlOffset=0.20101166;
 		};
 		class Item341
 		{
@@ -30538,6 +30547,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=0.77999985;
 			id=3716;
+			atlOffset=0.20101166;
 		};
 		class Item1208
 		{
