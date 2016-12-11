@@ -38,9 +38,9 @@ if(_time <= 0) then {
 
 life_oldClothes = uniform player;
 if (!(player isUniformAllowed "mgsr_civ_01_uniform")) then {
-	player forceAddUniform "mgsr_civ_01_uniform";
+    player forceAddUniform "mgsr_civ_01_uniform";
 } else {
-	player addUniform "mgsr_civ_01_uniform";
+    player addUniform "mgsr_civ_01_uniform";
 };
 
 for "_i" from 0 to 1 step 0 do {
@@ -53,7 +53,7 @@ for "_i" from 0 to 1 step 0 do {
         player forceWalk true;
     };
 
-	player allowDamage false;
+    player allowDamage false;
 	
     private _escDist = [[["Altis", 60], ["Tanoa", 145], ["Jackson_County", 80]]] call TON_fnc_terrainSort;
 
@@ -100,7 +100,7 @@ switch (true) do {
             [getPlayerUID player,profileName,"901"] remoteExecCall ["life_fnc_wantedAdd",RSERV];
         };
 		
-		if (!(player isUniformAllowed "mgsr_robe_dirty")) then {
+		      if (!(player isUniformAllowed "mgsr_robe_dirty")) then {
             player forceAddUniform "mgsr_robe_dirty";
         } else {
             player addUniform "mgsr_robe_dirty";
@@ -119,7 +119,7 @@ switch (true) do {
 
         player setPos (getMarkerPos "jail_release");
 
-		removeUniform player;
+		      removeUniform player;
         player addUniform life_oldClothes;
     };
 };
