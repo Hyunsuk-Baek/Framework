@@ -2,7 +2,7 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 --
 -- Compatible with newer MySQL versions. (After MySQL-5.5)
--- This SQL uses utf8mb4 and has CURRENT_TIMESTAMP function.
+-- This  SQL uses utf8mb4 and has CURRENT_TIMESTAMP function.
 --
 
 
