@@ -14,11 +14,16 @@ params [
  ["_time",15,[0]]
 ];
 
-if (_bad) then { _time = time + 1100; } else { _time = time + (_time * 60); };
+if (_bad) then { _time = time + (20 * 60); } else { _time = time + (_time * 60); };
 
 if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 1500; };
 _esc = false;
 _bail = false;
+
+if(_time <= 0) then { 
+    _time = time + (10 * 60);
+    hintC "어드민에게 이 화면 캡쳐후 신고하세요 : 구속시간이 오류라서 10분으로 세팅합니다.";
+};
 
 [_bad, _time] spawn {
     life_canpay_bail = false;
