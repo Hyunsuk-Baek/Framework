@@ -8,7 +8,7 @@ class EditorData
 	toggles=109;
 	class ItemIDProvider
 	{
-		nextID=5329;
+		nextID=5331;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6271.3076,751.82721,8936.6299};
-		dir[]={-0.92293322,-0.38478398,-0.012710688};
-		up[]={-0.38475183,0.92300344,-0.0052983728};
-		aside[]={-0.013770346,1.4618672e-007,0.99991703};
+		pos[]={8499.3125,51.847095,6839.6387};
+		dir[]={0.45710862,-0.56791991,0.6845243};
+		up[]={0.31539455,0.82306927,0.47230855};
+		aside[]={0.83164489,-2.5347981e-007,-0.55535483};
 	};
 };
 binarizationWanted=0;
@@ -655,7 +655,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1768;
+		items=1769;
 		class Item0
 		{
 			dataType="Marker";
@@ -1136,7 +1136,7 @@ class Mission
 		class Item45
 		{
 			dataType="Marker";
-			position[]={4891.019,20.9,2924.3335};
+			position[]={4892.5,20.9,2923.625};
 			name="jail_release";
 			type="Empty";
 			angle=129.78458;
@@ -2317,7 +2317,7 @@ class Mission
 			};
 			id=1338;
 			type="Land_CargoBox_V1_F";
-			atlOffset=0.043317318;
+			atlOffset=0.039286613;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2607,7 +2607,7 @@ class Mission
 			};
 			id=1372;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5481567;
+			atlOffset=3.546402;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2941,7 +2941,7 @@ class Mission
 			};
 			id=1432;
 			type="Land_InfoStand_V1_F";
-			atlOffset=3.5748596;
+			atlOffset=3.5743103;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7434,7 +7434,6 @@ class Mission
 					};
 					id=1670;
 					type="C_man_polo_3_F";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10454,7 +10453,7 @@ class Mission
 					};
 					id=2048;
 					type="B_RangeMaster_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11203,7 +11202,6 @@ class Mission
 					};
 					id=1711;
 					type="B_RangeMaster_F";
-					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -40162,12 +40160,12 @@ class Mission
 		class Item1719
 		{
 			dataType="Trigger";
-			position[]={8508.875,4.1525879,6532.875};
+			position[]={8508.875,4.1525359,6532.875};
 			class Attributes
 			{
 				condition="this && (local player) && (vehicle player in thisList)";
-				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false; " \n "vehicle player allowDamage false;";
-				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; " \n "vehicle player allowDamage true;";
+				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false;";
+				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; ";
 				sizeA=400;
 				sizeB=400;
 				sizeC=0;
@@ -40176,17 +40174,16 @@ class Mission
 			};
 			id=5096;
 			type="EmptyDetector";
-			atlOffset=5.197525e-005;
 		};
 		class Item1720
 		{
 			dataType="Trigger";
-			position[]={3435.875,95.200195,7653.625};
+			position[]={3435.875,95.199997,7653.625};
 			class Attributes
 			{
 				condition="this && (local player) && (vehicle player in thisList)";
-				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false; " \n "vehicle player allowDamage false;";
-				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; " \n "vehicle player allowDamage true;";
+				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false; ";
+				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; ";
 				sizeA=150;
 				sizeB=150;
 				sizeC=0;
@@ -40195,17 +40192,16 @@ class Mission
 			};
 			id=5098;
 			type="EmptyDetector";
-			atlOffset=0.00019836426;
 		};
 		class Item1721
 		{
 			dataType="Trigger";
-			position[]={5000.75,20.899902,2744.5};
+			position[]={5000.75,20.9,2744.5};
 			class Attributes
 			{
 				condition="this && (local player) && (vehicle player in thisList)";
-				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false; " \n "vehicle player allowDamage false;";
-				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; " \n "vehicle player allowDamage true;";
+				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false; ";
+				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; ";
 				sizeA=200;
 				sizeB=200;
 				sizeC=0;
@@ -40214,17 +40210,16 @@ class Mission
 			};
 			id=5099;
 			type="EmptyDetector";
-			atlOffset=-9.727478e-005;
 		};
 		class Item1722
 		{
 			dataType="Trigger";
-			position[]={658.875,5.1757813,2089.375};
+			position[]={658.875,5.1758833,2089.375};
 			class Attributes
 			{
 				condition="this && (local player) && (vehicle player in thisList)";
-				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false; " \n "vehicle player allowDamage false;";
-				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; " \n "vehicle player allowDamage true;";
+				onActivation="hint ""세이프존에 입장하였습니다""; " \n "life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false; ";
+				onDeactivation="hint ""세이프존을 벗어났습니다""; " \n "life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; ";
 				sizeA=150;
 				sizeB=150;
 				sizeC=0;
@@ -40233,7 +40228,6 @@ class Mission
 			};
 			id=5100;
 			type="EmptyDetector";
-			atlOffset=-0.00010204315;
 		};
 		class Item1723
 		{
@@ -41032,6 +41026,26 @@ class Mission
 			id=5324;
 			type="EmptyDetector";
 			atlOffset=-0.04598999;
+		};
+		class Item1768
+		{
+			dataType="Trigger";
+			position[]={4842.375,20.9,2978.25};
+			angle=0.76794481;
+			class Attributes
+			{
+				condition="this && (local player) && (vehicle player in thisList)";
+				onActivation="life_knockout = true; " \n "life_jetpack = true; " \n "player allowdamage false;";
+				onDeactivation="life_knockout = false; " \n "life_jetpack = false; " \n "player allowdamage true; ";
+				sizeA=65;
+				sizeB=55;
+				sizeC=0;
+				repeatable=1;
+				activationBy="ANY";
+				isRectangle=1;
+			};
+			id=5329;
+			type="EmptyDetector";
 		};
 	};
 };
