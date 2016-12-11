@@ -4629,7 +4629,7 @@
             <Polish>Pozostały czas kary:</Polish>
         </Key>
         <Key ID="STR_Jail_Pay">
-            <Original>보석금을 지불할 수 있습니다:</Original>
+            <Original>보석금 지불 가능 여부:</Original>
             <Czech>Může zaplatit kauci:</Czech>
             <Spanish>Puedes pagar la fianza en:</Spanish>
             <Russian></Russian>
