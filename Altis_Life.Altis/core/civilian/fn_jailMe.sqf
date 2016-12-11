@@ -9,23 +9,24 @@
 private ["_time","_bail","_esc","_countDown"];
 
 params [
-    ["_ret",[],[[]]],
-    ["_bad",false,[false]]
+ ["_ret",[],[[]]],
+ ["_bad",false,[false]],
+ ["_time",15,[0]]
 ];
 
+if (_bad) then { _time = time + 1100; } else { _time = time + (_time * 60); };
 
-if (_bad) then { _time = time + 1100; } else { _time = time + (15 * 60); };
-
-if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 1500; _time = time + (10 * 60); };
+if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 1500; };
 _esc = false;
 _bail = false;
 
-[_bad] spawn {
+[_bad, _time] spawn {
     life_canpay_bail = false;
+    life_bail_amount = life_bail_amount * 5;
     if (_this select 0) then {
-        sleep (10 * 60);
+        sleep ( (_this select 1) * 0.5 );
     } else {
-        sleep (5 * 60);
+        sleep ( (_this select 1) * 0.2 );
     };
     life_canpay_bail = true;
 };
@@ -40,7 +41,7 @@ for "_i" from 0 to 1 step 0 do {
         player forceWalk true;
     };
 
-    private _escDist = [[["Altis", 60], ["Tanoa", 145], ["Jackson_County", 70]]] call TON_fnc_terrainSort;
+    private _escDist = [[["Altis", 60], ["Tanoa", 145], ["Jackson_County", 80]]] call TON_fnc_terrainSort;
 
     if (player distance (getMarkerPos "jail_marker") > _escDist) exitWith {
         _esc = true;
