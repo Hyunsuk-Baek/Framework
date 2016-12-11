@@ -193,7 +193,6 @@ switch (_code) do {
 
     //Y Player Menu
     case 21: {
-        [] call SOCK_fnc_syncData;
         if (!_alt && !_ctrlKey && !dialog && !(player getVariable ["restrained",false]) && {!life_action_inUse}) then {
             [] call life_fnc_p_openMenu;
         };
