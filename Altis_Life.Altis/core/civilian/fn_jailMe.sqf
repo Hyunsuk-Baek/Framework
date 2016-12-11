@@ -13,8 +13,8 @@ params [
  ["_bad",false,[false]],
  ["_time",15,[0]]
 ];
-//디컨한놈 무조건 40분
-if (_bad) then { _time = time + ( 40 * 60); } else { _time = time + (_time * 60); };
+//디컨한놈 남은 시간 * 2 
+if (_bad) then { _time = time + ( 2 * _time * 60); } else { _time = time + (_time * 60); };
 
 if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 1500; };
 _esc = false;
