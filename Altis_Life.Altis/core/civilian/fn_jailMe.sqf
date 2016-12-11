@@ -13,8 +13,8 @@ params [
  ["_bad",false,[false]],
  ["_time",15,[0]]
 ];
-
-if (_bad) then { _time = time + (20 * 60); } else { _time = time + (_time * 60); };
+//디컨한놈 2배 시간 
+if (_bad) then { _time = time + (2 * _time * 60); } else { _time = time + (_time * 60); };
 
 if (count _ret > 0) then { life_bail_amount = (_ret select 2); } else { life_bail_amount = 1500; };
 _esc = false;
@@ -27,7 +27,7 @@ if(_time <= 0) then {
 
 [_bad, _time] spawn {
     life_canpay_bail = false;
-    life_bail_amount = life_bail_amount * 5;
+    life_bail_amount = life_bail_amount * 1;
     if (_this select 0) then {
         sleep ( (_this select 1) * 0.5 );
     } else {
