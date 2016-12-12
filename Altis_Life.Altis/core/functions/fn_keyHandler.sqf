@@ -496,15 +496,15 @@ switch (_code) do {
         };
     };
 
-    //오줌 모션 Shift + Num1
+    //술취한 모션 Shift + Num1
     case 79:
     {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            //cutText [format ["쉬야"], "PLAIN DOWN"];
-            //player playMove "Acts_AidlPercMstpSlowWrflDnon_pissing";  //Original Code
-            [] execVM "Custom\Motion\pee.sqf";
+            [player,"AOS_crazydrunkdance",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_crazydrunkdance";
+            player playMoveNow "AOS_crazydrunkdance";
         };
     };
 
@@ -663,8 +663,115 @@ switch (_code) do {
             player playMoveNow "AOS_robotdance";
         };
     };
-
-
+	
+	//
+	//박수 Shift + F1
+    case 59:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_clapping",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_clapping";
+            player playMoveNow "AOS_clapping";
+        };
+    };
+	
+	//박수 Shift + F2
+    case 60:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_clapping",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_clapping";
+            player playMoveNow "AOS_clapping";
+        };
+    };
+	
+	//박수 Shift + F3
+    case 61:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_FuckHandShow",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_FuckHandShow";
+            player playMoveNow "AOS_FuckHandShow";
+        };
+    };
+	
+	//박수 Shift + F4
+    case 62:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_hand_stand",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_hand_stand";
+            player playMoveNow "AOS_hand_stand";
+        };
+    };
+	
+	//자위1 Shift + F5
+    case 63:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_MasterV1",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_MasterV1";
+            player playMoveNow "AOS_MasterV1";
+        };
+    };
+	
+	//자위1 Shift + F6
+    case 64:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_MasterVJump",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_MasterVJump";
+            player playMoveNow "AOS_MasterVJump";
+        };
+    };
+	
+	//그뉵 Shift + F7
+    case 65:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_muscle",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_muscle";
+            player playMoveNow "AOS_muscle";
+        };
+    };
+	
+	//기도 Shift + F8
+    case 66:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_bow_pray",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_bow_pray";
+            player playMoveNow "AOS_bow_pray";
+        };
+    };
+	
+	//기도 Shift + F9
+    case 67:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_receive1a",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_receive1a";
+            player playMoveNow "AOS_receive1a";
+        };
+    };
 };
 
 _handled;
