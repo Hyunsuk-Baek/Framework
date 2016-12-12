@@ -8,7 +8,7 @@ class EditorData
 	toggles=109;
 	class ItemIDProvider
 	{
-		nextID=5332;
+		nextID=5335;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={231.68996,28.653164,421.0419};
-		dir[]={0.25940502,-0.31894982,0.9115985};
-		up[]={0.087300502,0.94776404,0.30679154};
-		aside[]={0.961833,-6.7797373e-008,-0.27370059};
+		pos[]={5682.5532,25,134.68079};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -647,7 +647,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1765;
+		items=1768;
 		class Item0
 		{
 			dataType="Marker";
@@ -7002,6 +7002,7 @@ class Mission
 						angles[]={0,1.8784513,0};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -7011,7 +7012,6 @@ class Mission
 					};
 					id=1660;
 					type="C_man_polo_3_F";
-					atlOffset=0.41114807;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -11190,18 +11190,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={2837.75,495.62643,689.5498};
+						position[]={2837.75,495.62695,689.54999};
 						angles[]={0,1.2740903,0};
 					};
 					side="Civilian";
 					flags=1;
 					class Attributes
 					{
-						init="this allowDamage false;  " \n "this enableSimulation false;  " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""]; " \n "this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""extreme_shop""];";
+						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];  " \n "this addAction[localize ""STR_MAR_General_Store"",life_fnc_weaponShopMenu,""genstore""];  " \n "this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""extreme_shop""]; " \n "this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
 					};
 					id=4879;
 					type="C_Driver_3_F";
-					atlOffset=0.50152588;
+					atlOffset=0.50201416;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15552,6 +15552,7 @@ class Mission
 			};
 			id=2124;
 			type="A3L_HospitalBed";
+			atlOffset=7.6293945e-006;
 		};
 		class Item332
 		{
@@ -15569,6 +15570,7 @@ class Mission
 			};
 			id=2126;
 			type="A3L_HospitalBed";
+			atlOffset=7.6293945e-006;
 		};
 		class Item333
 		{
@@ -40767,7 +40769,7 @@ class Mission
 		class Item1759
 		{
 			dataType="Trigger";
-			position[]={4954.75,-11.499994,-513.125};
+			position[]={5183.375,-11.5,-217.625};
 			class Attributes
 			{
 				condition="this && (local player) && (vehicle player in thisList)";
@@ -40781,12 +40783,12 @@ class Mission
 			};
 			id=5318;
 			type="EmptyDetector";
-			atlOffset=31.738005;
+			atlOffset=49.35685;
 		};
 		class Item1760
 		{
 			dataType="Trigger";
-			position[]={5054.25,-35.5,10912.125};
+			position[]={5088.125,-35.5,10414.375};
 			class Attributes
 			{
 				condition="this && (local player) && (vehicle player in thisList)";
@@ -40805,7 +40807,7 @@ class Mission
 		class Item1761
 		{
 			dataType="Trigger";
-			position[]={-879.625,-158.125,5175.5};
+			position[]={-227.875,-124.625,5268.625};
 			angle=1.5707964;
 			class Attributes
 			{
@@ -40820,12 +40822,12 @@ class Mission
 			};
 			id=5320;
 			type="EmptyDetector";
-			atlOffset=-0.007522583;
+			atlOffset=-0.04473114;
 		};
 		class Item1762
 		{
 			dataType="Trigger";
-			position[]={10928.25,-23.25,5145.625};
+			position[]={10461,-23.25,5169.5};
 			angle=1.5707964;
 			class Attributes
 			{
@@ -40840,7 +40842,7 @@ class Mission
 			};
 			id=5321;
 			type="EmptyDetector";
-			atlOffset=26.834381;
+			atlOffset=-0.049999237;
 		};
 		class Item1763
 		{
@@ -40879,6 +40881,74 @@ class Mission
 			};
 			id=5329;
 			type="EmptyDetector";
+		};
+		class Item1765
+		{
+			dataType="Marker";
+			position[]={3548.125,62.624378,4456.25};
+			name="ATM_Maker_26";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=0.77999985;
+			id=5332;
+			atlOffset=3.8146973e-006;
+		};
+		class Item1766
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3548,63.910233,4456.125};
+				angles[]={6.2822089,2.4260082,0.0009765625};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_NOTF_ATM"",life_fnc_atmMenu,"""",0,false,false,"""",' isNull objectParent player && player distance _target < 4 '];";
+			};
+			id=5333;
+			type="Land_Atm_02_F";
+			atlOffset=-4.196167e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1767
+		{
+			dataType="Marker";
+			position[]={8933.625,53.135742,3346};
+			name="marker_59";
+			markerType="ELLIPSE";
+			type="ellipse";
+			colorName="ColorRed";
+			alpha=0.57174265;
+			fillName="DiagGrid";
+			a=600;
+			b=600;
+			id=5334;
+			atlOffset=-13.073914;
 		};
 	};
 };
