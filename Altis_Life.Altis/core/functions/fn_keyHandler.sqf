@@ -665,15 +665,15 @@ switch (_code) do {
     };
 	
 	//
-	//박수 Shift + F1
+	//똥 Shift + F1
     case 59:
     {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"AOS_clapping",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "AOS_clapping";
-            player playMoveNow "AOS_clapping";
+            [player,"AOS_Dung",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Dung";
+            player playMoveNow "AOS_Dung";
         };
     };
 	
@@ -689,7 +689,7 @@ switch (_code) do {
         };
     };
 	
-	//박수 Shift + F3
+	//바큐손풀기 Shift + F3
     case 61:
     {
         if(_shift) then {_handled = true;};
@@ -701,7 +701,7 @@ switch (_code) do {
         };
     };
 	
-	//박수 Shift + F4
+	//물구나무 Shift + F4
     case 62:
     {
         if(_shift) then {_handled = true;};
@@ -725,7 +725,7 @@ switch (_code) do {
         };
     };
 	
-	//자위1 Shift + F6
+	//자위2 Shift + F6
     case 64:
     {
         if(_shift) then {_handled = true;};
@@ -761,7 +761,19 @@ switch (_code) do {
         };
     };
 	
-	//기도 Shift + F9
+	//펀치 때리기 Shift + F9
+    case 67:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_punch3",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_punch3";
+            player playMoveNow "AOS_punch3";
+        };
+    };
+	
+	//펀치 맞는모션 Shift + F10
     case 67:
     {
         if(_shift) then {_handled = true;};
