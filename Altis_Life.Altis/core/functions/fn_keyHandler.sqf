@@ -761,8 +761,32 @@ switch (_code) do {
         };
     };
 	
-	//펀치 때리기 Shift + F9
+	//손가락 가르키기 Shift + F9
     case 67:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_Point",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Point";
+            player playMoveNow "AOS_Point";
+        };
+    };
+	
+	//엄지척 Shift + F10
+    case 68:
+    {
+        if(_shift) then {_handled = true;};
+        if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
+        {
+            [player,"AOS_Thumbsup",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_Thumbsup";
+            player playMoveNow "AOS_Thumbsup";
+        };
+    };
+    
+	//주먹질 Shift + F11
+    case 87:
     {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
@@ -772,16 +796,16 @@ switch (_code) do {
             player playMoveNow "AOS_punch3";
         };
     };
-	
-	//펀치 맞는모션 Shift + F10
-    case 67:
+    
+	//맞는모션 Shift + F12
+    case 88:
     {
         if(_shift) then {_handled = true;};
         if(_shift && {isTouchingGround player} && {stance player isEqualTo "STAND"} && {!life_is_arrested}) then
         {
-            [player,"AOS_receive1a",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
-            player switchMove "AOS_receive1a";
-            player playMoveNow "AOS_receive1a";
+            [player,"AOS_receive1b",true] remoteExecCall ["life_fnc_animSync",RCLIENT];
+            player switchMove "AOS_receive1b";
+            player playMoveNow "AOS_receive1b";
         };
     };
 };
