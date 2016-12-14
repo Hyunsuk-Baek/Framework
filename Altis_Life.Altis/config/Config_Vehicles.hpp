@@ -304,6 +304,18 @@ class CarShops {
             { "B_SDV_01_F", "" }
         };
     };
+	
+	class med_ship {
+        side = "med";
+        conditions = "";
+        vehicles[] = {
+            { "B_Boat_Transport_01_F", "" },
+            { "C_Scooter_Transport_01_F", "" },
+            { "C_Boat_Civil_01_police_F", "" },
+            //{ "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 4" },
+            { "B_SDV_01_F", "" }
+        };
+    };
 
     //Custom
     class civ_car_addon {
@@ -737,7 +749,7 @@ class LifeCfgVehicles {
 
     class B_Boat_Armed_01_minigun_F {
         vItemSpace = 175;
-        conditions = "license_cop_cg";
+        conditions = "license_cop_cg || {call life_mediclevel >=1}";
         price = 75000;
         textures[] = { };
     };
@@ -891,7 +903,7 @@ class LifeCfgVehicles {
 
     class C_Boat_Civil_01_police_F {
         vItemSpace = 185;
-        conditions = "license_cop_cg";
+        conditions = "license_cop_cg || {call life_mediclevel >=1}";
         price = 200000;
         textures[] = { };
     };
@@ -1333,7 +1345,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_SDV_01_F {
         vItemSpace = 50;
-        conditions = "license_civ_boat || {license_cop_cg}";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 250000;
         textures[] = {};
     };

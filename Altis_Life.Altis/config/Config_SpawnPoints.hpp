@@ -353,15 +353,15 @@ class CfgSpawnPoints {
             };
             
             class Emergency1 {
-                displayName = "Emergency Center 1";
-                spawnMarker = "medic_spawn_4";
+                displayName = "South Airport";
+                spawnMarker = "medic_spawn_5";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
 
             class Emergency2 {
-                displayName = "Emergency Center 2";
-                spawnMarker = "medic_spawn_5";
+                displayName = "Western Sea";
+                spawnMarker = "medic_spawn_6";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
