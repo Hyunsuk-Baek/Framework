@@ -19,6 +19,7 @@ if (hasInterface) then {
 [] execVM "Custom\CL.sqf";
 [] execVM "admintools\loop.sqf";	//Admin Helper
 [] execVM "Custom\teargas.sqf"; //TearGas
+null = [20] execVM "Custom\ALvolcano\alias_volcano.sqf"; //Volcano
 
 //Cop & Medic Radio disable
 enableRadio false;

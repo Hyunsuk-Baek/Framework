@@ -1204,7 +1204,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Heli_Light_01_civil_F { //m900
         vItemSpace = 100;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 655000;
         textures[] = {};
     };
@@ -1657,21 +1657,21 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class sab_RobinDR400_5 {
         vItemSpace = 100;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 2000000;
         textures[] = {};
     };
 
     class C_Plane_Civil_01_F {
         vItemSpace = 100;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 1500000;
         textures[] = {};
     };
 
     class C_Plane_Civil_01_racing_F {
         vItemSpace = 200;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 2200000;
         textures[] = {};
     };
@@ -1679,35 +1679,35 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class sab_cuav_trojan {
         vItemSpace = 30;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 700000;
         textures[] = {};
     };
 
     class sab_cuav_piper {
         vItemSpace = 50;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 1250000;
         textures[] = {};
     };
 
     class sab_FAAllegro {
         vItemSpace = 60;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 1400000;
         textures[] = {};
     };
 
     class sab_ultralight {
         vItemSpace = 60;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 1000000;
         textures[] = {};
     };
 
     class R_HotairBalloon {
         vItemSpace = 500;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 3000000;
         textures[] = {};
     };
