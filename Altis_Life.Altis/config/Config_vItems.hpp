@@ -253,7 +253,7 @@ class VirtualItems {
         displayName = "STR_Item_GoldBar";
         weight = 10;
         buyPrice = -1;
-        sellPrice = 200000;
+        sellPrice = 180000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_goldBar.paa";
@@ -331,7 +331,7 @@ class VirtualItems {
         displayName = "STR_Item_OilP";
         weight = 4;
         buyPrice = -1;
-        sellPrice = 3000;
+        sellPrice = 3200;
         illegal = false;
         edible = -1;
         icon = "icons\ico_oilProcessed.paa";
@@ -353,7 +353,7 @@ class VirtualItems {
         displayName = "STR_Item_CopperIngot";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 2200;
+        sellPrice = 2600;
         illegal = false;
         edible = -1;
         icon = "icons\ico_copper.paa";
@@ -375,7 +375,7 @@ class VirtualItems {
         displayName = "STR_Item_IronIngot";
         weight = 5;
         buyPrice = -1;
-        sellPrice = 5000;
+        sellPrice = 4300;
         illegal = false;
         edible = -1;
         icon = "icons\ico_iron.paa";
@@ -441,7 +441,7 @@ class VirtualItems {
         displayName = "STR_Item_DiamondC";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 8500;
+        sellPrice = 7000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_diamondCut.paa";
@@ -463,7 +463,7 @@ class VirtualItems {
         displayName = "STR_Item_CementBag";
         weight = 5;
         buyPrice = -1;
-        sellPrice = 5000;
+        sellPrice = 3400;
         illegal = false;
         edible = -1;
         icon = "icons\ico_cement.paa";
@@ -509,8 +509,8 @@ class VirtualItems {
         variable = "marijuana";
         displayName = "STR_Item_Marijuana";
         weight = 3;
-        buyPrice = 6750;
-        sellPrice = 6500;
+        buyPrice = 6950;
+        sellPrice = 6800;
         illegal = true;
         edible = -1;
         icon = "icons\ico_marijuana.paa";
@@ -532,8 +532,8 @@ class VirtualItems {
         variable = "cocaineProcessed";
         displayName = "STR_Item_CocaineP";
         weight = 4;
-        buyPrice = 13500;
-        sellPrice = 10000;
+        buyPrice = 12500;
+        sellPrice = 9000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_cocaineProcessed.paa";

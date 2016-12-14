@@ -70,8 +70,8 @@ class Life_Settings {
     /* Fuel System Configurations */
     pump_service = false; //Allow users to use pump service on the map. Default = false
     fuel_cost = 120; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
-    service_chopper = 2000; //Cost to service chopper at chopper service station(Repair/Refuel).
-    fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
+    service_chopper = 20000; //Cost to service chopper at chopper service station(Repair/Refuel).
+    fuelCan_refuel = 2500; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
 
     /* Gang System Configurations */
     gang_price = 990000; //Gang creation price. --Remember they are persistent so keep it reasonable to avoid millions of gangs.
@@ -79,7 +79,7 @@ class Life_Settings {
     gang_upgradeMultiplier = 2.5; //CURRENTLY NOT IN USE
 
     /* Housing System Configurations */
-    house_limit = 5; //Maximum number of houses a player can own.
+    house_limit = 3; //Maximum number of houses a player can own.
     houseGarage_buyPrice = 1000000;
     houseGarage_sellPrice = 350000;
 
@@ -121,7 +121,7 @@ class Life_Settings {
 
     /* Player Job System Configurations */
     delivery_points[] = { "dp_1", "dp_2", "dp_3", "dp_4", "dp_5", "dp_6", "dp_7", "dp_8", "dp_9", "dp_10", "dp_11", "dp_12", "dp_13", "dp_14", "dp_15", "dp_15", "dp_16", "dp_17", "dp_18", "dp_19", "dp_20", "dp_21", "dp_22", "dp_23", "dp_24", "dp_25" };
-    fuelTank_winMultiplier = 5; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
+    fuelTank_winMultiplier = 6; //Win Multiplier in FuelTank Missions. Increase for greater payout. Default = 1
 
     /* Search & Seizure System Configurations */
     seize_exempt[] = { "Binocular", "ItemWatch", "ItemCompass", "ItemGPS", "ItemMap", "NVGoggles", "FirstAidKit", "ToolKit", "Chemlight_red", "Chemlight_yellow", "Chemlight_green", "Chemlight_blue", "optic_ACO_grn_smg", "hgun_P07_snds_F", "hgun_Pistol_heavy_02_F", "hgun_ACPC2_F", "hgun_PDW2000_F" }; //Arma items that will not get seized from player inventories
@@ -166,7 +166,7 @@ class Life_Settings {
     /* crimes[] = {String, Bounty, Code} */
     crimes[] = {
         {"STR_Crime_187V","180000","187V"}, //로드킬
-        {"STR_Crime_187","180000","187"}, //살인
+        {"STR_Crime_187","200000","187"}, //살인
         {"STR_Crime_901","100000","901"}, //탈옥
         {"STR_Crime_215","5000","215"}, //차량절도시도
         {"STR_Crime_213","60000","213"}, //불법폭탄물사용
