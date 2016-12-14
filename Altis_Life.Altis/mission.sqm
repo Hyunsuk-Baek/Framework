@@ -8,11 +8,11 @@ class EditorData
 	toggles=109;
 	class ItemIDProvider
 	{
-		nextID=5460;
+		nextID=5467;
 	};
 	class MarkerIDProvider
 	{
-		nextID=63;
+		nextID=64;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={778.92645,115.01296,4881.3169};
-		dir[]={-0.40795195,-0.54885691,0.7296471};
-		up[]={-0.26785362,0.83590597,0.47907415};
-		aside[]={0.87286341,3.2247044e-008,0.4880214};
+		pos[]={8200.1641,29.135448,6234.5806};
+		dir[]={0.20972255,-0.8082568,0.55023307};
+		up[]={0.28786907,0.58882123,0.75526017};
+		aside[]={0.93443483,5.941838e-007,-0.35616446};
 	};
 };
 binarizationWanted=0;
@@ -661,7 +661,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1821;
+		items=1827;
 		class Item0
 		{
 			dataType="Marker";
@@ -1499,7 +1499,7 @@ class Mission
 			position[]={8475.8096,4.1525359,6925.8813};
 			name="cop_car_1";
 			type="Empty";
-			angle=112.96856;
+			angle=112.96855;
 			id=1238;
 		};
 		class Item78
@@ -7793,7 +7793,6 @@ class Mission
 					};
 					id=1681;
 					type="C_man_polo_3_F";
-					atlOffset=0.20101166;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10958,18 +10957,41 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8207.625,5.2514391,6249.4248};
-						angles[]={0,0.42065942,0};
+						position[]={8207.625,5.2513466,6249.4248};
+						angles[]={0,0.42065924,0};
 					};
 					side="Civilian";
 					flags=5;
 					class Attributes
 					{
-						init="this enableSimulation false;   " \n "this allowDamage false;   " \n "this addAction[localize""STR_Process_plywood"",life_fnc_processAction,""plywood"",0,false,false,"""",' life_inv_wood > 0 && !life_is_processing'];   " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""plywood"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""plywood"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""plywood"",0,false,false,"""",' !license_civ_plywood && playerSide == civilian ']; " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""]; " \n "this addAction[localize""STR_Shops_wood"",life_fnc_virt_menu,""wood""];";
+						init="this enableSimulation false;    " \n "this allowDamage false;    " \n "this addAction[localize""STR_Shops_Market"",life_fnc_virt_menu,""market""];  " \n "this addAction[localize""STR_Shops_wood"",life_fnc_virt_menu,""wood""];";
 					};
 					id=4875;
 					type="C_man_hunter_1_F";
-					atlOffset=0.0044202805;
+					atlOffset=0.004327774;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item92
 				{
@@ -15548,7 +15570,7 @@ class Mission
 			type="loc_Hospital";
 			colorName="ColorRed";
 			id=2075;
-			atlOffset=48.694229;
+			atlOffset=38.209129;
 		};
 		class Item323
 		{
@@ -15627,7 +15649,6 @@ class Mission
 			};
 			id=2117;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.20101166;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15668,7 +15689,6 @@ class Mission
 			};
 			id=2119;
 			type="A3L_HospitalBed2015";
-			atlOffset=0.20101166;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -15709,7 +15729,6 @@ class Mission
 			};
 			id=2124;
 			type="A3L_HospitalBed";
-			atlOffset=0.20079803;
 		};
 		class Item332
 		{
@@ -15727,7 +15746,6 @@ class Mission
 			};
 			id=2126;
 			type="A3L_HospitalBed";
-			atlOffset=0.18959808;
 		};
 		class Item333
 		{
@@ -15745,7 +15763,6 @@ class Mission
 			};
 			id=2127;
 			type="A3L_HospitalBed";
-			atlOffset=0.1932373;
 		};
 		class Item334
 		{
@@ -15763,7 +15780,6 @@ class Mission
 			};
 			id=2128;
 			type="A3L_HospitalBed";
-			atlOffset=0.19988251;
 		};
 		class Item335
 		{
@@ -15781,7 +15797,6 @@ class Mission
 			};
 			id=2129;
 			type="A3L_HospitalBed";
-			atlOffset=0.20101166;
 		};
 		class Item336
 		{
@@ -15799,7 +15814,6 @@ class Mission
 			};
 			id=2130;
 			type="A3L_HospitalBed";
-			atlOffset=0.20101166;
 		};
 		class Item337
 		{
@@ -15817,7 +15831,6 @@ class Mission
 			};
 			id=2131;
 			type="A3L_HospitalBed";
-			atlOffset=0.20101166;
 		};
 		class Item338
 		{
@@ -15835,7 +15848,6 @@ class Mission
 			};
 			id=2132;
 			type="A3L_HospitalBed";
-			atlOffset=0.20101166;
 		};
 		class Item339
 		{
@@ -30646,7 +30658,6 @@ class Mission
 			colorName="ColorGreen";
 			angle=0.77999985;
 			id=3716;
-			atlOffset=0.20101166;
 		};
 		class Item1206
 		{
@@ -38737,13 +38748,13 @@ class Mission
 		class Item1624
 		{
 			dataType="Marker";
-			position[]={8207.5,4.1445313,6249.5};
+			position[]={8207.5,-0,6249.5};
 			name="marker_364";
-			text="목공소";
+			text="합판 가게";
 			type="mil_box";
 			colorName="ColorBrown";
 			id=4882;
-			atlOffset=-0.0033640862;
+			atlOffset=-4.1478953;
 		};
 		class Item1625
 		{
@@ -41935,7 +41946,7 @@ class Mission
 			position[]={712.75,5.1142578,4901.625};
 			name="medic_west_heli_1";
 			type="Empty";
-			angle=106.99999;
+			angle=106.99998;
 			id=5443;
 			atlOffset=-0.048645973;
 		};
@@ -42023,9 +42034,142 @@ class Mission
 			position[]={609.5,-1.8627978e-030,4932};
 			name="med_ship_1";
 			type="Empty";
-			angle=254.10999;
+			angle=254.10995;
 			id=5452;
 			atlOffset=12.735785;
+		};
+		class Item1821
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7683.4839,20.901438,4823.375};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						init="this enableSimulation false;    " \n "this allowDamage false;    " \n "this addAction[localize""STR_Process_plywood"",life_fnc_processAction,""plywood"",0,false,false,"""",' life_inv_wood > 0 && !life_is_processing'];    " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""plywood"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""plywood"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""plywood"",0,false,false,"""",' !license_civ_plywood && playerSide == civilian ']; ";
+					};
+					id=5461;
+					type="C_man_w_worker_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=5460;
+		};
+		class Item1822
+		{
+			dataType="Marker";
+			position[]={7683.375,-4.7233936e-012,4823.25};
+			name="marker_wood_2";
+			text="목재소";
+			type="mil_box";
+			colorName="ColorBrown";
+			id=5462;
+			atlOffset=-20.9;
+		};
+		class Item1823
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7740.188,23.079586,4829.5488};
+				angles[]={0,0.76794487,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5463;
+			type="Land_LampDecor_F";
+		};
+		class Item1824
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7731.1763,23.079586,4842.4937};
+				angles[]={0,0.76794487,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5464;
+			type="Land_LampDecor_F";
+		};
+		class Item1825
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7696.125,23.079557,4816.375};
+				angles[]={0,0.41887903,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5465;
+			type="Land_LampDecor_F";
+			atlOffset=-2.8610229e-005;
+		};
+		class Item1826
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7674.375,23.079575,4824.625};
+				angles[]={0,0.47123891,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowdamage false;";
+			};
+			id=5466;
+			type="Land_LampDecor_F";
+			atlOffset=-1.1444092e-005;
 		};
 	};
 };
