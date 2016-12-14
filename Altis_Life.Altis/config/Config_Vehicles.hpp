@@ -614,21 +614,21 @@ class LifeCfgVehicles {
 
     class C_Rubberboat {
         vItemSpace = 125;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 25000;
         textures[] = { };
     };
 
     class C_Scooter_Transport_01_F {
         vItemSpace = 50;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 75000;
         textures[] = { };
     };
 
     class B_Heli_Transport_01_F { //ghost hawk
         vItemSpace = 200;
-        conditions = "license_cop_cAir";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 850000;
         textures[] = {
             { "Cop", "cop", {"textures\cop\ghosthawk_0.paa","textures\cop\ghosthawk_1.paa"}, "" },
@@ -638,7 +638,7 @@ class LifeCfgVehicles {
 
     class I_Heli_light_03_F { //hellcat
         vItemSpace = 200;
-        conditions = "license_cop_cAir";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 650000;
         textures[] = {
             { "Cop", "cop", {"textures\cop\cop_hellcat.paa"}, "" },
@@ -648,14 +648,14 @@ class LifeCfgVehicles {
 
     class O_Heli_Light_02_v2_F { //ORCA
         vItemSpace = 200;
-        conditions = "license_cop_cAir";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 750000;
         textures[] = {};
     };
 
     class O_Heli_Light_02_F { // ORCA ARMED
         vItemSpace = 200;
-        conditions = "license_cop_cAir";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 13000000;
         textures[] = {
             { "Desert Digi", "reb", {"\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"}, "" }
@@ -664,21 +664,21 @@ class LifeCfgVehicles {
 
     class O_Heli_Attack_02_black_F {
          vItemSpace = 200;
-         conditions = "license_cop_cAir";
+         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
          price = 2000000;
          textures[] = {};
     };
 
     class B_Plane_CAS_01_F {
          vItemSpace = 200;
-         conditions = "license_cop_cAir";
+         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
          price = 5000000;
          textures[] = {};
     };
 
     class O_Heli_Attack_02_F {
          vItemSpace = 200;
-         conditions = "license_cop_cAir";
+         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
          price = 41000000;
          textures[] = {};
     };
@@ -722,7 +722,7 @@ class LifeCfgVehicles {
 
     class I_MRAP_03_hmg_F { //strider hmg
         vItemSpace = 200;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 650000;
         textures[] = {
             { "Black", "cop", {"#(argb,8,8,3)color(0.05,0.05,0.05,1)"}, "" },
@@ -746,7 +746,7 @@ class LifeCfgVehicles {
 
     class I_Truck_02_covered_F { //zamak truck covered
         vItemSpace = 330;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 350000;
         textures[] = {
             { "Cola", "civ", {"textures\civ\cola_zamak_front.paa","textures\civ\cola_zamak_back.paa"}, "" },
@@ -757,7 +757,7 @@ class LifeCfgVehicles {
 
     class I_Truck_02_transport_F { //zamark transport
         vItemSpace = 300;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 550000;
         textures[] = {
             { "Orange", "civ", {
@@ -772,14 +772,14 @@ class LifeCfgVehicles {
 
     class O_Truck_03_device_F { //tempest device
         vItemSpace = 350;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 8000000;
         textures[] = { };
     };
 
     class B_Truck_01_transport_F { //hemett
         vItemSpace = 385;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 660000;
         textures[] = {
             { "yellow", "civ", {"#(argb,8,8,3)color(0.6,0.3,0.01,1)"}, ""},
@@ -790,14 +790,14 @@ class LifeCfgVehicles {
 
     class B_Truck_01_box_F { //hemtt box
         vItemSpace = 450;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 800000;
         textures[] = { };
     };
 
     class O_MRAP_02_F { //ifrit
         vItemSpace = 60;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 700000;
         textures[] = {
             { "Black Skull", "reb", {"textures\rebel\reb_black_ifrit_front.paa", "textures\rebel\reb_black_ifrit_back.paa"}, "" },
@@ -810,7 +810,7 @@ class LifeCfgVehicles {
 
     class O_MRAP_02_hmg_F { //ifrit hmg
         vItemSpace = 60;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 3500000;
         textures[] = {
             { "Black Skull", "reb", {"textures\rebel\reb_black_ifrit_front.paa", "textures\rebel\reb_black_ifrit_back.paa"}, "" },
@@ -879,7 +879,7 @@ class LifeCfgVehicles {
 
     class C_Boat_Civil_01_F {
         vItemSpace = 150;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 122000;
         textures[] = { };
     };
@@ -901,7 +901,7 @@ class LifeCfgVehicles {
 
     class C_Offroad_01_F {
         vItemSpace = 65;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 102500;
         textures[] = {
             { "US Police", "cop", {"textures\cop\police_offroad.paa"}, "" },
@@ -956,7 +956,7 @@ class LifeCfgVehicles {
 
     class C_Kart_01_Blu_F {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 50000;
         textures[] = {};
     };
@@ -1013,7 +1013,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
 //    class C_Hatchback_01_sport_F {
 //        vItemSpace = 45;
-//        conditions = "license_civ_driver";
+//        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
 //        price = 140000;
 //        textures[] = {
 //            { "Police", "cop", {"textures\cop\cop_hatchback.paa"}, "" },
@@ -1112,7 +1112,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Van_01_transport_F {
         vItemSpace = 130;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 135000;
         textures[] = {
             { "White", "civ", {
@@ -1187,7 +1187,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class C_Heli_Light_01_civil_F { //m900
         vItemSpace = 100;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 655000;
         textures[] = {};
     };
@@ -1336,7 +1336,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class C_Van_01_fuel_F {
         vItemSpace = 20;
         vFuelSpace = 17500;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 620000;
         textures[] = {
             { "White", "civ", {
@@ -1353,7 +1353,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class I_Truck_02_fuel_F {
         vItemSpace = 40;
         vFuelSpace = 40000;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 800000;
         textures[] = {
             { "White", "civ", {
@@ -1366,7 +1366,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class Jonzie_Tanker_Truck { //탱크로리 거대
         vItemSpace = 70;
         vFuelSpace = 50000;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2500000;
         textures[] = {};
     };
@@ -1410,70 +1410,70 @@ will modify the virtual space and the price of the vehicle, but other informatio
     ////////////////////////////// ADDON
     class max_bike_police {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 150000;
         textures[] = {};
     };
 
     class Mrshounka_ducati_police_p {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 700000;
         textures[] = {};
     };
 
     class max_impala_security {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 150000;
         textures[] = {};
     };
 
     class Mrshounka_bmw_gend {
         vItemSpace = 40;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 300000;
         textures[] = {};
     };
 
     class Mrshounka_rs4_gend_p_blanc {
         vItemSpace = 40;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1500000;
         textures[] = {};
     };
 
     class shounka_a3_audiq7_v2_gendarmerie {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1800000;
         textures[] = {};
     };
 
     class Mrshounka_agera_gend_p {
         vItemSpace = 30;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2300000;
         textures[] = {};
     };
 
     class 77FuryShr {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 200000;
         textures[] = {};
     };
 
     class 77FuryCop {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 200000;
         textures[] = {};
     };
 
     class Mrshounka_rs_2015_g {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 500000;
         textures[] = {};
     };
@@ -1490,14 +1490,14 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class shounka_a3_brinks_grise {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 800000;
         textures[] = {};
     };
 
     class Mrshounka_a3_308_gend {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 150000;
         textures[] = {};
     };
@@ -1518,63 +1518,63 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class max_BP_tahoe {
         vItemSpace = 60;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 230000;
         textures[] = {};
     };
 
     class Mrshounka_Volkswagen_Touareg_police_police {
         vItemSpace = 60;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 210000;
         textures[] = {};
     };
 
     class max_FBI_tahoe_undercover {
          vItemSpace = 120;
-         conditions = "license_civ_driver";
+         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
          price = 300000;
          textures[] = {};
     };
 
     class max_bus_pris {
          vItemSpace = 220;
-         conditions = "license_civ_driver";
+         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
          price = 400000;
          textures[] = {};
     };
 
     class shounka_a3_gendsprinter {
          vItemSpace = 160;
-         conditions = "license_civ_driver";
+         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
          price = 800000;
          textures[] = {};
     };
 
     class max_van_sheriff {
          vItemSpace = 120;
-         conditions = "license_civ_driver";
+         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
          price = 340000;
          textures[] = {};
     };
 
     class max_FBI_van {
          vItemSpace = 120;
-         conditions = "license_civ_driver";
+         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
          price = 500000;
          textures[] = {};
     };
 
     class max_FBI_tahoe {
          vItemSpace = 120;
-         conditions = "license_civ_driver";
+         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
          price = 400000;
          textures[] = {};
     };
 
     class police_heavy_heli {  //orca police
          vItemSpace = 130;
-         conditions = "license_civ_driver";
+         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
          price = 700000;
          textures[] = {};
     };
@@ -1602,7 +1602,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class max_towtruck {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 700000;
         textures[] = {};
     };
@@ -1619,42 +1619,42 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class shounka_a3_dafxf_euro6_f {
         vItemSpace = 350;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1900000;
         textures[] = {};
     };
 
     class Mrshounka_a3_iveco_f {
         vItemSpace = 480;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2550000;
         textures[] = {};
     };
 
     class shounka_a3_renaultmagnum_f {
         vItemSpace = 560;
-        conditions = "license_civ_trucking";
+        conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 3500000;
         textures[] = {};
     };
 
     class sab_RobinDR400_5 {
         vItemSpace = 100;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 2000000;
         textures[] = {};
     };
 
     class C_Plane_Civil_01_F {
         vItemSpace = 100;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 1500000;
         textures[] = {};
     };
 
     class C_Plane_Civil_01_racing_F {
         vItemSpace = 200;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 2200000;
         textures[] = {};
     };
@@ -1662,35 +1662,35 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class sab_cuav_trojan {
         vItemSpace = 30;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 700000;
         textures[] = {};
     };
 
     class sab_cuav_piper {
         vItemSpace = 50;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 1250000;
         textures[] = {};
     };
 
     class sab_FAAllegro {
         vItemSpace = 60;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 1400000;
         textures[] = {};
     };
 
     class sab_ultralight {
         vItemSpace = 60;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 1000000;
         textures[] = {};
     };
 
     class R_HotairBalloon {
         vItemSpace = 500;
-        conditions = "license_civ_pilot";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}"
         price = 3000000;
         textures[] = {};
     };
@@ -1698,56 +1698,56 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //Civ Boat
     class B_CBS_WaterShadow730_F {
         vItemSpace = 120;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 1500000;
         textures[] = {};
     };
 
     class BirdKTM_BambooRaft {
         vItemSpace = 100;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 50000;
         textures[] = {};
     };
 
     class COREV_O_SmallBoat {
         vItemSpace = 180;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 500000;
         textures[] = {};
     };
 
     class Lexx_Jetboat_H {
         vItemSpace = 150;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 2500000;
         textures[] = {};
     };
 
     class COREV_O_FishingBoat {
         vItemSpace = 260;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 3000000;
         textures[] = {};
     };
 
     class POP_Speed_yatch {
         vItemSpace = 210;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 4300000;
         textures[] = {};
     };
 
     class Mattaust_Fisher {
         vItemSpace = 600;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 10000000;
         textures[] = {};
     };
 
     class mr_max_freighter {
         vItemSpace = 500;
-        conditions = "license_civ_boat";
+        conditions = "license_civ_boat || {license_cop_cg} || {call life_mediclevel >=1}";
         price = 5600000;
         textures[] = {};
     };
@@ -1758,7 +1758,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //랭글러 지프
     class Tal_Wrangler_Red {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1200000;
         textures[] = {};
     };
@@ -1769,7 +1769,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //오픈 지프
     class max_AJ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 470000;
         textures[] = {};
     };
@@ -1777,7 +1777,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //해골 갱 Bike
     class max_bike {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 250000;
         textures[] = {};
     };
@@ -1787,7 +1787,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //Bowler Suv 2인승
     class Mrshounka_Bowler_c {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 400000;
         textures[] = {};
     };
@@ -1797,7 +1797,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //버기카
     class shounka_buggy {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 600000;
         textures[] = {};
     };
@@ -1808,7 +1808,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //낡은 버스
     class max_bus {
         vItemSpace = 150;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1500000;
         textures[] = {};
     };
@@ -1816,7 +1816,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //닷지 차져 2015년 버전
     class Mrshounka_a3_dodge15_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 260000;
         textures[] = {};
     };
@@ -1826,7 +1826,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //시보렛 Avalanche
     class shounka_avalanche {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 150000;
         textures[] = {};
     };
@@ -1836,7 +1836,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //citroen c4  4인승 해치백
     class Mrshounka_c4_p_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 200000;
         textures[] = {};
     };
@@ -1846,7 +1846,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //citroen ds3 4인승  해치백
     class Mrshounka_a3_ds3_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 160000;
         textures[] = {};
     };
@@ -1856,7 +1856,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //citroen ds4  4인승  해치백
     class shounka_a3_ds4_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 150000;
         textures[] = {};
     };
@@ -1866,7 +1866,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //citroen Nemo 귀여운 사각 ㅋ 2인승
     class shounka_nemo {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 170000;
         textures[] = {};
     };
@@ -1876,7 +1876,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //Clio RS  4인승 해치백
     class shounka_a3_cliors_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 130000;
         textures[] = {};
     };
@@ -1886,7 +1886,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //crwonVic 옛날 세단 4인승
     class max_CrownVic_blue {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 170000;
         textures[] = {};
     };
@@ -1897,7 +1897,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //ducati 오토바이 1인승
     class Mrshounka_ducati_p {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1400000;
         textures[] = {};
     };
@@ -1907,7 +1907,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //GMC Vandura 봉고
     class Mrshounka_Vandura_civ {
         vItemSpace = 100;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 260000;
         textures[] = {};
     };
@@ -1917,7 +1917,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //폭스바겐 골프
     class Mrshounka_golfvi_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 400000;
         textures[] = {};
     };
@@ -1927,7 +1927,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //험머 H3  6인
     class max_H3_red {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 900000;
         textures[] = {};
     };
@@ -1936,7 +1936,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //임팔라 세단 5인
     class max_impala_black {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 210000;
         textures[] = {};
     };
@@ -1945,7 +1945,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //JEEP Blinde 4인승
     class Mrshounka_jeep_blinde_noir {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 450000;
         textures[] = {};
     };
@@ -1955,7 +1955,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //jeep 그랜드 체로키 4인승
     class Mrshounka_cherokee_noir {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 500000;
         textures[] = {};
     };
@@ -1965,7 +1965,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //jeep 오픈 2인승
     class max_jeep_green {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 400000;
         textures[] = {};
     };
@@ -1975,7 +1975,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //벤츠 구형 스포츠카
     class Mrshounka_mercedes_190_p_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 900000;
         textures[] = {};
     };
@@ -1983,7 +1983,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //벤츠 c63 AMG 2015
     class Mrshounka_c63_2015_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 3200000;
         textures[] = {};
     };
@@ -1991,7 +1991,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //벤츠 스프린터
     class shounka_a3_pompier_sprinter {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1000000;
         textures[] = {};
     };
@@ -2000,7 +2000,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //푸조 207 RC
     class Mrshounka_207_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 290000;
         textures[] = {};
     };
@@ -2008,7 +2008,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //골프 308 GTI 푸조
     class Mrshounka_a3_308_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 370000;
         textures[] = {};
     };
@@ -2016,7 +2016,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //포르쉐 카이엔
     class Mrshounka_cayenne_p_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1200000;
         textures[] = {};
     };
@@ -2024,7 +2024,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //RENAULT 소형 해치백 2인승
     class Mrshounka_r5_noir {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 450000;
         textures[] = {};
     };
@@ -2033,7 +2033,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     // renault megane RS 2015  4인승 해치백 3도어
     class Mrshounka_megane_rs_2015_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 400000;
         textures[] = {};
     };
@@ -2041,7 +2041,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //renault twingo 해치백 4인승 소형
     class Mrshounka_twingo_p {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 250000;
         textures[] = {};
     };
@@ -2049,7 +2049,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //벤츠 스마트 2인승
     class Mrshounka_a3_smart_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 200000;
         textures[] = {};
     };
@@ -2059,7 +2059,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //SUV 5인승 맥스 - 파노라마선루프 SUV
     class max_suv_black {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 500000;
         textures[] = {};
     };
@@ -2068,7 +2068,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //옛날 van 6인승
     class max_van_white {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 300000;
         textures[] = {};
     };
@@ -2081,7 +2081,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //폭스바겐 투아렉 4인승 suv
     class Mrshounka_Volkswagen_Touareg_bleufonce {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 300000;
         textures[] = {};
     };
@@ -2089,7 +2089,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //야마하 오토바이
     class Mrshounka_yamaha_p {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 240000;
         textures[] = {};
     };
@@ -2099,7 +2099,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //썰매
     class jean_sleigh {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 3300000;
         textures[] = {};
     };
@@ -2107,7 +2107,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //몬스터트럭
     class A3L_MonsterTruck {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2700000;
         textures[] = {};
     };
@@ -2115,7 +2115,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //아제라 스포츠
     class Mrshounka_agera_p {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 5700000;
         textures[] = {};
     };
@@ -2125,7 +2125,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //닷지 차져
     class max_charger_black {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 360000;
         textures[] = {};
     };
@@ -2136,7 +2136,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //LT sport
     class dbo_LT_01 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 600000;
         textures[] = {};
     };
@@ -2144,7 +2144,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //라이칸 하이퍼스포트
     class Mrshounka_lykan_c {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 6700000;
         textures[] = {};
     };
@@ -2152,7 +2152,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //Flipcar
     class A3L_Flipcar {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1700000;
         textures[] = {};
     };
@@ -2160,7 +2160,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //롤스로이스 팬텀 검정 ( 대통령차)
     class max_vipcar {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 5100000;
         textures[] = {};
     };
@@ -2168,7 +2168,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //쇼핑카
     class sga_shopping_cart {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 500000;
         textures[] = {};
     };
@@ -2176,7 +2176,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //쇼핑카 몬스터
     class sga_shopping_cart_monster {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 800000;
         textures[] = {};
     };
@@ -2184,7 +2184,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //호버 보드
     class sga_hover_board {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1000000;
         textures[] = {};
     };
@@ -2194,7 +2194,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //1969 Dodge 슈퍼 비
     class SIG_SuperBeeB {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 400000;
         textures[] = {};
     };
@@ -2204,7 +2204,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //아우디 RS4
     class Mrshounka_rs4_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 750000;
         textures[] = {};
     };
@@ -2214,7 +2214,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //아우디 RS5
     class shounka_a3_rs5_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 900000;
         textures[] = {};
     };
@@ -2224,7 +2224,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //아우디 RS6
     class shounka_rs6 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1000000;
         textures[] = {};
     };
@@ -2234,7 +2234,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //BMW 1 시리즈 M세단
     class Mrshounka_bmwm1_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 400000;
         textures[] = {};
     };
@@ -2245,7 +2245,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //BMW 세단 2인승  검정
     class max_BMW {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 500000;
         textures[] = {};
     };
@@ -2255,7 +2255,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //BMW  GTR3레이싱
     class max_BMW_M3_GTR {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2100000;
         textures[] = {};
     };
@@ -2265,7 +2265,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //BMW M 6
     class Mrshounka_bmwm6_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1200000;
         textures[] = {};
     };
@@ -2275,7 +2275,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //시보레 몬스터 트럭
     class shounka_monsteur {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 3700000;
         textures[] = {};
     };
@@ -2301,7 +2301,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //Ford gt 스포츠카
     class shounka_gt {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 700000;
         textures[] = {};
     };
@@ -2317,7 +2317,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //ford 머스탱
     class Mrshounka_mustang_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 540000;
         textures[] = {};
     };
@@ -2336,7 +2336,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //험머 H1  //4인
     class Mrshounka_hummer_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1200000;
         textures[] = {};
     };
@@ -2346,7 +2346,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //험머     H2 //4인
     class shounka_h2 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1100000;
         textures[] = {};
     };
@@ -2356,7 +2356,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //람보르기니 가야르도
     class max_lambo {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 6700000;
         textures[] = {};
     };
@@ -2382,7 +2382,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //람보르기니 베네노 veneno
     class Mrshounka_veneno_c {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 9000000;
         textures[] = {};
     };
@@ -2393,7 +2393,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //롤스로이스 팬텀 ( vip )  크롬색
     class max_vipcar1 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 4700000;
         textures[] = {};
     };
@@ -2401,7 +2401,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //아우디 리무진
     class shounka_limo_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 6700000;
         textures[] = {};
     };
@@ -2412,7 +2412,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //링컨 1969
     class Mrshounka_lincoln_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 1000000;
         textures[] = {};
     };
@@ -2422,7 +2422,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //맥라렌 mp4-12c
     class shounka_mp4 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7700000;
         textures[] = {};
     };
@@ -2430,7 +2430,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //벤츠 CLK
     class shounka_clk {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2700000;
         textures[] = {};
     };
@@ -2438,7 +2438,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //닛산 GTR 2012
     class Mrshounka_a3_gtr_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2000000;
         textures[] = {};
     };
@@ -2459,7 +2459,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //푸조 308 오픈카 2인승
     class Mrshounka_a3_308_rcz {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 800000;
         textures[] = {};
     };
@@ -2469,7 +2469,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //푸조 508 세단
     class shounka_a3_peugeot508_civ_noir {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 500000;
         textures[] = {};
     };
@@ -2479,7 +2479,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //포르쉐 911
     class shounka_porsche911 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2700000;
         textures[] = {};
     };
@@ -2487,7 +2487,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //포르쉐 911 92년식
     class mrshounka_92_civ {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2100000;
         textures[] = {};
     };
@@ -2495,7 +2495,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     //옛날 머슬카 Transam 2인승
     class shounka_transam {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 600000;
         textures[] = {};
     };
@@ -2556,34 +2556,34 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class dbo_crosser {
         vItemSpace = 20;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 300000;
         textures[] = {};
     };
 
     class sfp_wheelchair {
         vItemSpace = 100;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 50000;
         textures[] = {};
     };
     class Skyline_Bus_01_F {
         vItemSpace = 300;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2500000;
         textures[] = {};
     };
 
     class ivory_rs4 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 750000;
         textures[] = {};
     };
 
     class ivory_e36 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 700000;
         textures[] = {};
     };
@@ -2622,7 +2622,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class ivory_190e {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 600000;
         textures[] = {};
     };
@@ -2640,91 +2640,91 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class ivory_r34 {
         vItemSpace = 50;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 850000;
         textures[] = {};
     };
 
     class ivory_gti {
         vItemSpace = 40;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 600000;
         textures[] = {};
     };
 
     class ivory_veyron {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_gt500 {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_supra_topsecret {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_lfa {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_elise {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_f1 {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_mp4 {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_c {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class ivory_supra {
         vItemSpace = 80;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 7000000;
         textures[] = {};
     };
 
     class Jonzie_Forklift {
         vItemSpace = 30;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 200000;
         textures[] = {};
     };
 
     class Jonzie_Tow_Truck {
         vItemSpace = 150;
-        conditions = "license_civ_driver";
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2000000;
         textures[] = {};
     };
