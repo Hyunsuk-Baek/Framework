@@ -23,7 +23,7 @@ class WeaponShops {
     //Armory Shops
     class gun {
         name = "Billy Joe's Firearms";
-        side = "";
+        side = "civ";
         conditions = "license_civ_gun";
         items[] = {
             { "hgun_Rook40_F", "", 12500, 500, "" },
@@ -134,7 +134,7 @@ class WeaponShops {
     class rebeldonator {
         name = "Donator Shop";
         side = "civ";
-        conditions = "";
+        conditions = "license_civ_rebel || {call life_donorlevel >= 1}";
         items[] = {
             { "hgun_007_SW_M10_gold", "", 110000, 2000, "call life_donorlevel >= 1" },
             { "hgun_007_SW_M10_special", "", 110000, 2000, "call life_donorlevel >= 1" },
@@ -253,7 +253,7 @@ class WeaponShops {
             { "Sasimi_Water", "", 100000, 500, "" }
         };
         mags[] = {
-            { "Sasimi_Mag", "", 100000, -1, "" }
+            { "Sasimi_Mag", "", 50000, -1, "" }
         };
         accs[] = {
         };
@@ -325,7 +325,7 @@ class WeaponShops {
     class cop_basic {
         name = "Altis Cop Shop";
         side = "cop";
-        conditions = "";
+        conditions = "call life_coplevel >= 1";
         items[] = {
             { "tf_anprc152", "", 4000, 980, "" }, //Bluefor personal - 5km ( 30-512Mhz)
             { "tf_anprc148jem", "", 4000, 980, "" }, //Independent - personal - 5km ( 30-512Mhz)
@@ -376,7 +376,7 @@ class WeaponShops {
     class cop_patrol {
         name = "Altis Patrol Officer Shop";
         side = "cop";
-        conditions = "";
+        conditions = "call life_coplevel >= 2";
         items[] = {
             { "arifle_MX_F", "", 150000, 10000, "" },
             { "SMG_02_F", "", 100000, 10000, "" },
@@ -418,46 +418,46 @@ class WeaponShops {
     class cop_sergeant {
         name = "Altis Sergeant Officer Shop";
         side = "cop";
-        conditions = "";
+        conditions = "call life_coplevel >= 4";
         items[] = {
-            { "Pstl9x19_CZ75B", "", 150000, 25000, "call life_coplevel >= 3" }, // CZ-75B
-            { "hgun_007_Colt1911", "", 150000, 25000, "call life_coplevel >= 3" },
-            { "Pstl11x23_M1911", "", 150000, 25000, "call life_coplevel >= 3" },
-            { "Pstl9x19_FNGP35", "", 150000, 25000, "call life_coplevel >= 3" },
-            { "Pstl9x19_92FS", "", 150000, 25000, "call life_coplevel >= 3" },
-            { "Pstl11x23_SAARevolver", "", 250000, 25000, "call life_coplevel >= 3" },
-            { "Pstl11x23_Revolver", "", 250000, 25000, "call life_coplevel >= 3" },
+            { "Pstl9x19_CZ75B", "", 150000, 25000, "" }, // CZ-75B
+            { "hgun_007_Colt1911", "", 150000, 25000, "" },
+            { "Pstl11x23_M1911", "", 150000, 25000, "" },
+            { "Pstl9x19_FNGP35", "", 150000, 25000, "" },
+            { "Pstl9x19_92FS", "", 150000, 25000, "" },
+            { "Pstl11x23_SAARevolver", "", 250000, 25000, "" },
+            { "Pstl11x23_Revolver", "", 250000, 25000, "" },
 
-            { "srifle_EBR_F", "", 300000, 25000, "call life_coplevel >= 4" },//mk18
-            { "srifle_DMR_01_F", "", 220000, 25000, "call life_coplevel >= 4" },//rahim
-            { "srifle_DMR_05_hex_F", "cyrus(DLC)", 330000, 25000, "call life_coplevel >= 4" },//cyrus
-            { "LMG_Mk200_F", "", 850000, 25000, "call life_coplevel >= 4" },//mk200
-            { "srifle_LRR_F", "", 450000, 25000, "call life_coplevel >= 4" },
-			{ "arifle_ARX_blk_F", "Type115 Apex", 450000, 25000, "call life_coplevel >= 4" },
+            { "srifle_EBR_F", "", 300000, 25000, "" },//mk18
+            { "srifle_DMR_01_F", "", 220000, 25000, "" },//rahim
+            { "srifle_DMR_05_hex_F", "cyrus(DLC)", 330000, 25000, "" },//cyrus
+            { "LMG_Mk200_F", "", 850000, 25000, "" },//mk200
+            { "srifle_LRR_F", "", 450000, 25000, "" },
+			{ "arifle_ARX_blk_F", "Type115 Apex", 450000, 25000, "" },
 
-            { "optic_SOS", "", 25000, -1, "call life_coplevel >= 4" },
-            { "optic_DMS", "", 30000, -1, "call life_coplevel >= 4" },
-            { "optic_Hamr", "", 25000, -1, "call life_coplevel >= 4" },
-            { "optic_NVS", "", 80000, -1, "call life_coplevel >= 4" },
-            { "optic_KHS_blk", "", 45000, -1, "call life_coplevel >= 4" },
-            { "acc_pointer_IR", "", 20000, -1, "call life_coplevel >= 4" }
+            { "optic_SOS", "", 25000, -1, "" },
+            { "optic_DMS", "", 30000, -1, "" },
+            { "optic_Hamr", "", 25000, -1, "" },
+            { "optic_NVS", "", 80000, -1, "" },
+            { "optic_KHS_blk", "", 45000, -1, "" },
+            { "acc_pointer_IR", "", 20000, -1, "" }
         };
         mags[] = {
-            { "15Rnd_9x19_CZ75B", "", 10000, -1, "call life_coplevel >= 3" },
-            { "9Rnd_45ACP_Mag", "", 10000, -1, "call life_coplevel >= 3" },
-            { "13Rnd_9x19_FNGP35", "", 10000, -1, "call life_coplevel >= 3" },
-            { "15Rnd_9x19_92FS", "", 10000, -1, "call life_coplevel >= 3" },
-            { "6Rnd_45ACP_Cylinder", "", 10000, -1, "call life_coplevel >= 3" },
+            { "15Rnd_9x19_CZ75B", "", 10000, -1, "" },
+            { "9Rnd_45ACP_Mag", "", 10000, -1, "" },
+            { "13Rnd_9x19_FNGP35", "", 10000, -1, "" },
+            { "15Rnd_9x19_92FS", "", 10000, -1, "" },
+            { "6Rnd_45ACP_Cylinder", "", 10000, -1, "" },
 
-            { "20Rnd_762x51_Mag", "", 10000, -1, "call life_coplevel >= 4" },
-            { "10Rnd_762x54_Mag", "", 10000, -1, "call life_coplevel >= 4" },
-            { "10Rnd_93x64_DMR_05_Mag", "", 10000, -1, "call life_coplevel >= 4" },
-            { "200Rnd_65x39_cased_Box", "", 100000, -1, "call life_coplevel >= 4" },
-            { "200Rnd_65x39_cased_Box_Tracer", "", 100000, -1, "call life_coplevel >= 4" },
-            { "7Rnd_408_Mag", "", 50000, -1, "call life_coplevel >= 4" },
-			{ "30Rnd_65x39_caseless_green", "", 50000, -1, "call life_coplevel >= 4" },
-			{ "30Rnd_65x39_caseless_green_mag_Tracer", "", 50000, -1, "call life_coplevel >= 4" },
-			{ "10Rnd_50BW_Mag_F", "", 50000, -1, "call life_coplevel >= 4" }
+            { "20Rnd_762x51_Mag", "", 10000, -1, "" },
+            { "10Rnd_762x54_Mag", "", 10000, -1, "" },
+            { "10Rnd_93x64_DMR_05_Mag", "", 10000, -1, "" },
+            { "200Rnd_65x39_cased_Box", "", 100000, -1, "" },
+            { "200Rnd_65x39_cased_Box_Tracer", "", 100000, -1, "" },
+            { "7Rnd_408_Mag", "", 50000, -1, "" },
+			{ "30Rnd_65x39_caseless_green", "", 50000, -1, "" },
+			{ "30Rnd_65x39_caseless_green_mag_Tracer", "", 50000, -1, "" },
+			{ "10Rnd_50BW_Mag_F", "", 50000, -1, "" }
         };
         accs[] = {
         };
@@ -466,29 +466,29 @@ class WeaponShops {
     class cop_mastershop {
         name = "Altis police master Shop";
         side = "cop";
-        conditions = "";
+        conditions = "call life_coplevel >= 5";
         items[] = {
-            { "srifle_GM6_F", "", 450000, 25000, "call life_coplevel >= 5" },//lynx
-            { "LMG_Zafir_F", "", 550000, 25000, "call life_coplevel >= 5" },//zafir
-            { "MMG_01_hex_F", "", 700000, 25000, "call life_coplevel >= 5" }, //NAVID
-            { "launch_Titan_F", "", 1500000, 25000, "call life_coplevel >= 5" },
-            { "launch_B_Titan_short_F", "", 1500000, 25000, "call life_coplevel >= 5" },
+            { "srifle_GM6_F", "", 450000, 25000, "" },//lynx
+            { "LMG_Zafir_F", "", 550000, 25000, "" },//zafir
+            { "MMG_01_hex_F", "", 700000, 25000, "" }, //NAVID
+            { "launch_Titan_F", "", 1500000, 25000, "" },
+            { "launch_B_Titan_short_F", "", 1500000, 25000, "" },
 
-            { "optic_LRPS", "", 100000, -1, "call life_coplevel >= 5" },
-            { "optic_Hamr", "", 100000, -1, "call life_coplevel >= 5" },
-            { "optic_tws", "", 150000, -1, "call life_coplevel >= 5" },
-            { "optic_Nightstalker", "", 130000, -1, "call life_coplevel >= 5" },
-            { "acc_pointer_IR", "", 30000, -1, "call life_coplevel >= 5" }
+            { "optic_LRPS", "", 100000, -1, "" },
+            { "optic_Hamr", "", 100000, -1, "" },
+            { "optic_tws", "", 150000, -1, "" },
+            { "optic_Nightstalker", "", 130000, -1, "" },
+            { "acc_pointer_IR", "", 30000, -1, "" }
         };
         mags[] = {
-            { "5Rnd_127x108_Mag", "", 50000, -1, "call life_coplevel >= 5" },
-            { "5Rnd_127x108_APDS_Mag", "", 50000, -1, "call life_coplevel >= 5" },
-            { "150Rnd_762x54_Box", "", 100000, -1, "call life_coplevel >= 5" },
-            { "150Rnd_762x54_Box_Tracer", "", 100000, -1, "call life_coplevel >= 5" },
-            { "150Rnd_93x64_Mag", "", 100000, -1, "call life_coplevel >= 5" },
-            { "Titan_AA", "", 100000, -1, "call life_coplevel >= 5" },
-            { "Titan_AT", "", 100000, -1, "call life_coplevel >= 5" },
-            { "Titan_AP", "", 100000, -1, "call life_coplevel >= 5" }
+            { "5Rnd_127x108_Mag", "", 50000, -1, "" },
+            { "5Rnd_127x108_APDS_Mag", "", 50000, -1, "" },
+            { "150Rnd_762x54_Box", "", 100000, -1, "" },
+            { "150Rnd_762x54_Box_Tracer", "", 100000, -1, "" },
+            { "150Rnd_93x64_Mag", "", 100000, -1, "" },
+            { "Titan_AA", "", 100000, -1, "" },
+            { "Titan_AT", "", 100000, -1, "" },
+            { "Titan_AP", "", 100000, -1, "" }
         };
         accs[] = {
         };
@@ -497,40 +497,40 @@ class WeaponShops {
     class cop_donatorshop {
 		name = "Altis police donator Shop";
 		side = "cop";
-		conditions = "";
+		conditions = "call life_donorlevel >=1";
 		items[] = {
-            { "hgun_007_SW_M10_gold", "", 110000, 2000, "call life_donorlevel >=1" },
-            { "hgun_007_SW_M10_special", "", 110000, 2000, "call life_donorlevel >=1" },
-            { "hgun_007_W_PPK", "", 110000, 2000, "call life_donorlevel >=1" },
+            { "hgun_007_SW_M10_gold", "", 110000, 2000, "" },
+            { "hgun_007_SW_M10_special", "", 110000, 2000, "" },
+            { "hgun_007_W_PPK", "", 110000, 2000, "" },
 
             { "Pstl762x25_CZ52", "", 110000, 2000, "call life_donorlevel >=2" },
             { "Pstl762x25_TT33", "", 110000, 2000, "call life_donorlevel >=2" },
             { "arifle_SPAR_01_blk_F", "", 450000, 25000, "call life_donorlevel >=2" },
 			{ "arifle_SPAR_02_blk_F", "", 450000, 25000, "call life_donorlevel >=2" },
 			{ "arifle_SPAR_03_blk_F", "", 450000, 25000, "call life_donorlevel >=2" },
-			{ "LMG_03_F", "", 850000, 25000, "call life_donorlevel >=1" },
+			{ "LMG_03_F", "", 850000, 25000, "" },
 
 
-            { "optic_AMS", "", 100000, -1, "call life_donorlevel >=1" },
-            { "optic_KHS_hex", "", 100000, -1, "call life_donorlevel >=1" },
-            { "optic_KHS_tan", "", 150000, -1, "call life_donorlevel >=1" },
-            { "optic_AMS_khk", "", 130000, -1, "call life_donorlevel >=1" }
+            { "optic_AMS", "", 100000, -1, "" },
+            { "optic_KHS_hex", "", 100000, -1, "" },
+            { "optic_KHS_tan", "", 150000, -1, "" },
+            { "optic_AMS_khk", "", 130000, -1, "" }
 
 		};
 		mags[] = {
-            { "6Rnd_45ACP_Cylinder", "", 10000, -1, "call life_donorlevel >=1" },
-            { "8Rnd_762x25_TT33", "", 10000, -1, "call life_donorlevel >=1" },
-            { "8Rnd_765x17_Mag", "", 10000, -1, "call life_donorlevel >=1" },
+            { "6Rnd_45ACP_Cylinder", "", 10000, -1, "" },
+            { "8Rnd_762x25_TT33", "", 10000, -1, "" },
+            { "8Rnd_765x17_Mag", "", 10000, -1, "" },
 
-			{ "30Rnd_556x45_Stanag", "", 50000, -1, "call life_donorlevel >=1" },
-			{ "30Rnd_556x45_Stanag_green", "", 50000, -1, "call life_donorlevel >=1" },
-			{ "30Rnd_556x45_Stanag_Tracer_Green", "", 50000, -1, "call life_donorlevel >=1" },
-			{ "150Rnd_556x45_Drum_Mag_F", "", 100000, -1, "call life_donorlevel >=1" },
-			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 100000, -1, "call life_donorlevel >=1" },
-			{ "20Rnd_762x51_Mag", "", 100000, -1, "call life_donorlevel >=1" },
-			{ "200Rnd_556x45_Box_F", "", 200000, -1, "call life_donorlevel >=1" },
-			{ "200Rnd_556x45_Box_Red_F", "", 200000, -1, "call life_donorlevel >=1" },
-			{ "200Rnd_556x45_Box_Tracer_Red_F", "", 200000, -1, "call life_donorlevel >=1" }
+			{ "30Rnd_556x45_Stanag", "", 50000, -1, "" },
+			{ "30Rnd_556x45_Stanag_green", "", 50000, -1, "" },
+			{ "30Rnd_556x45_Stanag_Tracer_Green", "", 50000, -1, "" },
+			{ "150Rnd_556x45_Drum_Mag_F", "", 100000, -1, "" },
+			{ "150Rnd_556x45_Drum_Mag_Tracer_F", "", 100000, -1, "" },
+			{ "20Rnd_762x51_Mag", "", 100000, -1, "" },
+			{ "200Rnd_556x45_Box_F", "", 200000, -1, "" },
+			{ "200Rnd_556x45_Box_Red_F", "", 200000, -1, "" },
+			{ "200Rnd_556x45_Box_Tracer_Red_F", "", 200000, -1, "" }
 		};
 		accs[] = {
 		};
@@ -540,7 +540,7 @@ class WeaponShops {
     class med_basic {
         name = "store";
         side = "med";
-        conditions = "";
+        conditions = "call life_mediclevel >= 1";
         items[] = {
             { "tf_anprc152", "", 4000, 980, "" }, //Bluefor personal - 5km ( 30-512Mhz)
             { "tf_anprc148jem", "", 4000, 980, "" }, //Independent - personal - 5km ( 30-512Mhz)
