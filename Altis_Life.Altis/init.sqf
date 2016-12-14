@@ -49,5 +49,5 @@ disableRemoteSensors true;
 //Maker Delete
 {_x setMarkerAlphaLocal 0} forEach
 [
-  "del_obj_1","del_obj_2","del_obj_3","del_obj_4","del_obj_5","del_obj_6","del_obj_7","del_obj_8","del_obj_9","del_obj_10","del_obj_11","del_obj_12","del_obj_13","del_obj_14","del_obj_15","del_obj_16","del_obj_17","del_obj_18"
+  "del_obj_1","del_obj_2","del_obj_3","del_obj_4","del_obj_5","del_obj_6","del_obj_7","del_obj_8","del_obj_9","del_obj_10","del_obj_11","del_obj_12","del_obj_13","del_obj_14","del_obj_15","del_obj_16","del_obj_17","del_obj_18", "del_obj_westsea"
 ];

@@ -282,6 +282,10 @@ _markername18="del_obj_18";
 _terrainobjects18=nearestTerrainObjects [(getMarkerPos _markername18),[],(getmarkersize _markername18)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects18;
 
+_markername19="del_obj_westsea"; 
+_terrainobjects19=nearestTerrainObjects [(getMarkerPos _markername19),[],(getmarkersize _markername19)select 0]; 
+{hideObjectGlobal _x} foreach _terrainobjects19;
+
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Server Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
