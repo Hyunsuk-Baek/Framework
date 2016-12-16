@@ -80,7 +80,11 @@ class CarShops {
             { "O_Plane_CAS_02_F", "" }, //네오프론
             { "C_Plane_Civil_01_racing_F", "" }, //Caesar BTT 타노아 경비행기
             { "sab_ultralight", "" },        //addon // 경비행기 1인승
-            { "R_HotairBalloon", "" }        //addon // 열기구
+            { "R_HotairBalloon", "" },        //addon // 열기구
+			{ "ARMSCor_A109_Civ", "" },	//addon // 빨간 헬기
+			{ "ej_S94", "" },	//addon	//UH-60 흰색 프로팰러 미래형 노 어드밴스
+			{ "ej_UH60M_UT", "" },	//addon	//UH-60 일반 갈색 노 어드밴스
+			{ "Boeing_CH_47_F_T", "" }	//addon	//치누크갈색
         };
     };
 
@@ -121,7 +125,8 @@ class CarShops {
             { "O_Heli_Transport_04_covered_F",  "" },
             { "O_Heli_Transport_04_bench_F",  "" },
             { "O_T_LSV_02_unarmed_F",  "" },
-            { "O_T_LSV_02_armed_F",  "" }
+            { "O_T_LSV_02_armed_F",  "" },
+			{ "kyo_CH47_HC3",  "" }	//반군 치누크(국방색) 노 어드밴스
             //addon
 //            { "max_CG_heli",  "call life_donorlevel >= 2" } //uFO
         };
@@ -190,7 +195,9 @@ class CarShops {
             { "I_Heli_Transport_02_F",  "" },
             { "O_Heli_Transport_04_F",  "" },
             { "O_Heli_Transport_04_medevac_F",  "" },
-            { "I_Heli_light_03_unarmed_F",  "" }
+            { "I_Heli_light_03_unarmed_F",  "" },
+			{ "ej_UH60M_MEV",  "" },
+			{ "ej_UH92_MEV",  "" }
         };
     };
 
@@ -289,7 +296,8 @@ class CarShops {
             { "B_Heli_Attack_01_F", "call life_coplevel >= 5" },
             { "O_Heli_Attack_02_black_F", "call life_coplevel >= 5" },
             { "B_Plane_CAS_01_F", "call life_coplevel >= 5" },
-            { "B_UAV_01_F", "call life_donorlevel >= 1" }
+            { "B_UAV_01_F", "call life_donorlevel >= 1" },
+			{ "kyo_MH47E_HC", "" }
         };
     };
 
@@ -2759,4 +2767,37 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 1000000;
         textures[] = {};
     };
+	
+	class ARMSCor_A109_Civ { //빨간 헬기
+        vItemSpace = 220;
+        conditions = "license_civ_pilot || {license_med_mAir}";
+        price = 800000;
+        textures[] = {};
+    };
+	
+	class Boeing_CH_47_F_T { //치누크 갈색
+        vItemSpace = 350;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 1800000;
+        textures[] = {};
+    };
+	
+	class ej_S94 { //UH-60 시리즈 노 어드밴스(미래형,시민,메딕)
+        vItemSpace = 400;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 85000000;
+        textures[] = {};
+    };	
+	class ej_UH60M_UT : ej_S94{};
+	class ej_UH60M_MEV : ej_S94{};
+	class ej_UH92_MEV : ej_S94{};
+	
+	class kyo_CH47_HC3 { //치누크 갈색 노 어드밴스(경찰&반군)
+        vItemSpace = 350;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 90000000;
+        textures[] = {};
+    };
+
+	class kyo_MH47E_HC : kyo_CH47_HC3{};
 };
