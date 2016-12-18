@@ -1629,7 +1629,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class police_heavy_heli {  //orca police
          vItemSpace = 130;
-         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+         conditions = "license_cop_cAir";
          price = 700000;
          textures[] = {};
     };
