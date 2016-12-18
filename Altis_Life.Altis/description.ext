@@ -228,20 +228,20 @@ class CfgSounds {
 	{
 		name = "murmur_8"; // Name for mission editor
 		sound[] = {\Sounds\Custom\Volcano\murmur_8.ogg, db+10, 1.0};
-		titles[] = {0, ""};	
-	};		
+		titles[] = {0, ""};
+	};
 	class eruptie_1
 	{
 		name = "eruptie_1";
 		sound[] = {"\Sounds\Custom\Volcano\eruptie_1.ogg", db+20, 1};
 		titles[] = {};
-	};		
+	};
 	class eruptie_2
 	{
 		name = "eruptie_2";
 		sound[] = {"\Sounds\Custom\Volcano\eruptie_2.ogg", db+20, 1};
 		titles[] = {};
-	};	
+	};
 	class eruptie_3
 	{
 		name = "eruptie_3";
@@ -253,19 +253,19 @@ class CfgSounds {
 		name = "tunet_v_4"; // Name for mission editor
 		sound[] = {\Sounds\Custom\Volcano\tunet_v_4.ogg, db+15, 1.0};
 		titles[] = {0, ""};
-	};	
+	};
 	class tunet_v_5
 	{
 		name = "tunet_v_5"; // Name for mission editor
 		sound[] = {\Sounds\Custom\Volcano\tunet_v_5.ogg, db+15, 1.0};
 		titles[] = {0, ""};
-	};	
+	};
 	class tunet_v_6
 	{
 		name = "tunet_v_6"; // Name for mission editor
 		sound[] = {\Sounds\Custom\Volcano\tunet_v_6.ogg, db+15, 1.0};
 		titles[] = {0, ""};
-	};	
+	};
 	class tunet_v_9
 	{
 		name = "tunet_v_9"; // Name for mission editor

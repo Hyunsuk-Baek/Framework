@@ -195,4 +195,12 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+
+    class milkwork {
+        variable = "milkwork";
+        displayName = "STR_License_Milk";
+        price = 50000;
+        illegal = false;
+        side = "civ";
+    };
 };

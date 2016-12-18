@@ -13,14 +13,14 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "toolkit_infinite", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "toolkit_infinite", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw","milk" };
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "toolkit_infinite", "fuelFull", "peach", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "toolkit_infinite", "fuelFull", "peach", "defibrillator","Fixtool"};
     };
 
     class rebel {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "toolkit_infinite", "fuelFull", "defusekit" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "toolkit_infinite", "fuelFull", "defusekit", "Fixtool" };
     };
 
     //Custom
@@ -141,6 +141,13 @@ class VirtualShops {
         side = "";
         conditions = "";
         items[] = { "wood", "chainsaw", "plywood" };
+    };
+
+    class milkshop {
+        name = "STR_Shops_milk";
+        side = "";
+        conditions = "";
+        items[] = { "Raw_milk", "milkingmachine" };
     };
 };
 
@@ -891,8 +898,8 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\custom\ico_bomul.paa";
-    };   
-	
+    };
+
     class wood {
         variable = "wood";
         displayName = "STR_Item_wood";
@@ -902,8 +909,8 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\custom\wood.paa";
-    }; 
-	
+    };
+
     class plywood {
         variable = "plywood";
         displayName = "STR_Item_plywood";
@@ -913,8 +920,8 @@ class VirtualItems {
         illegal = false;
         edible = -1;
         icon = "icons\custom\wood.paa";
-    }; 
-	
+    };
+
     class chainsaw {
         variable = "chainsaw";
         displayName = "STR_Item_chainsaw";
@@ -937,4 +944,47 @@ class VirtualItems {
         icon = "icons\custom\ico_mic.paa";
     };
 
+    class Fixtool {
+        variable = "Fixtool";
+        displayName = "STR_Item_fixtool";
+        weight = 5;
+        buyPrice = 10000;
+        sellPrice = 5000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\ico_storageSmall.paa";
+    };
+
+    class Raw_milk {
+        variable = "Raw_milk";
+        displayName = "STR_Item_rawmilk";
+        weight = 2;
+        buyPrice = -1;
+        sellPrice = 500;
+        illegal = false;
+        edible = 10;
+        icon = "icons\Custom\ico_Raw_Milk.paa";
+    };
+
+    class milk {
+        variable = "milk";
+        displayName = "STR_Item_milk";
+        weight = 2;
+        buyPrice = 5000;
+        sellPrice = 3000;
+        illegal = false;
+        edible = 100;
+        icon = "icons\Custom\ico_Milk.paa";
+    };
+
+    class milkingmachine {
+        variable = "milkingmachine";
+        displayName = "STR_Item_milkingmachine";
+        weight = 2;
+        buyPrice = 150000;
+        sellPrice = 3000;
+        illegal = false;
+        edible = -1;
+        icon = "icons\Custom\ico_mlikingmachine.png";
+    };
 };

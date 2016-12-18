@@ -269,6 +269,7 @@ class Life_Client_Core {
         class spikeStrip {};
         class storageBox {};
         class weed {};
+		class Fixtool {};
     };
 
     class Medical_System {

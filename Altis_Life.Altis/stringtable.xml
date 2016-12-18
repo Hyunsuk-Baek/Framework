@@ -141,6 +141,9 @@
             <Portuguese>Mercado</Portuguese>
             <Polish>Market Altis</Polish>
         </Key>
+        <Key ID="STR_Shops_Milk">
+            <Original>우유 상점</Original>
+        </Key>
         <Key ID="STR_Shops_Rebel">
             <Original>반군 상점</Original>
             <Czech>Rebel Market</Czech>
@@ -322,6 +325,9 @@
         </Key>
 		<Key ID="STR_Shops_wood">
             <Original>The Carpentry Shop</Original>
+        </Key>
+        <Key ID="STR_Shops_milk">
+            <Original>The Milk Shop</Original>
         </Key>
     </Package>
     <Package name="Global">
@@ -6882,6 +6888,18 @@
         <Key ID="STR_Item_broadcastmic">
             <Original>뉴스마이크</Original>
         </Key>
+        <Key ID="STR_Item_fixtool">
+            <Original>오브젝트 수리도구</Original>
+        </Key>
+        <Key ID="STR_Item_rawmilk">
+            <Original>원유</Original>
+        </Key>
+        <Key ID="STR_Item_milk">
+            <Original>우유</Original>
+        </Key>
+        <Key ID="STR_Item_milkingmachine">
+            <Original>착유기</Original>
+        </Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">
@@ -7117,6 +7135,9 @@
         </Key>
         <Key ID="STR_License_Plywood">
             <Original>Plywood License</Original>
+        </Key>
+        <Key ID="STR_License_Milk">
+            <Original>Milk License</Original>
         </Key>
     </Package>
     <Package name="More_Item_Strings">
@@ -7799,6 +7820,9 @@
 
         <Key ID="STR_Process_plywood">
             <Original>Making Plywood</Original>
+        </Key>
+        <Key ID="STR_Process_milk">
+            <Original>Making Milk</Original>
         </Key>
     </Package>
     <Package name="Medical_Strings">

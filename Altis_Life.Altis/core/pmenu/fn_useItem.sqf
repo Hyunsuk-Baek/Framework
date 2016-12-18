@@ -90,7 +90,7 @@ switch (true) do {
             };
         };
     };
-    
+
     case (_item in ["cocaine_processed","heroin_processed"]): {
         if ([false,_item,1] call life_fnc_handleInv) then {
             life_thirst = life_thirst / 2;
@@ -114,7 +114,7 @@ switch (true) do {
             };
         };
     };
-	
+
     case (_item isEqualTo "marijuana"): {
         if(([false,_item,1] call life_fnc_handleInv)) then {
             [] spawn life_fnc_weed;
@@ -125,6 +125,11 @@ switch (true) do {
         [] spawn life_fnc_newsBroadcast;
         closeDialog 0;
 	   };
+
+       case (_item isEqualTo "Fixtool"): {
+        [] spawn life_fnc_Fixtool;
+        closeDialog 0;
+    };
 
     default {
         hint localize "STR_ISTR_NotUsable";

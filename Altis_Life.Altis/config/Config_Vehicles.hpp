@@ -83,8 +83,7 @@ class CarShops {
             { "R_HotairBalloon", "" },        //addon // 열기구
 			{ "ARMSCor_A109_Civ", "" },	//addon // 빨간 헬기
 			{ "ej_S94", "" },	//addon	//UH-60 흰색 프로팰러 미래형 노 어드밴스
-			{ "ej_UH60M_UT", "" },	//addon	//UH-60 일반 갈색 노 어드밴스
-			{ "Boeing_CH_47_F_T", "" }	//addon	//치누크갈색
+			{ "ej_UH60M_UT", "" }	//addon	//UH-60 일반 갈색 노 어드밴스
         };
     };
 
@@ -126,6 +125,7 @@ class CarShops {
             { "O_Heli_Transport_04_bench_F",  "" },
             { "O_T_LSV_02_unarmed_F",  "" },
             { "O_T_LSV_02_armed_F",  "" },
+            { "Boeing_CH_47_F_T", "" },  //addon //치누크갈색
 			{ "kyo_CH47_HC3",  "" }	//반군 치누크(국방색) 노 어드밴스
             //addon
 //            { "max_CG_heli",  "call life_donorlevel >= 2" } //uFO
@@ -283,21 +283,19 @@ class CarShops {
         side = "cop";
         conditions = "call life_coplevel >= 1";
         vehicles[] = {
-            { "B_Heli_Light_01_F", "" },
-            { "B_Heli_Transport_03_unarmed_F", "" },
-            { "B_Heli_Transport_01_F", "" },
-            { "O_Heli_Light_02_unarmed_F", "" },
-            { "I_Heli_Transport_02_F", "" },
-            { "police_heavy_heli", "" },// 경찰 오르카//애드온
+            { "B_Heli_Light_01_F", "" },    //허밍버드
+            { "B_Heli_Transport_03_unarmed_F", "" },    //휴론 비무장
+            { "B_Heli_Transport_01_F", "" },    //휴론
+            { "O_Heli_Light_02_unarmed_F", "" },    //오르카 비무장
+            { "I_Heli_Transport_02_F", "" },    //모호크
             { "B_T_VTOL_01_vehicle_F", "" }, //black fish 36인용 차량수송용
-            { "I_Heli_light_03_F", "call life_coplevel >= 4" },
-            { "O_Heli_Light_02_v2_F", "call life_coplevel >= 4" },
-            { "B_Heli_Light_01_armed_F", "call life_coplevel >= 5" },
-            { "B_Heli_Attack_01_F", "call life_coplevel >= 5" },
-            { "O_Heli_Attack_02_black_F", "call life_coplevel >= 5" },
-            { "B_Plane_CAS_01_F", "call life_coplevel >= 5" },
-            { "B_UAV_01_F", "call life_donorlevel >= 1" },
-			{ "kyo_MH47E_HC", "" }
+            { "I_Heli_light_03_F", "call life_coplevel >= 4" }, //헬켓
+            { "O_Heli_Light_02_v2_F", "call life_coplevel >= 4" },  //오르카 무장
+            { "B_Heli_Light_01_armed_F", "call life_coplevel >= 5" },   //포니
+            { "B_Heli_Attack_01_F", "call life_coplevel >= 5" },    //블랙풋
+            { "O_Heli_Attack_02_black_F", "call life_coplevel >= 5" },  //카이만
+            { "B_Plane_CAS_01_F", "call life_coplevel >= 5" },  //와이프아웃
+			{ "kyo_MH47E_HC", "" }   //치누크 노어드밴스
         };
     };
 
@@ -312,7 +310,7 @@ class CarShops {
             { "B_SDV_01_F", "" }
         };
     };
-	
+
 	class med_ship {
         side = "med";
         conditions = "";
@@ -1276,7 +1274,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class O_Heli_Light_02_unarmed_F { //orca
         vItemSpace = 210;
-        conditions = "license_civ_pilot || {license_med_mAir}";
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 750000;
         textures[] = {
             { "Black", "cop", {
@@ -1318,7 +1316,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
                 "\a3\air_f_beta\Heli_Transport_02\Data\Skins\heli_transport_02_3_dahoman_co.paa"
             }, "" },
             { "Black", "cop", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
+                "a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
             }, "" },
             { "Rebel CAMO", "reb", {
                 "textures\rebel\reblbirdcamo1.paa"
@@ -2847,31 +2845,31 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 1000000;
         textures[] = {};
     };
-	
+
 	class ARMSCor_A109_Civ { //빨간 헬기
         vItemSpace = 220;
         conditions = "license_civ_pilot || {license_med_mAir}";
         price = 800000;
         textures[] = {};
     };
-	
+
 	class Boeing_CH_47_F_T { //치누크 갈색
         vItemSpace = 350;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 1800000;
         textures[] = {};
     };
-	
+
 	class ej_S94 { //UH-60 시리즈 노 어드밴스(미래형,시민,메딕)
         vItemSpace = 400;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 85000000;
         textures[] = {};
-    };	
+    };
 	class ej_UH60M_UT : ej_S94{};
 	class ej_UH60M_MEV : ej_S94{};
 	class ej_UH92_MEV : ej_S94{};
-	
+
 	class kyo_CH47_HC3 { //치누크 갈색 노 어드밴스(경찰&반군)
         vItemSpace = 350;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
