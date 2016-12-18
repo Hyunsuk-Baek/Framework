@@ -28,7 +28,7 @@ class CarShops {
             { "C_Offroad_01_repair_F", "" },
             { "C_Offroad_02_unarmed_green_F", "" },
             { "C_Offroad_02_unarmed_orange_F", "" },
-            { "C_Offroad_02_unarmed_red_F", "" },
+            { "C_Offroad_02_unarmed_red_F", "" }
         };
     };
 
