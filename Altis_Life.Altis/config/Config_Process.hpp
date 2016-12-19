@@ -102,7 +102,7 @@ class ProcessAction {
         MaterialsGive[] = {{"plywood",4}};
         Text = "STR_Process_plywood";
         //ScrollText = "Make Plywood";
-        NoLicenseCost = 30000;
+        NoLicenseCost = 600;
     };
 
     class rawMilk {
@@ -110,6 +110,6 @@ class ProcessAction {
         MaterialsGive[] = {{"milk",1}};
         Text = "STR_Process_milk";
         //ScrollText = "Make Milk";
-        NoLicenseCost = 30000;
+        NoLicenseCost = 500;
     };
 };

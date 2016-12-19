@@ -191,7 +191,7 @@ class Licenses {
     class plywood {
         variable = "plywood";
         displayName = "STR_License_Plywood";
-        price = 50000;
+        price = 100000;
         illegal = false;
         side = "civ";
     };
@@ -199,7 +199,7 @@ class Licenses {
     class milkwork {
         variable = "milkwork";
         displayName = "STR_License_Milk";
-        price = 50000;
+        price = 100000;
         illegal = false;
         side = "civ";
     };
