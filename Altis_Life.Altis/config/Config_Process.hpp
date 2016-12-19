@@ -105,8 +105,8 @@ class ProcessAction {
         NoLicenseCost = 30000;
     };
 
-    class Raw_milk {
-        MaterialsReq[] = {{"Raw_milk",2}};
+    class rawMilk {
+        MaterialsReq[] = {{"rawMilk",2}};
         MaterialsGive[] = {{"milk",1}};
         Text = "STR_Process_milk";
         //ScrollText = "Make Milk";

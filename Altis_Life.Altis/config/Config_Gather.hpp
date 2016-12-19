@@ -137,7 +137,7 @@ Example 2:
             amount = 1;
             zones[] = { "milk_1"};
             item = "milkingmachine";
-            mined[] = { "Raw_milk" };
+            mined[] = { "rawMilk" };
             zoneSize = 5;
         };
     };

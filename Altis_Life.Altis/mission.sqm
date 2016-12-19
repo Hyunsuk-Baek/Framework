@@ -13724,7 +13724,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this allowDamage false;   " \n "this enableSimulation false;   " \n "this addAction[localize""STR_Shops_Milk"",life_fnc_virt_menu,""milkshop""]; " \n " " \n "this addAction[localize""STR_Process_milk"",life_fnc_processAction,""Raw_milk"",0,false,false,"""",' life_inv_Raw_milk > 0 && !life_is_processing']; " \n "     " \n "this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""milkwork"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""milkwork"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""milkwork"",0,false,false,"""",' !license_civ_milkwork && playerSide == civilian ']; ";
+						init="this allowDamage false;  this enableSimulation false;  this addAction[localize""STR_Shops_Milk"",life_fnc_virt_menu,""milkshop""]; this addAction[localize""STR_Process_milk"",life_fnc_processAction,""rawMilk"",0,false,false,"""",' life_inv_rawMilk > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""milkwork"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""milkwork"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""milkwork"",0,false,false,"""",' !license_civ_milkwork && playerSide isEqualTo civilian ']; ";
 					};
 					id=5774;
 					type="C_man_w_worker_F";

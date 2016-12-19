@@ -147,7 +147,7 @@ class VirtualShops {
         name = "STR_Shops_milk";
         side = "";
         conditions = "";
-        items[] = { "Raw_milk", "milkingmachine" };
+        items[] = { "rawMilk", "milkingmachine" };
     };
 };
 
@@ -955,15 +955,15 @@ class VirtualItems {
         icon = "icons\ico_storageSmall.paa";
     };
 
-    class Raw_milk {
-        variable = "Raw_milk";
-        displayName = "STR_Item_rawmilk";
+    class rawMilk {
+        variable = "rawMilk";
+        displayName = "STR_Item_rawMilk";
         weight = 2;
         buyPrice = -1;
         sellPrice = 500;
         illegal = false;
         edible = 10;
-        icon = "icons\Custom\ico_Raw_Milk.paa";
+        icon = "icons\Custom\ico_rawMilk.paa";
     };
 
     class milk {
@@ -974,7 +974,7 @@ class VirtualItems {
         sellPrice = 3000;
         illegal = false;
         edible = 100;
-        icon = "icons\Custom\ico_Milk.paa";
+        icon = "icons\Custom\ico_milk.paa";
     };
 
     class milkingmachine {

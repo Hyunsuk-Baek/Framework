@@ -6891,7 +6891,7 @@
         <Key ID="STR_Item_fixtool">
             <Original>오브젝트 수리도구</Original>
         </Key>
-        <Key ID="STR_Item_rawmilk">
+        <Key ID="STR_Item_rawMilk">
             <Original>원유</Original>
         </Key>
         <Key ID="STR_Item_milk">
