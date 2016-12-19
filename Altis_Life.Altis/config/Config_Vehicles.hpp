@@ -1418,7 +1418,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class Jonzie_Tanker_Truck { //탱크로리 거대
         vItemSpace = 70;
-        vFuelSpace = 50000;
+        vFuelSpace = 52000;
         conditions = "license_civ_trucking || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 2500000;
         textures[] = {};
