@@ -2878,4 +2878,34 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
 	class kyo_MH47E_HC : kyo_CH47_HC3{};
+
+
+	/// 경매 특별 // 카샵에는 안팔고 디비로만 넣어줄차
+	class bv_458_skin_camo { // 카모 페라리
+         vItemSpace = 60;
+         conditions = "";
+         price = 5000000;
+         textures[] = {};
+    };
+
+    class bv_458_skin_camo_urban { //카모 얼반 페라리
+         vItemSpace = 60;
+         conditions = "";
+         price = 5000000;
+         textures[] = {};
+    };
+
+    class bv_monster_skin_camo { // 카모 몬스터 트럭
+         vItemSpace = 60;
+         conditions = "";
+         price = 5000000;
+         textures[] = {};
+    };
+
+    class bv_caressa_gt_burgundy { // 포르쉐 카레라 GT 레드와인
+         vItemSpace = 60;
+         conditions = "";
+         price = 5000000;
+         textures[] = {};
+    };
 };
