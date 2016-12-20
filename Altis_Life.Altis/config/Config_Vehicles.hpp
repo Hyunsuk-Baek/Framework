@@ -2896,7 +2896,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     };
 
     class bv_monster_skin_camo { // 카모 몬스터 트럭
-         vItemSpace = 60;
+         vItemSpace = 100;
          conditions = "";
          price = 5000000;
          textures[] = {};
