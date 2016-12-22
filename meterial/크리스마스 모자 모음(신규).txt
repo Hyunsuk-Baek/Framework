@@ -1,0 +1,110 @@
+//쿠키맨
+Gorb_AngryGingerbread1
+Gorb_AngryGingerbread2
+Gorb_AngryGingerbread3
+Gorb_AngryGingerbreadSwirl1
+Gorb_AngryGingerbreadSwirl2
+Gorb_Gingerbread1
+
+//루돌프 머리띠
+Gorb_Antler
+
+//크리스마스 비니
+Gorb_PuddingHat
+
+//크리스마스 전체 동그란 가면
+Gorb_PuddingMask1
+Gorb_PuddingMask2
+
+//쿨 엘프 가면(선그라스 전체 머리)
+Gorb_CoolElfMask1
+Gorb_CoolElfMask2
+Gorb_CoolElfMask3
+
+//엘프 마스크(선그라스 없는 전체 머리)
+Gorb_ElfMask1
+Gorb_ElfMask2
+Gorb_ElfMask3
+
+//엘프 모자
+Gorb_Elf
+
+//패스티벌 모자
+Gorb_FestiveHat1
+Gorb_FestiveHat2
+Gorb_FestiveHat3
+Gorb_FestiveHat4
+Gorb_FestiveHat5
+Gorb_FestiveHat6
+Gorb_FestiveHat7
+Gorb_FestiveHat8
+
+//홀리데이 모자(일반 모자랑 비슷)
+Gorb_HolidayBaseballHat1
+Gorb_HolidayBaseballHat2
+Gorb_HolidayBaseballHat3
+Gorb_HolidayBaseballHat4
+Gorb_HolidayBaseballHat5
+Gorb_HolidayBaseballHat6
+Gorb_HolidayBaseballHat7
+Gorb_HolidayBaseballHat8
+
+//수면모자 짧은거
+Gorb_PlaidHat1
+Gorb_PlaidHat2
+Gorb_PlaidHat3
+Gorb_PlaidHat4
+
+//수면모자 긴거
+Gorb_KnittedHat1
+Gorb_KnittedHat2
+Gorb_KnittedHat3
+Gorb_KnittedHat4
+
+//할머니 가면(얼굴 전체)
+Gorb_MrsClaus1
+Gorb_MrsClaus2
+Gorb_MrsClaus3
+
+//펭귄 마스크(얼굴 전체)
+Gorb_Penguin
+
+//루돌프 마스크(얼굴 전체)
+Gorb_Reindeer
+
+//무서운 산타 마스크(얼굴 전체)
+Gorb_RoughSantaClaus1
+Gorb_RoughSantaClaus2
+Gorb_RoughSantaClaus3
+
+//산타모자 빨간
+Gorb_SantaHat
+
+//산타모자 녹색
+Gorb_SantaHat_Green
+
+//산타마자(얼굴 전체)
+Gorb_Santa_White
+Gorb_Santa_Tan
+Gorb_Santa_Black
+
+//눈사람 모자(얼굴 전체)
+Gorb_Snowman
+
+//트리 모자(얼굴 전체)
+Gorb_TreeMask1
+Gorb_TreeMask2
+Gorb_TreeMask3
+Gorb_TreeMask4
+Gorb_TreeMask5
+Gorb_TreeMask6
+
+//칠면조 모자(얼굴 전체)
+Gorb_TurkeyMask1
+Gorb_TurkeyMask2
+Gorb_TurkeyMask3
+
+//못생긴 할머니(얼굴 전체)
+Gorb_UglyMrsClaus1
+Gorb_UglyMrsClaus2
+Gorb_UglyMrsClaus3
