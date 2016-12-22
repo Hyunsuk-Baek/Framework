@@ -1,0 +1,44 @@
+
+
+vvv_traje_policia_1 //경찰 정석 모자
+vvv_traje_policia_2 // 상동 . 모자없는거
+vvv_traje_policia_3 // 경찰 콧수염 모자. 보안관 
+vvv_mujer_policia // 여경 ( 캐쥬얼 )
+
+vvv_character_swat_3 // 스왓 블루 (얼굴 ㄴㄴ) 
+vvv_character_swat // 스왓 검정 풀장비 ( 얼굴 ㄴㄴ) 
+vvv_character_swat_2 // 스왓 화이트 (얼굴 ㄴㄴ) 
+
+U_GirlSet_PD_uniform // 못생 여경 검정 
+
+vvv_traje_bombero_2 // 소방관 (황토)
+vvv_traje_bombero // 소방관 (검정)
+vvv_traje_doctor  // 의사 (얼굴 ㄴㄴ) 
+
+
+vvv_traje_dallas // 은행강도(정장, 가면, 달라스)
+
+vvv_traje_ejecutivo_1 // 신사
+vvv_character_jennifer // 여전사 ( 제니퍼 ) 
+vvv_character_messi // 메시 
+vvv_character_prosti // 나체녀 
+vvv_traje_robot_1 // 로봇 
+vvv_character_protibanador // 비키니 ( 얼굴은 안바뀜 - 설정 사용자에서 바꾸면됨) 
+vvv_character_sub_zero // 제로 ( 스타워즈? ) 
+
+vvv_traje_romano // 중세 기사 ( 얼굴 ㄴㄴ , 모자있음) 
+vvv_character_wandelina // 여자 힙합 
+vvv_character_wandelina_2 // 여자 힙합 2 
+
+U_GirlSet1_uniform // 못생긴여자 셋 
+U_GirlSet2_uniform
+U_GirlSet3_uniform
+U_GirlSet4_uniform
+
+// 여자 (얼굴ㄴ ㄴ, 셔츠. 팬츠만)
+vvv_elena_fisher // 여자 셔츠/팬츠 ( 얼굴 ㄴㄴ) 
+vvv_elena_fisher~16
+EF_FEM_2U // 자켓 바지 
+EF_FEM_3_2 // 검치마 스타킹 
+EF_FEM_3A_2 // 빨치마 스타킹 
+
