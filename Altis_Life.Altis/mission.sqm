@@ -12277,7 +12277,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""];";
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""]; this addAction[localize""STR_MAR_Character_Store"",life_fnc_clothingMenu,""characterShop""];";
 						disableSimulation=1;
 					};
 					id=5271;
@@ -12380,7 +12380,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""]; " \n " " \n "";
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""]; this addAction[localize""STR_MAR_Character_Store"",life_fnc_clothingMenu,""characterShop""];" \n " " \n "";
 						disableSimulation=1;
 					};
 					id=5273;
@@ -12484,7 +12484,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""]; " \n " " \n "";
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""]; this addAction[localize""STR_MAR_Character_Store"",life_fnc_clothingMenu,""characterShop""];" \n " " \n "";
 						disableSimulation=1;
 					};
 					id=5275;
@@ -12587,7 +12587,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""]; " \n " " \n "";
+						init="this allowDamage false; this enableSimulation false; this addAction[localize""STR_MAR_Clothing_Store"",life_fnc_clothingMenu,""bruce""];this addAction[localize""STR_MAR_Addon_Clothing_Store"",life_fnc_clothingMenu,""clothes_addon""]; this addAction[localize""STR_MAR_Character_Store"",life_fnc_clothingMenu,""characterShop""];" \n " " \n "";
 						disableSimulation=1;
 					};
 					id=5277;

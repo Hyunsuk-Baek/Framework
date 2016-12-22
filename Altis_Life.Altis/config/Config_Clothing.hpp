@@ -175,10 +175,10 @@ class Clothing {
             { "A3L_SpookyMummy", "", 5000, "" },
 			{ "A3L_Worker_Outfit", "", 5000, "" },
             // { "A3L_Zombie", "", 5000, "" },
-			{ "A3L_Prisoner_Outfit", "prisoner1", 5000, "" },
-            { "mgsr_civ_01_uniform", "prisoner2", 5000, "" },
-            { "mgsr_robe_dirty", "prisoner3", 5000, "" },
-            { "mgsr_robe_muddy", "prisoner4", 5000, "" },
+//			{ "A3L_Prisoner_Outfit", "prisoner1", 5000, "" },탈옥범 구분위해 판매종료
+//            { "mgsr_civ_01_uniform", "prisoner2", 5000, "" },
+//            { "mgsr_robe_dirty", "prisoner3", 5000, "" },
+//            { "mgsr_robe_muddy", "prisoner4", 5000, "" },
             { "xmas_santa_blufor_uniform", "santa blue", 5000, "call life_donorlevel >= 1" },
             { "xmas_santa_ind_uniform", "santa green", 5000, "call life_donorlevel >= 1" },
             { "xmas_santa_opfor_uniform", "santa red", 5000, "call life_donorlevel >= 1" },
@@ -342,6 +342,34 @@ class Clothing {
         };
     };
 
+    class characterShop {
+        title = "STR_Shops_C_Character";
+        conditions = "call life_donorlevel >= 1";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, "" },
+            { "vvv_traje_dallas", "", 999999, "call life_donorlevel >= 1" },
+            { "vvv_traje_ejecutivo_1", "", 999999, "call life_donorlevel >= 1" },
+            { "vvv_character_messi", "", 999999, "call life_donorlevel >= 2" },
+            { "vvv_traje_robot_1", "", 999999, "call life_donorlevel >= 4" },
+            { "vvv_character_sub_zero", "", 999999, "call life_donorlevel >= 3" },
+            { "vvv_traje_romano", "", 999999, "call life_donorlevel >= 3" }
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, "" }
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, "" }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, "" }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, "" }
+        };
+    };
+
+
     class cop {
         title = "STR_Shops_C_Police";
         conditions = "";
@@ -360,6 +388,14 @@ class Clothing {
             { "U_NikosAgedBody", "시민2", 10550, "call life_coplevel >= 4" },
             { "U_B_CTRG_Soldier_3_F", "", 990000, "call life_coplevel >= 3" },
             { "U_B_CTRG_Soldier_F", "", 990000, "call life_coplevel >= 3" },
+
+            { "vvv_traje_policia_1", "", 990000, "call life_donorlevel >= 2" },
+            { "vvv_traje_policia_2", "", 990000, "call life_donorlevel >= 1" },
+            { "vvv_traje_policia_3", "", 990000, "call life_donorlevel >= 2" },
+            { "vvv_mujer_policia", "", 990000, "call life_donorlevel >= 3" },
+            { "vvv_character_swat_3", "", 990000, "call life_donorlevel >= 1" },
+            { "vvv_character_swat", "", 990000, "call life_donorlevel >= 2" },
+            { "vvv_character_swat_2", "", 990000, "call life_donorlevel >= 1" },
 
             { "U_GirlSet_PD_uniform", "", 600000, "call life_coplevel >= 4" },
             { "U_GirlSet_SWAT_uniform", "", 600000, "call life_coplevel >= 4" },
@@ -390,6 +426,10 @@ class Clothing {
             { "H_Booniehat_mcamo", "", 8120, "call life_coplevel >= 1" },
             { "H_Beret_Colonel", "", 8120, "call life_coplevel >= 1" },
             { "H_Bandanna_khk", "", 8120, "call life_coplevel >= 1" },
+
+            { "Marine_HelmetCII", "", 300000, "call life_donorlevel >= 2" },
+            { "Atlas_HelmetM", "", 300000, "call life_donorlevel >= 2" },
+
             { "H_HelmetB_light", "", 8120, "call life_coplevel >= 2" },
             { "H_HelmetCrew_O", "", 8120, "call life_coplevel >= 2" },
             { "H_HelmetSpecO_blk", "", 8120, "call life_coplevel >= 2" },
@@ -644,6 +684,9 @@ class Clothing {
             { "U_B_CombatUniform_mcam", "EMS 형광", 500, "" },
             { "U_B_CombatUniform_mcam_worn", "EMS 녹색", 500, "" },
             { "U_Competitor", "EMS 주황", 500, "" },
+            { "vvv_traje_bombero_2", "소방관", 500, "call life_donorlevel >= 1" },
+            { "vvv_traje_bombero", "소방관 검정", 500, "call life_donorlevel >= 2" },
+            { "vvv_traje_doctor", "의사", 500, "call life_donorlevel >= 1" },
             { "U_I_Wetsuit", "EMS wetsuit", 5000, "" }
         };
         headgear[] = {

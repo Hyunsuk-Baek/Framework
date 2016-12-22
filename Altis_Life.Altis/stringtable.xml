@@ -61,6 +61,9 @@
         <Key ID="STR_Shops_C_Addon">
             <Original>Clothes shop - Addon</Original>
         </Key>
+        <Key ID="STR_Shops_C_Character">
+            <Original>Character shop</Original>
+        </Key>        
         <Key ID="STR_Shops_C_Police">
             <Original>AOSoul Cop shop</Original>
             <Czech>Altis policejní oddělení Shop</Czech>
@@ -10289,6 +10292,9 @@
         <Key ID="STR_MAR_Addon_Clothing_Store">
             <Original>Addon Clothing Store</Original>
         </Key>
+        <Key ID="STR_MAR_Character_Store">
+            <Original>Character Shop</Original>
+        </Key>        
         <Key ID="STR_MAR_Medical_Assistance">
             <Original>Medical Assistance</Original>
             <Czech>lékařská pomoc</Czech>
