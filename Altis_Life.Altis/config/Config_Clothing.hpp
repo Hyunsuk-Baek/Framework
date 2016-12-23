@@ -374,7 +374,10 @@ class Clothing {
         conditions = "";
         side = "civ";
         uniforms[] = {
-            { "NONE", "Remove Uniform", 0, "" },
+            { "NONE", "Remove Uniform", 0, "" }
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, "" },
                   //쿠키맨
             { "Gorb_AngryGingerbread1", "", 500000, "" },
             { "Gorb_AngryGingerbread2", "", 500000, "" },
@@ -485,9 +488,6 @@ class Clothing {
             { "Gorb_UglyMrsClaus1", "", 800000, "" },
             { "Gorb_UglyMrsClaus2", "", 800000, "" },
             { "Gorb_UglyMrsClaus3", "", 800000, "" }
-        };
-        headgear[] = {
-            { "NONE", "Remove Hat", 0, "" }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, "" }
