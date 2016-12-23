@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={831.29071,119.49235,9913.8262};
-		dir[]={0.96092916,-0.2757118,0.024921546};
-		up[]={0.27562875,0.96124071,0.0071480563};
-		aside[]={0.025926333,-2.2472886e-007,-0.99967408};
+		pos[]={852.75031,136.94312,9891.8564};
+		dir[]={0,-0.70710671,0.70710689};
+		up[]={0,0.70710683,0.70710665};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -7045,7 +7045,6 @@ class Mission
 						angles[]={0,1.8784513,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -7055,6 +7054,7 @@ class Mission
 					};
 					id=1660;
 					type="C_man_polo_3_F";
+					atlOffset=0.41114807;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48948,18 +48948,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={851.125,111.87644,9914.4248};
+						position[]={851.125,111.87636,9914.4248};
 						angles[]={0,1.9510862,0};
 					};
 					side="Civilian";
 					flags=7;
 					class Attributes
 					{
-						init="removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n "this forceAddUniform ""vvv_character_alma""; " \n "this allowDamage false;";
+						init="removeAllWeapons this;  " \n "removeAllItems this;  " \n "removeAllAssignedItems this;  " \n "removeUniform this;  " \n "removeVest this;  " \n "removeBackpack this;  " \n "removeHeadgear this;  " \n "removeGoggles this;  " \n "this forceAddUniform ""vvv_character_alma"";  " \n "this allowDamage false; " \n "this addAction[localize""STR_Shops_Bobu"",life_fnc_clothingMenu,""bobu""];";
 					};
 					id=6303;
 					type="C_man_p_beggar_F";
-					atlOffset=0.045082092;
+					atlOffset=0.044998169;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -48997,6 +48997,7 @@ class Mission
 					showWP="NEVER";
 					id=6304;
 					type="Move";
+					atlOffset=-7.6293945e-006;
 				};
 				class Item2
 				{
@@ -49230,7 +49231,7 @@ class Mission
 			{
 			};
 			id=6302;
-			atlOffset=0.045082092;
+			atlOffset=0.044998169;
 		};
 	};
 };
