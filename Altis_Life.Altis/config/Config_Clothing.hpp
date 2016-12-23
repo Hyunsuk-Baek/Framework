@@ -369,6 +369,137 @@ class Clothing {
         };
     };
 
+    class bobu {
+        title = "STR_Shops_Bobu";
+        conditions = "";
+        side = "civ";
+        uniforms[] = {
+            { "NONE", "Remove Uniform", 0, "" },
+                  //쿠키맨
+            { "Gorb_AngryGingerbread1", "", 500000, "" },
+            { "Gorb_AngryGingerbread2", "", 500000, "" },
+            { "Gorb_AngryGingerbread3", "", 500000, "" },
+            { "Gorb_AngryGingerbreadSwirl1", "", 500000, "" },
+            { "Gorb_AngryGingerbreadSwirl2", "", 500000, "" },
+            { "Gorb_Gingerbread1", "", 500000, "" },
+
+                  //루돌프 머리띠
+            { "Gorb_Antler", "", 300000, "" },
+
+                  //크리스마스 비니
+            { "Gorb_PuddingHat", "", 300000, "" },
+
+                  //크리스마스 전체 동그란 가면
+            { "Gorb_PuddingMask1", "", 800000, "" },
+            { "Gorb_PuddingMask2", "", 800000, "" },
+
+                  //엘프 모자
+            { "Gorb_Elf", "", 500000, "" },
+
+                  //패스티벌 모자
+            { "Gorb_FestiveHat1", "", 500000, "" },
+            { "Gorb_FestiveHat2", "", 500000, "" },
+            { "Gorb_FestiveHat3", "", 500000, "" },
+            { "Gorb_FestiveHat4", "", 500000, "" },
+            { "Gorb_FestiveHat5", "", 500000, "" },
+            { "Gorb_FestiveHat6", "", 500000, "" },
+            { "Gorb_FestiveHat7", "", 500000, "" },
+            { "Gorb_FestiveHat8", "", 500000, "" },
+
+                  //홀리데이 모자(일반 모자랑 비슷)
+            { "Gorb_HolidayBaseballHat1", "", 100000, "" },
+            { "Gorb_HolidayBaseballHat2", "", 100000, "" },
+            { "Gorb_HolidayBaseballHat3", "", 100000, "" },
+            { "Gorb_HolidayBaseballHat4", "", 100000, "" },
+            { "Gorb_HolidayBaseballHat5", "", 100000, "" },
+            { "Gorb_HolidayBaseballHat6", "", 100000, "" },
+            { "Gorb_HolidayBaseballHat7", "", 100000, "" },
+            { "Gorb_HolidayBaseballHat8", "", 100000, "" },
+
+                  //수면모자 짧은거
+            { "Gorb_PlaidHat1", "", 500000, "" },
+            { "Gorb_PlaidHat2", "", 500000, "" },
+            { "Gorb_PlaidHat3", "", 500000, "" },
+            { "Gorb_PlaidHat4", "", 500000, "" },
+
+                  //수면모자 긴거
+            { "Gorb_KnittedHat1", "", 500000, "" },
+            { "Gorb_KnittedHat2", "", 500000, "" },
+            { "Gorb_KnittedHat3", "", 500000, "" },
+            { "Gorb_KnittedHat4", "", 500000, "" },
+
+                  //산타모자 빨간
+            { "Gorb_SantaHat", "", 500000, "" },
+
+                  //산타모자 녹색
+            { "Gorb_SantaHat_Green", "", 500000, "" },
+
+                  //쿨 엘프 가면(선그라스 전체 머리)
+            { "Gorb_CoolElfMask1", "", 800000, "" },
+            { "Gorb_CoolElfMask2", "", 800000, "" },
+            { "Gorb_CoolElfMask3", "", 800000, "" },
+
+                  //엘프 마스크(선그라스 없는 전체 머리)
+            { "Gorb_ElfMask1", "", 800000, "" },
+            { "Gorb_ElfMask2", "", 800000, "" },
+            { "Gorb_ElfMask3", "", 800000, "" },
+
+                  //할머니 가면(얼굴 전체)
+            { "Gorb_MrsClaus1", "", 800000, "" },
+            { "Gorb_MrsClaus2", "", 800000, "" },
+            { "Gorb_MrsClaus3", "", 800000, "" },
+
+                  //펭귄 마스크(얼굴 전체)
+            { "Gorb_Penguin", "", 800000, "" },
+
+                  //루돌프 마스크(얼굴 전체)
+            { "Gorb_Reindeer", "", 800000, "" },
+
+                  //무서운 산타 마스크(얼굴 전체)
+            { "Gorb_RoughSantaClaus1", "", 800000, "" },
+            { "Gorb_RoughSantaClaus2", "", 800000, "" },
+            { "Gorb_RoughSantaClaus3", "", 800000, "" },
+
+                  //산타마자(얼굴 전체)
+            { "Gorb_Santa_White", "", 800000, "" },
+            { "Gorb_Santa_Tan", "", 800000, "" },
+            { "Gorb_Santa_Black", "", 800000, "" },
+
+                  //눈사람 모자(얼굴 전체)
+            { "Gorb_Snowman", "", 800000, "" },
+
+                  //트리 모자(얼굴 전체)
+            { "Gorb_TreeMask1", "", 800000, "" },
+            { "Gorb_TreeMask2", "", 800000, "" },
+            { "Gorb_TreeMask3", "", 800000, "" },
+            { "Gorb_TreeMask4", "", 800000, "" },
+            { "Gorb_TreeMask5", "", 800000, "" },
+            { "Gorb_TreeMask6", "", 800000, "" },
+
+                  //칠면조 모자(얼굴 전체)
+            { "Gorb_TurkeyMask1", "", 800000, "" },
+            { "Gorb_TurkeyMask2", "", 800000, "" },
+            { "Gorb_TurkeyMask3", "", 800000, "" },
+
+                  //못생긴 할머니(얼굴 전체)
+            { "Gorb_UglyMrsClaus1", "", 800000, "" },
+            { "Gorb_UglyMrsClaus2", "", 800000, "" },
+            { "Gorb_UglyMrsClaus3", "", 800000, "" }
+        };
+        headgear[] = {
+            { "NONE", "Remove Hat", 0, "" }
+        };
+        goggles[] = {
+            { "NONE", "Remove Glasses", 0, "" }
+        };
+        vests[] = {
+            { "NONE", "Remove Vest", 0, "" }
+        };
+        backpacks[] = {
+            { "NONE", "Remove Backpack", 0, "" }
+        };
+    };
+
 
     class cop {
         title = "STR_Shops_C_Police";
