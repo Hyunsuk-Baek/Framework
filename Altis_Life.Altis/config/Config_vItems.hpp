@@ -784,7 +784,7 @@ class VirtualItems {
         displayName = "STR_Item_TurtleRaw";
         weight = 5;
         buyPrice = -1;
-        sellPrice = 40000;
+        sellPrice = 30000;
         illegal = true;
         edible = -1;
         icon = "icons\ico_turtleRaw.paa";
@@ -850,7 +850,7 @@ class VirtualItems {
         displayName = "STR_Item_SheepRaw";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 9000;
+        sellPrice = 70000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_lambChopRaw.paa";
@@ -860,8 +860,8 @@ class VirtualItems {
         variable = "sheep";
         displayName = "STR_Item_Sheep";
         weight = 3;
-        buyPrice = 15000;
-        sellPrice = 12000;
+        buyPrice = 75000;
+        sellPrice = 70000;
         illegal = false;
         edible = 100;
         icon = "icons\ico_lambChop.paa";
@@ -872,7 +872,7 @@ class VirtualItems {
         displayName = "STR_Item_GoatRaw";
         weight = 3;
         buyPrice = -1;
-        sellPrice = 9500;
+        sellPrice = 80000;
         illegal = false;
         edible = -1;
         icon = "icons\ico_muttonLegRaw.paa";
@@ -882,8 +882,8 @@ class VirtualItems {
         variable = "goat";
         displayName = "STR_Item_Goat";
         weight = 3;
-        buyPrice = 15000;
-        sellPrice = 10000;
+        buyPrice = 85000;
+        sellPrice = 80000;
         illegal = false;
         edible = 100;
         icon = "icons\ico_muttonLeg.paa";
@@ -960,7 +960,7 @@ class VirtualItems {
         displayName = "STR_Item_rawMilk";
         weight = 2;
         buyPrice = -1;
-        sellPrice = 500;
+        sellPrice = 700;
         illegal = false;
         edible = 10;
         icon = "icons\Custom\ico_rawMilk.paa";
@@ -970,8 +970,8 @@ class VirtualItems {
         variable = "milk";
         displayName = "STR_Item_milk";
         weight = 2;
-        buyPrice = 5000;
-        sellPrice = 3000;
+        buyPrice = 6000;
+        sellPrice = 5200;
         illegal = false;
         edible = 100;
         icon = "icons\Custom\ico_milk.paa";
@@ -982,7 +982,7 @@ class VirtualItems {
         displayName = "STR_Item_milkingmachine";
         weight = 2;
         buyPrice = 150000;
-        sellPrice = 3000;
+        sellPrice = 10000;
         illegal = false;
         edible = -1;
         icon = "icons\Custom\ico_mlikingmachine.png";
