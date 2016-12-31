@@ -290,6 +290,10 @@ _markername20="del_obj_20";
 _terrainobjects20=nearestTerrainObjects [(getMarkerPos _markername20),[],(getmarkersize _markername20)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects20;
 
+_markername21="del_obj_21";
+_terrainobjects21=nearestTerrainObjects [(getMarkerPos _markername21),[],(getmarkersize _markername21)select 0];
+{hideObjectGlobal _x} foreach _terrainobjects21;
+
 _markername99="del_obj_westsea"; 
 _terrainobjects99=nearestTerrainObjects [(getMarkerPos _markername99),[],(getmarkersize _markername99)select 0]; 
 {hideObjectGlobal _x} foreach _terrainobjects99;
