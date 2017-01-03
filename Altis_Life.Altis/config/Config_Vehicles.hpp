@@ -83,7 +83,21 @@ class CarShops {
             { "R_HotairBalloon", "" },        //addon // 열기구
 			{ "ARMSCor_A109_Civ", "" },	//addon // 빨간 헬기
 			{ "ej_S94", "" },	//addon	//UH-60 흰색 프로팰러 미래형 노 어드밴스
-			{ "ej_UH60M_UT", "" }	//addon	//UH-60 일반 갈색 노 어드밴스
+			{ "sab_falcon", "" },	//addon	//UH-60 일반 갈색 노 어드밴스
+			{ "sab_falcon_2", "call life_donorlevel >= 1" },
+			{ "sab_falcon_3", "call life_donorlevel >= 1" },
+			{ "sab_falcon_4", "call life_donorlevel >= 1" },
+			{ "sab_falcon_5", "call life_donorlevel >= 1" },
+			{ "sab_falcon_6", "call life_donorlevel >= 2" },
+			{ "sab_falcon_7", "call life_donorlevel >= 2" },
+			{ "sab_falcon_8", "call life_donorlevel >= 2" },
+			{ "sab_falcon_9", "call life_donorlevel >= 2" },
+			{ "sab_grob115", "" },
+			{ "sab_stampe", "" },
+			{ "sab_stampe2", "" },
+			{ "sab_stampe3", "" },
+			{ "sab_stampe4", "" },
+			{ "sab_stampe5", "" }
         };
     };
 
@@ -295,7 +309,8 @@ class CarShops {
             { "B_Heli_Attack_01_F", "call life_coplevel >= 5" },    //블랙풋
             { "O_Heli_Attack_02_black_F", "call life_coplevel >= 5" },  //카이만
             { "B_Plane_CAS_01_F", "call life_coplevel >= 5" },  //와이프아웃
-			{ "kyo_MH47E_HC", "" }   //치누크 노어드밴스
+			{ "kyo_MH47E_HC", "" },   //치누크 노어드밴스
+			{ "C_hh60j_unarmed_F", ""}
         };
     };
 
@@ -2879,7 +2894,50 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
 	class kyo_MH47E_HC : kyo_CH47_HC3{};
 
+	class sab_falcon { //팔콘
+        vItemSpace = 200;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 4800000;
+        textures[] = {};
+    };
 
+	class sab_falcon_2 : sab_falcon{};
+	class sab_falcon_3 : sab_falcon{};
+	class sab_falcon_4 : sab_falcon{};
+	class sab_falcon_5 : sab_falcon{};
+	class sab_falcon_6 : sab_falcon{};	
+	class sab_falcon_7 : sab_falcon{};
+	class sab_falcon_8 : sab_falcon{};
+	class sab_falcon_9 : sab_falcon{};
+			
+			
+	class sab_grob115 { 
+        vItemSpace = 160;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 1800000;
+        textures[] = {};
+    };
+
+			
+	class sab_stampe {
+        vItemSpace = 250;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 2500000;
+        textures[] = {};
+    };
+    
+	class sab_stampe2 : sab_stampe{};
+	class sab_stampe3 : sab_stampe{};	
+	class sab_stampe4 : sab_stampe{};
+	class sab_stampe5 : sab_stampe{};
+    
+	class C_hh60j_unarmed_F { //coast guard heli
+        vItemSpace = 250;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 2000000;
+        textures[] = {};
+    };
+    
 	/// 경매 특별 // 카샵에는 안팔고 디비로만 넣어줄차
 	class bv_458_skin_camo { // 카모 페라리
          vItemSpace = 60;
