@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="AOSoul Life RPG">
     <Package name="Init">
         <Key ID="STR_Init_ClientSetup">
@@ -2085,6 +2085,17 @@
         </Key>
         <Key ID="STR_Garage_Title">
             <Original>Vehicle Garage</Original>
+            <Czech>Garáž Vehicle</Czech>
+            <Spanish>Garaje de Vehículos</Spanish>
+            <Russian></Russian>
+            <German>Fahrzeug Garage</German>
+            <French>Garage de Vehicules</French>
+            <Italian>Garage Veicoli</Italian>
+            <Portuguese>Garagem de Veículos</Portuguese>
+            <Polish>Garaż</Polish>
+        </Key>
+        <Key ID="STR_Garage_Title_air">
+            <Original>Air Garage</Original>
             <Czech>Garáž Vehicle</Czech>
             <Spanish>Garaje de Vehículos</Spanish>
             <Russian></Russian>
