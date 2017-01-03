@@ -83,7 +83,8 @@ class CarShops {
             { "R_HotairBalloon", "" },        //addon // 열기구
 			{ "ARMSCor_A109_Civ", "" },	//addon // 빨간 헬기
 			{ "ej_S94", "" },	//addon	//UH-60 흰색 프로팰러 미래형 노 어드밴스
-			{ "sab_falcon", "" },	//addon	//UH-60 일반 갈색 노 어드밴스
+			{ "ej_UH60M_UT", "" },	//addon	//UH-60 일반 갈색 노 어드밴스
+			{ "sab_falcon", "" },
 			{ "sab_falcon_2", "call life_donorlevel >= 1" },
 			{ "sab_falcon_3", "call life_donorlevel >= 1" },
 			{ "sab_falcon_4", "call life_donorlevel >= 1" },
