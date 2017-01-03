@@ -110,7 +110,7 @@ class CarShops {
 
     class reb_car {
         side = "civ";
-        conditions = "";
+        conditions = "license_civ_rebel";
         vehicles[] = {
             { "B_Quadbike_01_F", "" },
             { "B_G_Offroad_01_F", "" },
