@@ -33,3 +33,5 @@
 #include "blackjack.hpp"
 #include "AS_AdminMenu.hpp"     //admin panel
 #include "AS_Refund.hpp"        //admin panel
+#include "dynmarket_changeprice.hpp"	//market
+#include "dynmarket_prices.hpp"	//market

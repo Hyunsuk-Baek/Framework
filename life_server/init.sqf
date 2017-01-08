@@ -209,6 +209,9 @@ life_attachment_point setVectorDirAndUp [[0,1,0], [0,0,1]];
 // Sharing the point of attachment with all players.
 publicVariable "life_attachment_point";
 
+//MarketSystem
+[] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
+
 //Map Object Delete by AOS
 _markername1="del_obj_1";
 _terrainobjects1=nearestTerrainObjects [(getMarkerPos _markername1),[],(getmarkersize _markername1)select 0];
