@@ -77,8 +77,8 @@ DYNMARKET_Items_Groups =
 	],
 	["Mined",
 		[
-			["wood",-1,1500,6000],
-			["plywood",-1,500,2400],
+			["wood",-1,2000,5500],
+			["plywood",-1,800,2400],
 			["oil_unprocessed",-1,1000,4000],
 			["oil_processed",-1,1200,5200],
 			["copper_refined",-1,600,4600],
