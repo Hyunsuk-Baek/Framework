@@ -77,8 +77,8 @@ DYNMARKET_Items_Groups =
 	],
 	["Mined",
 		[
-			["wood",-1,800,3800],
-			["plywood",-1,500,2200],
+			["wood",-1,1500,4300],
+			["plywood",-1,500,2300],
 			["oil_unprocessed",-1,1000,4000],
 			["oil_processed",-1,1200,5200],
 			["copper_refined",-1,600,4600],
@@ -139,8 +139,8 @@ DYNMARKET_Items_ToTrack        =
 	["goat_raw",80000],
 	["goat",82000],
 	//Mined
-	["wood",1800],
-	["plywood",4500],
+	["wood",3600],
+	["plywood",1650],
 	["oil_unprocessed",2000],
 	["oil_processed",3200],
 	["copper_refined",2600],
