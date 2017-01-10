@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "toolkit_infinite", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw","milk" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "toolkit_infinite", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw","milk","rawMilk" };
     };
 
     class med_market {
@@ -147,7 +147,7 @@ class VirtualShops {
         name = "STR_Shops_milk";
         side = "";
         conditions = "";
-        items[] = { "rawMilk", "milkingmachine" };
+        items[] = { "milkingmachine" };
     };
 };
 
