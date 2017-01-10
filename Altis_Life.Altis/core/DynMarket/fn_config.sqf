@@ -33,16 +33,60 @@ DYNMARKET_Items_Groups =
 [
 	["Legal",
 		[
-			["apple",-1,10,50],
-			["peach",-1,30,100]
+			/*["아이템 코드",-1,최소,최대],*/
+			//Food
+			["apple",-1,100,500],
+			["peach",-1,100,500],
+			["rabbit_raw",-1,1000,4000],
+			["rabbit",-1,2000,6000],
+			["salema_raw",-1,500,3450],
+			["salema",-1,1000,4300],
+			["ornate_raw",-1,450,3450],
+			["ornate",-1,1000,4000],
+			["mackerel_raw",-1,1000,4000],
+			["mackerel",-1,1500,4500],
+			["tuna_raw",-1,3500,6500],
+			["tuna",-1,4000,8000],
+			["mullet_raw",-1,1000,5000],
+			["mullet",-1,1300,5300],
+			["catshark_raw",-1,6000,10000],
+			["catshark",-1,7000,11000],
+			["turtle_raw",-1,20000,50000],
+			["turtle_soup",-1,25000,55000],
+			["hen_raw",-1,3000,7000],
+			["hen",-1,4000,8000],
+			["rooster_raw",-1,15000,45000],
+			["rooster",-1,17000,47000],
+			["sheep_raw",-1,60000,90000],
+			["sheep",-1,62000,92000],
+			["goat_raw",-1,70000,100000],
+			["goat",-1,72000,102000],
+			["bomul",-1,1,1],
+			["wood",-1,2500,6500],
+			["plywood",-1,800,3800],
+			["rawMilk",-1,100,1300],
+			["milk",-1,1000,6200],
+			//Mined
+			["oil_unprocessed",-1,1000,4000],
+			["oil_processed",-1,1200,5200],
+			["copper_refined",-1,600,4600],
+			["iron_refined",-1,2300,6300],
+			["salt_refined",-1,500,3500],
+			["glass",-1,1500,5500],
+			["diamond_uncut",-1,1000,5000],
+			["diamond_cut",-1,4100,8100],
+			["cement",-1,1400,5400]
 		],
-		0.5
+		0.8
 	],
 	["Illegal", 
 		[
-			/*["peach",-1,30,100]*/
+			/*["아이템 코드",-1,최소,최대],*/
+			["heroin_processed",-1,4000,12000],
+			["marijuana",-1,2800,10800],
+			["cocaine_processed",-1,5000,13000]
 		],
-		0.5
+		0.6
 	]
 ];
 
@@ -50,54 +94,53 @@ DYNMARKET_Items_Groups =
 
 DYNMARKET_Items_ToTrack        = 
 [
-
-	["apple",25],
-	["peach",50],
-	["tbacon",125],
-	["donuts",130],
-	["rabbit_raw",150],
-	["rabbit",170],
-	["ornate_raw",190],
-	["ornate",190],
-	["mackerel_raw",190],
-	["mackerel",190],
-	["tuna_raw",190],
-	["tuna",190],
-	["mullet_raw",190],
-	["mullet",200],
-	["catshark_raw",200],
-	["catshark",200],
-	["turtle_soup",200],
-	["hen_raw",200],
-	["hen",200],
-	["rooster_raw",210],
-	["sheep_raw",210],
-	["sheep",155],
-	["goat_raw",155],
-	["goat",300],
-	["redgull",1500],
-	["coffee",10],
-	["waterBottle",10],
-	["pickaxe",350],
-	["fuelFull",500],
-	["spikeStrip",1200],
-	["lockpick",75],
-	["goldbar",95000],
-	["blastingcharge",35000],
-	["boltcutter",7500],
-	["defusekit",2500],
-	["storagesmall",75000],
-	["storagebig",15000],
-	["oil_processed",1200],
-	["copper_refined",1700],
-	["iron_refined",1650],
-	["salt_refined",1850],
-	["glass",1450],
-	["diamond_cut",2530],
-	["cement",2350],
-	["heroin_processed",5000],
-	["marijuana",5250],
-	["cocaine_processed",5300]
+	/* ["아이템코드",기본가격], */
+	//Food
+	["apple",300],
+	["peach",300],
+	["rabbit_raw",2000],
+	["rabbit",4000],
+	["salema_raw",1450],
+	["salema",2300],
+	["ornate_raw",1450],
+	["ornate",2000],
+	["mackerel_raw",2000],
+	["mackerel",2500],
+	["tuna_raw",5500],
+	["tuna",6000],
+	["mullet_raw",3000],
+	["mullet",3300],
+	["catshark_raw",8000],
+	["catshark",9000],
+	["turtle_raw",30000],
+	["turtle_soup",45000],
+	["hen_raw",5000],
+	["hen",6000],
+	["rooster_raw",25000],
+	["rooster",27000],
+	["sheep_raw",70000],
+	["sheep",72000],
+	["goat_raw",80000],
+	["goat",82000],
+	["bomul",1],
+	["wood",4500],
+	["plywood",1800],
+	["rawMilk",700],
+	["milk",4200],
+	//Drugs
+	["heroin_processed",8000],
+	["marijuana",6800],
+	["cocaine_processed",9000],
+	//Mined
+	["oil_unprocessed",2000],
+	["oil_processed",3200],
+	["copper_refined",2600],
+	["iron_refined",4300],
+	["salt_refined",1500],
+	["glass",3500],
+	["diamond_uncut",3000],
+	["diamond_cut",6100],
+	["cement",3400]
 ];
 
 //███████████████████████████████████████████████████████████████████████
