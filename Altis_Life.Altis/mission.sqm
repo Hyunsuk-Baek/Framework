@@ -8,11 +8,11 @@ class EditorData
 	toggles=105;
 	class ItemIDProvider
 	{
-		nextID=6416;
+		nextID=6417;
 	};
 	class MarkerIDProvider
 	{
-		nextID=70;
+		nextID=71;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9180.3008,64.959244,6667.9858};
-		dir[]={0.17029729,-0.41464901,-0.89393502};
-		up[]={0.077600196,0.90997374,-0.40734333};
-		aside[]={-0.98236066,-2.5652116e-007,-0.18714537};
+		pos[]={9182.6035,62.881195,6656.4771};
+		dir[]={0.23690642,-0.74214655,-0.62703288};
+		up[]={0.26230231,0.67023629,-0.69424862};
+		aside[]={-0.9354918,-1.0103104e-006,-0.35345101};
 	};
 };
 binarizationWanted=0;
@@ -706,7 +706,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=2223;
+		items=2224;
 		class Item0
 		{
 			dataType="Marker";
@@ -15697,7 +15697,6 @@ class Mission
 			};
 			id=2124;
 			type="A3L_HospitalBed";
-			atlOffset=7.6293945e-006;
 		};
 		class Item325
 		{
@@ -15715,7 +15714,6 @@ class Mission
 			};
 			id=2126;
 			type="A3L_HospitalBed";
-			atlOffset=7.6293945e-006;
 		};
 		class Item326
 		{
@@ -49476,7 +49474,7 @@ class Mission
 			alpha=0;
 			a=5;
 			b=8;
-			angle=8.9999943;
+			angle=8.9999933;
 			id=6354;
 			atlOffset=-4.1525359;
 		};
@@ -49700,6 +49698,16 @@ class Mission
 			id=6415;
 			type="Land_LampDecor_F";
 			atlOffset=-0.00053405762;
+		};
+		class Item2223
+		{
+			dataType="Marker";
+			position[]={9184.3037,54.959999,6650.9985};
+			name="marker_70";
+			text="현상금 서비스 센터";
+			type="mil_dot";
+			colorName="ColorOrange";
+			id=6416;
 		};
 	};
 };
