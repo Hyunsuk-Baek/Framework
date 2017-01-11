@@ -15,25 +15,37 @@ if (isNull _unit) exitWith {};
 switch (_side) do {
     case west: {
         if (_bool) then {
-            life_radio_west radioChannelAdd [_unit];
+			life_radio_west radioChannelAdd [_unit];
+			life_radio_indep radioChannelAdd [_unit];
+			life_radio_civ radioChannelRemove [_unit];
         } else {
-            life_radio_west radioChannelRemove [_unit];
+			life_radio_west radioChannelAdd [_unit];
+			life_radio_indep radioChannelAdd [_unit];
+			life_radio_civ radioChannelRemove [_unit];
         };
     };
 
     case civilian: {
         if (_bool) then {
-            life_radio_civ radioChannelAdd [_unit];
+			life_radio_west radioChannelAdd [_unit];
+			life_radio_indep radioChannelAdd [_unit];
+			life_radio_civ radioChannelRemove [_unit];
         } else {
-            life_radio_civ radioChannelRemove [_unit];
+			life_radio_west radioChannelAdd [_unit];
+			life_radio_indep radioChannelAdd [_unit];
+			life_radio_civ radioChannelRemove [_unit];
         };
     };
 
     case independent: {
         if (_bool) then {
-            life_radio_indep radioChannelAdd [_unit];
+			life_radio_west radioChannelAdd [_unit];
+			life_radio_indep radioChannelAdd [_unit];
+			life_radio_civ radioChannelRemove [_unit];
         } else {
-            life_radio_indep radioChannelRemove [_unit];
+			life_radio_west radioChannelAdd [_unit];
+			life_radio_indep radioChannelAdd [_unit];
+			life_radio_civ radioChannelRemove [_unit];
         };
     };
 };

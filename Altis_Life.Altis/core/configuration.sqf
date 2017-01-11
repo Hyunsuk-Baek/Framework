@@ -50,6 +50,7 @@ life_markers = false;
 life_canpay_bail = true;
 life_jetpack = false;
 life_recentText = "";
+life_removeBounty = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

@@ -132,6 +132,7 @@ CONST(JxMxE_PublishVehicle,"false");
 
 life_radio_west = radioChannelCreate [[255, 0, 0, 0.8], "EmergencyChannel", "%UNIT_NAME", []];
 life_radio_indep = radioChannelCreate [[255, 0, 0, 0.8], "EmergencyChannel", "%UNIT_NAME", []];
+life_radio_civ = radioChannelCreate [[255, 0, 0, 0.8], "EmergencyChannel", "%UNIT_NAME", []];
 
 /* Set the amount of gold in the federal reserve at mission start */
 fed_bank setVariable ["safe",count playableUnits,true];
@@ -154,6 +155,7 @@ TON_fnc_requestClientID =
 
 /* Miscellaneous mission-required stuff */
 life_wanted_list = [];
+life_bounty_list = [];
 
 cleanupFSM = [] execFSM "\life_server\FSM\cleanup.fsm";
 

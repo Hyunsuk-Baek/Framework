@@ -35,3 +35,5 @@
 #include "AS_Refund.hpp"        //admin panel
 #include "dynmarket_changeprice.hpp"	//market
 #include "dynmarket_prices.hpp"	//market
+#include "bounty_list.hpp"	//Bounty
+#include "bounty_addList.hpp"	//Bounty
