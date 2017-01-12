@@ -23,5 +23,5 @@ private _list = _display displayCtrl 24010;
 ctrlSetText[24040,"연결 완료"];
 
 if (((lbSize _list)-1) isEqualTo -1) then {
-    _list lbAdd "No bounty's set";
+    _list lbAdd "현상금 걸린 사람이 없습니다";
 };
