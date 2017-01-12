@@ -29,7 +29,7 @@ _arr params [
 ["_obj",objNull,[objNull]],
 ["_time",60,[60]],
 ["_type","Mil_dot",["Mil_dot"]],
-["_txt","ROBBERY IN PROGRESS",["ROBBERY IN PROGRESS"]],
+["_txt","강도 진행 중",["강도 진행 중"]],
 ["_color","ColorRed",["ColorRed"]]
 ];
 

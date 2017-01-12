@@ -12,7 +12,7 @@ disableSerialization;
 if(playerSide == west) exitWith {};
 if(playerSide == independent) exitWith {};
 if(!license_civ_bountyH) exitWith {
-	hint "Only registered bounty hunters can access the hunters databse";
+	hint "현상금 사냥꾼 라이센스를 가진자만이 현상금 수배 목록에 접근할 수 있다.";
 };
 
 createDialog "life_bounty_menu";
@@ -46,7 +46,7 @@ private _crimes = LIFE_SETTINGS(getArray,"crimes");
 };forEach _crimes;
 */
 
-ctrlSetText[24040,"Establishing connection..."];
+ctrlSetText[24040,"연결을 시도하는중..."];
 
 /*
 if (FETCH_CONST(life_coplevel) < 3 && {FETCH_CONST(life_adminlevel) isEqualTo 0}) then {

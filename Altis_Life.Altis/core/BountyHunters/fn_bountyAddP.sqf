@@ -21,9 +21,9 @@ if (isNull _unit) exitWith {};
 } forEach playableUnits;
 
 if (life_cash < _amountP) then {
-	hint "You do not have the selected amount, visit an atm or select a lower bounty.";
+	hint "선택한 금액이 모자릅니다. ATM 갔다 오거나 더 낮은 현상금을 선택하세요";
 } else {
-	[1,[_unit,60,"Mil_dot","THE BOUNTY HUNTERS TARGET LAST KNOWN POSITION"]] remoteExec ["life_fnc_markers",_unitsToNotify];
+	[1,[_unit,60,"Mil_dot","현상금사냥꾼들이 쫒고있는 녀석의 마지막 위치"]] remoteExec ["life_fnc_markers",_unitsToNotify];
 	life_cash = life_cash - _amountP;
 	
 	if (life_HC_isActive) then {

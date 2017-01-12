@@ -49631,7 +49631,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this enableSimulation false; this allowDamage false; this addAction [""Bounty Hunting ($100,000)"", life_fnc_bountyBuy,"""",0,false,false,"""",' !license_civ_bountyH && playerSide isEqualTo civilian']; this addAction[""<t color = '#D660D6'>Bounty Add</t>"",life_fnc_bountyAddMenu,"""",0,false,false,"""",'']; this addAction[""<t color = '#E6F402'>Bounty List</t>"",life_fnc_bountyMenu,"""",0,false,false,"""",''];";
+						init="this enableSimulation false; this allowDamage false; this addAction [""현상금 사냥 라이센스($100,000)"", life_fnc_bountyBuy,"""",0,false,false,"""",' !license_civ_bountyH && playerSide isEqualTo civilian']; this addAction[""<t color = '#D660D6'>현상금 추가하기</t>"",life_fnc_bountyAddMenu,"""",0,false,false,"""",'']; this addAction[""<t color = '#E6F402'>현상금 목록</t>"",life_fnc_bountyMenu,"""",0,false,false,"""",''];";
 					};
 					id=6413;
 					type="C_man_1";

@@ -11934,40 +11934,40 @@
 			<Original>$1,000,000</Original>
 		</Key>
 		<Key ID="STR_Bounty_AddP">
-            <Original>%1 has been added to the bounty list, he was added for $%2 this has risen he current bounty price to $%3. The last known location has been marked on the map for all bounty hunting units. Normal declaration rules still apply, RDM will be delt with.</Original>
+            <Original>%1 (이)의 현상금이  $%2 가 추가되었고 현재 총 현상금 $%3 이다. 이 수배자의 마지막 위치는 모든 현상금 사냥꾼의 맵에 마킹되어있으며 현상금을 노리고 RP 없이 사살한 경우 제재될 수 있슴.</Original>
         </Key>
 		<Key ID="STR_MAR_bountyW">
-            <Original>Bounty Hunters Armory</Original>
+            <Original>현상금 사냥꾼 무기고</Original>
         </Key>
 		<Key ID="STR_MAR_bounty">
-            <Original>Bounty Hunters HQ</Original>
+            <Original>현상금 사냥꾼 본부</Original>
         </Key>
 		<Key ID="STR_GNOTF_BountyMSG">
-            <Original>You are about to buy a 'Bounty Hunting License' buying this license will give you access to the Bounty Hunters Database, kill someone on the list to get thier bounty! Normal declaration still applys, you can NOT RDM! Do you accept these terms and conditions?</Original>
+            <Original>당신은 현상금 사냥꾼 라이센스를 구매하려고합니다. 이 라이센스를 구매하면 현상금이 걸려있는 수배범들의 목록을 볼수 있으며, 그놈들을 죽여서 현상금을 받으세요! 그러나  RP없이 현상금이 걸린 사람을 죽여서는 안됩니다!</Original>
         </Key>
 		<Key ID="STR_bounty_bountyList_notBH">
-            <Original>You are not a civilian, only civilians can add people to the bounty list! I suggest you leave!</Original>
+            <Original>시민만이 현상금 목록을 추가할수 있습니다. 썩 물러가세요!</Original>
         </Key>
 		<Key ID="STR_bounty_bountyList_noPlayerSelected">
-            <Original>No player on the list was selected! Please select a player.</Original>
+            <Original>리스트에서 아무도 선택되지 않았습니다.</Original>
         </Key>
 		<Key ID="STR_bounty_bountyList_noAmountSelected">
-            <Original>No amount was selected, use the drop down menu to select a bounty amount.</Original>
+            <Original>선택된 현상금이 없습니다. 드롭다운 메뉴를 눌러 현상금액을 선택하세요.</Original>
         </Key>
 		<Key ID="STR_Bounty_BountyKill">
-            <Original>You have collected a bounty of $%1 for killing someone on the bounty list, nice job!</Original>
+            <Original>당신은 현상금 사냥에 성공하여 $%1 를 받았습니다. 잘했어요!</Original>
         </Key>
       		<Key ID="STR_Bounty_Title">
-            <Original>Bounty List</Original>
+            <Original>현상금 리스트</Original>
         </Key>
 		<Key ID="STR_BountyA_Title">
-            <Original>Bounty Hunting Database</Original>
+            <Original>현상금 사냥꾼 데이터베이스</Original>
         </Key>
 		<Key ID="STR_Bounty_License">
-            <Original>Bounty License</Original>
+            <Original>현상금 라이센스</Original>
         </Key>
     <Key ID="STR_License_bountyH">
-            <Original>Bounty Hunter</Original>
+            <Original>현상금 사냥꾼</Original>
         </Key>
 	</Package>
 </Project>

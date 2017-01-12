@@ -9,7 +9,7 @@
 */
 private ["_display","_list"];
 disableSerialization;
-if !(license_civ_bountyH) exitWith {hint "Only registered bounty hunters can remove bountys on peoples heads!"};
+if !(license_civ_bountyH) exitWith {hint "오직 등록된 현상금 사냥꾼만이 사람들의 머리 위에 [현상금]을 제거할 수 있음!"};
 _display = findDisplay 24000;
 _list = _display displayCtrl 24020;
 _data = lbData[24010,(lbCurSel 24010)];
@@ -20,7 +20,7 @@ if (_data isEqualTo []) exitWith {};
 private _remover = getPlayerUID player;
 private _removed = _data select 0;
 
-//if (_remover isEqualTo _removed) exitWith {hint "You cannot remove your self from the bounty hunters list! You must die to be removed!"};
+if (_remover isEqualTo _removed) exitWith {hint "당신은 현상금 사냥꾼 명단에서 자신을 제거할 수 없습니다! 지우려면 죽어야만 합니다!"};
 
 
 if (life_HC_isActive) then {
