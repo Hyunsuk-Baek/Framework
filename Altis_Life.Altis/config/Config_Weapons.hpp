@@ -286,8 +286,7 @@ class WeaponShops {
             { "Chemlight_red", "", 300, 50, "" },
             { "Chemlight_yellow", "", 300, 50, "" },
             { "Chemlight_green", "", 300, 50, "" },
-            { "Chemlight_blue", "", 300, 50, "" },
-			{ "TRYK_Shemagh_WH_NV", "야시경", 500000, -1, "" }
+            { "Chemlight_blue", "", 300, 50, "" }
         };
         mags[] = {};
         accs[] = {};
@@ -341,7 +340,6 @@ class WeaponShops {
             { "AOS_FlashLight_White", "", 5000, 10, "" },
             { "AOS_FlashLight_Yellow", "", 5000, 10, "" },
             { "NVGoggles", "", 20000, 980, "" },
-			{ "TRYK_Shemagh_WH_NV", "야시경", 500000, -1, "" },	//전체 야시경
             { "arifle_sdar_F", "Taser Rifle", 130000, 20000, "" },
             { "hgun_P07_F", "Stun Pistol", 35000, 650, "" },
             { "hgun_Rook40_F", "", 50000, 500, "" },
@@ -553,7 +551,6 @@ class WeaponShops {
             { "AOS_FlashLight_White", "", 5000, 10, "" },
             { "AOS_FlashLight_Yellow", "", 5000, 10, "" },
             { "NVGoggles", "", 20000, 980, "" },
-			{ "TRYK_Shemagh_WH_NV", "야시경", 500000, -1, "" },	//전체 야시경
             { "ItemGPS", "", 100, 45, "" },
             { "Binocular", "", 150, 50, "" },
             { "Pstl9x19_NP22", "", 50000, 500, "" },
