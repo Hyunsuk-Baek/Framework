@@ -211,7 +211,21 @@ CREATE TABLE IF NOT EXISTS `wanted` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `bounty` (
+  `bountyID` varchar(64) NOT NULL,
+  `bountyName` varchar(32) NOT NULL,
+  `bounty` int(100) NOT NULL,
+  `insert_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`bountyID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- ----------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dynmarket` (
+ `id` INT NOT NULL DEFAULT 1,
+ `prices` TEXT NOT NULL,
+ PRIMARY KEY (`id`));
+INSERT INTO `dynmarket` VALUES (1,'[]');
+-- ----------------------------------------------------------
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
