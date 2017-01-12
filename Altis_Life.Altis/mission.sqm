@@ -49704,7 +49704,7 @@ class Mission
 			dataType="Marker";
 			position[]={9184.3037,54.959999,6650.9985};
 			name="marker_70";
-			text="현상금 서비스 센터";
+			text="현상금 사냥 본부";
 			type="mil_dot";
 			colorName="ColorOrange";
 			id=6416;
