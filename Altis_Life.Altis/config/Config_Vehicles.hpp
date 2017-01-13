@@ -3026,7 +3026,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class pop_raptor_blanco {
 		vItemSpace = 50;
 		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-		price = 450000;
+		price = 1100000;
 		textures[] = {};
 	};
 
