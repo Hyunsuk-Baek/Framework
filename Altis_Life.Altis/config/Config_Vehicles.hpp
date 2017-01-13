@@ -55,6 +55,16 @@ class CarShops {
             { "O_Truck_03_device_F", "" },
             { "C_Van_01_fuel_F", "" },
             { "I_Truck_02_fuel_F", "" },
+
+			{ "pop_raptor_blanco", "" },
+			{ "pop_raptor_negro", "" },
+			{ "pop_raptor_azul", "" },
+			{ "pop_raptor_amarillo", "" },
+			{ "pop_raptor_rojo", "" },
+			{ "pop_raptor_gris", "" },
+			{ "pop_raptor_violeta", "" },
+			{ "pop_raptor_naranja", "" },
+
             { "Jonzie_Tanker_Truck", "" },
             { "shounka_a3_dafxf_euro6_f", "" },    //트레일러 없는 트럭
             { "Mrshounka_a3_iveco_f", "" },        //IVECO 특장트럭 ( 컨테이너 )  4인승
@@ -433,7 +443,11 @@ class CarShops {
              { "dbo_crosser", "" },    //공격형 오토바이
              { "sfp_wheelchair", "" },    //휠체어
              { "ivory_190e", "" },       //Mercedes-Benz 190E
-             { "ivory_190e_taxi", "" }      //Mercedes-Benz 190E(Taxi)
+             { "ivory_190e_taxi", "" },      //Mercedes-Benz 190E(Taxi)
+             { "VVV_Cadillac_DTS", "" },      //Mercedes-Benz 190E(Taxi)
+             { "VVV_Cadillac_XLR_V", "" },     //Mercedes-Benz 190E(Taxi)
+			 { "VVV_Audi_TT_RS_Coupe", "" }
+
         };
     };
 
@@ -453,6 +467,7 @@ class CarShops {
             { "shounka_f430_spider_orange", "call life_donorlevel >= 1" },        //페라리 f430 스파이더
             { "shounka_mp4", "call life_donorlevel >= 2" },                        //맥라렌 mp4-12c
             { "A3L_MonsterTruck", "call life_donorlevel >= 1" },            //몬스터트럭
+			{ "VVV_Bentley_Continental_SS", "call life_donorlevel >= 2" }, //벤틀리컨티넨탈
             { "Mrshounka_c63_2015_civ", "call life_donorlevel >= 1" }, //벤츠 c63 AMG 2015
             { "Mrshounka_agera_p", "call life_donorlevel >= 3" },            //아제라 스포츠
             { "Mrshounka_agera_p_bleu", "call life_donorlevel >= 3" },        //아제라 스포츠
@@ -559,10 +574,12 @@ class CarShops {
             { "Mrshounka_veneno_c_bleu", "" },            //람보르기니 베네노 veneno
             { "Mrshounka_veneno_c_jaune", "" },            //람보르기니 베네노 veneno
 //            { "max_vipcar1", "call life_donorlevel >= 2" },     //롤스로이스 팬텀 ( vip )  크롬색
+            { "VVV_audi_r8", "" },            //아우디r8
             { "shounka_limo_civ", "" },                    //아우디 리무진
             { "shounka_limo_civ_noir", "" },            //아우디 리무진
             { "shounka_limo_civ_bleufonce", "" },        //아우디 리무진
             { "shounka_limo_civ_orange", "" },            //아우디 리무진
+
             { "Mrshounka_lincoln_civ", "" },            //링컨 1969
             { "Mrshounka_lincoln_noir", "" },            //링컨 1969
             { "Mrshounka_lincoln_grise", "" },            //링컨 1969
@@ -583,6 +600,7 @@ class CarShops {
             { "shounka_porsche911", "" },                //포르쉐 911
             { "mrshounka_92_civ", "" },                    //포르쉐 911 92년식
             { "shounka_transam", "" },                    //옛날 머슬카 Transam 2인승
+            { "VVV_Bentley_Arnage", "" },                    //벤틀리 Arnage
             { "ivory_rs4", "" },        //Audi RS4
             { "ivory_e36", "" },        //BMW M3 E36
             { "ivory_m3", "" },     //BMW M3 E92
@@ -2476,7 +2494,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class max_lambo {
         vItemSpace = 50;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 6700000;
+        price = 5700000;
         textures[] = {};
     };
     class max_lambo1 : max_lambo{};
@@ -2486,7 +2504,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class mrshounka_huracan_c {
         vItemSpace = 50;
         conditions = "";
-        price = 8700000;
+        price = 6700000;
         textures[] = {};
     };
     class mrshounka_huracan_c_noir : mrshounka_huracan_c{};
@@ -2502,7 +2520,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class Mrshounka_veneno_c {
         vItemSpace = 50;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 9000000;
+        price = 4500000;
         textures[] = {};
     };
     class Mrshounka_veneno_c_noir : Mrshounka_veneno_c{};
@@ -2568,7 +2586,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class Mrshounka_pagani_c {
         vItemSpace = 50;
         conditions = "";
-        price = 5700000;
+        price = 3700000;
         textures[] = {};
     };
     class Mrshounka_pagani_c_noir : Mrshounka_pagani_c{};
@@ -2669,7 +2687,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class shounka_harley_a3 {
          vItemSpace = 100;
          conditions = "";
-         price = 30000000;
+         price = 5000000;
          textures[] = {};
     };
 
@@ -2774,35 +2792,35 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class ivory_veyron {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 8000000;
         textures[] = {};
     };
 
     class ivory_gt500 {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 6000000;
         textures[] = {};
     };
 
     class ivory_supra_topsecret {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 4500000;
         textures[] = {};
     };
 
     class ivory_lfa {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 4600000;
         textures[] = {};
     };
 
     class ivory_elise {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 6000000;
         textures[] = {};
     };
 
@@ -2816,21 +2834,21 @@ will modify the virtual space and the price of the vehicle, but other informatio
     class ivory_mp4 {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 5000000;
         textures[] = {};
     };
 
     class ivory_c {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 4000000;
         textures[] = {};
     };
 
     class ivory_supra {
         vItemSpace = 80;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-        price = 7000000;
+        price = 3000000;
         textures[] = {};
     };
 
@@ -2879,7 +2897,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class ej_S94 { //UH-60 시리즈 노 어드밴스(미래형,시민,메딕)
         vItemSpace = 400;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 85000000;
+        price = 55000000;
         textures[] = {};
     };
 	class ej_UH60M_UT : ej_S94{};
@@ -2889,7 +2907,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class kyo_CH47_HC3 { //치누크 갈색 노 어드밴스(경찰&반군)
         vItemSpace = 350;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 90000000;
+        price = 40000000;
         textures[] = {};
     };
 
@@ -2967,4 +2985,65 @@ will modify the virtual space and the price of the vehicle, but other informatio
          price = 5000000;
          textures[] = {};
     };
+    //벤틀리 아나지
+    class VVV_Bentley_Arnage {
+        vItemSpace = 70;
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+        price = 4000000;
+        textures[] = {};
+    };
+    //벤틀리 컨티넨탈
+    class VVV_Bentley_Continental_SS {
+        vItemSpace = 70;
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+        price = 4500000;
+        textures[] = {};
+    };
+//캐딜락 세단
+    class VVV_Cadillac_DTS {
+        vItemSpace = 40;
+        conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+        price = 650000;
+        textures[] = {};
+    };
+//캐딜락 컨버터블
+	class VVV_Cadillac_XLR_V {
+		vItemSpace = 40;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 700000;
+		textures[] = {};
+	};
+
+	//아우디 쿠페
+	class VVV_Audi_TT_RS_Coupe {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 620000;
+		textures[] = {};
+	};
+
+	//스프링튜닝 트럭 포드 랩터
+	class pop_raptor_blanco {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 450000;
+		textures[] = {};
+	};
+
+	class pop_raptor_negro : pop_raptor_blanco{};
+	class pop_raptor_azul : pop_raptor_blanco{};
+	class pop_raptor_rojo : pop_raptor_blanco{};
+	class pop_raptor_rosa : pop_raptor_blanco{};
+	class pop_raptor_amarillo : pop_raptor_blanco{};
+	class pop_raptor_gris : pop_raptor_blanco{};
+	class pop_raptor_violeta : pop_raptor_blanco{};
+	class pop_raptor_naranja : pop_raptor_blanco{};
+
+	//아우디 R8
+	class VVV_audi_r8 {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 4500000;
+		textures[] = {};
+	};
 };
