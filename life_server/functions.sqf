@@ -187,14 +187,14 @@ compileFinal "
 TON_fnc_cell_adminmsg =
 compileFinal "
     if (isServer) exitWith {};
-    if ((call life_coplevel) < 4 && (call life_adminlevel) < 1 && (call life_mediclevel) < 5) exitWith {hint ""You are not coplevel 4 or MedicLevel 5 or Admin"";};
+    if ((call life_coplevel) < 4 && (call life_adminlevel) < 1 && (call life_mediclevel) < 4) exitWith {hint ""You are not coplevel 4 or MedicLevel 4 or Admin"";};
     private [""_msg"",""_to""];
     ctrlShow[3020,false];
     _msg = ctrlText 3003;
     _to = call compile format [""%1"",(lbData[3004,(lbCurSel 3004)])];
     if (isNull _to) exitWith {ctrlShow[3020,true];};
     if (isNil ""_to"") exitWith {ctrlShow[3020,true];};
-    if (_msg isEqualTo """") exitWith {hint ""You must enter a message to send!"";ctrlShow[3020,true];};
+    if (_msg isEqualTo """") exitWith {hint ""보낼 메시지를 작성해야합니다.!"";ctrlShow[3020,true];};
 
     [_msg,name player,3] remoteExecCall [""TON_fnc_clientMessage"",_to];
     [] call life_fnc_cellphone;
@@ -205,7 +205,7 @@ compileFinal "
 TON_fnc_cell_adminmsgall =
 compileFinal "
     if (isServer) exitWith {};
-    if ((call life_coplevel) < 4 && (call life_adminlevel) < 1 && (call life_mediclevel) < 5) exitWith {hint ""You are not coplevel 4 or MedicLevel 5 or Admin"";};
+    if ((call life_coplevel) < 4 && (call life_adminlevel) < 1 && (call life_mediclevel) < 4) exitWith {hint ""You are not coplevel 4 or MedicLevel 4 or Admin"";};
     private [""_msg"",""_from""];
     ctrlShow[3021,false];
     _msg = ctrlText 3003;
