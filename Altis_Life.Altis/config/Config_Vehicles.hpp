@@ -3024,9 +3024,9 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
 	//스프링튜닝 트럭 포드 랩터
 	class pop_raptor_blanco {
-		vItemSpace = 50;
+		vItemSpace = 140;
 		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-		price = 1100000;
+		price = 900000;
 		textures[] = {};
 	};
 
