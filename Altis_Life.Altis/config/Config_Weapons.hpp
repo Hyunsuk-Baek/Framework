@@ -89,7 +89,7 @@ class WeaponShops {
             { "optic_Hamr", "", 7500, -1, "" },
             { "acc_flashlight", "", 1000, -1, "" },
             { "optic_DMS", "", 87500, -1, "" },
-            { "optic_Nightstalker", "", 150000, -1, ""},
+            { "optic_Nightstalker", "", 350000, -1, ""},
             { "optic_SOS", "SOS_DLC", 100000, -1, "" },
             { "muzzle_snds_58_blk_F", "", 500000, -1, "" }
         };
@@ -132,7 +132,7 @@ class WeaponShops {
     };
 
     class rebeldonator {
-        name = "Donator Shop";
+        name = "Rebel Donator Shop";
         side = "civ";
         conditions = "license_civ_rebel || {call life_donorlevel >= 1}";
         items[] = {
@@ -151,7 +151,6 @@ class WeaponShops {
             { "optic_Hamr", "", 7500, -1, "call life_donorlevel >= 1" },
             { "acc_flashlight", "", 1000, -1, "call life_donorlevel >= 1" },
             { "optic_DMS", "", 87500, -1, "call life_donorlevel >= 1" },
-            { "optic_Nightstalker", "", 150000, -1, "call life_donorlevel >= 1"},
             { "optic_SOS", "SOS_DLC", 100000, -1, "call life_donorlevel >= 1" },
             { "muzzle_snds_58_blk_F", "", 200000, -1, "call life_donorlevel >= 1" },
             { "hlc_optic_PVS4G3", "", 550000, -1, "call life_donorlevel >= 2"},
@@ -476,8 +475,8 @@ class WeaponShops {
 
             { "optic_LRPS", "", 100000, -1, "" },
             { "optic_Hamr", "", 100000, -1, "" },
-            { "optic_tws", "", 150000, -1, "" },
-            { "optic_Nightstalker", "", 130000, -1, "" },
+            { "optic_tws", "", 250000, -1, "" },
+            { "optic_Nightstalker", "", 250000, -1, "" },
             { "acc_pointer_IR", "", 30000, -1, "" }
         };
         mags[] = {
