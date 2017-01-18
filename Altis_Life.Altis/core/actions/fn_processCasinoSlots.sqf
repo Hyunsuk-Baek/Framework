@@ -165,3 +165,4 @@ else
 };
 
 5 cutText ["","PLAIN"];
+[] call life_fnc_hudUpdate;
