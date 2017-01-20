@@ -3679,18 +3679,7 @@
             <German>Du kannst kein Fahrzeug beim Schrotthändler verschrotten, während ein Spieler in der Nähe ist!</German>
         </Key>
         <Key ID="STR_NOTF_Restrained">
-            <Original>%1 이(가) %2 에 의해 체포되었습니다. </Original>
-            <Czech>%1 byl omezen%2</Czech>
-            <Spanish>%1 fue retenido por %2</Spanish>
-            <Russian></Russian>
-            <German>%1 wurde von %2 festgenommen</German>
-            <French>%1 a été menotté par %2</French>
-            <Italian>%1 è stato ammanettato da %2</Italian>
-            <Portuguese>%1 foi imobilizado por %2</Portuguese>
-            <Polish>%1 został skuty przez %2</Polish>
-        </Key>
-        <Key ID="STR_NOTF_Restrained_civ">
-            <Original>%2 님이  %1를 ziptie로 결박하였습니다.  </Original>
+            <Original>%1 was restrained by %2</Original>
             <Czech>%1 byl omezen%2</Czech>
             <Spanish>%1 fue retenido por %2</Spanish>
             <Russian></Russian>
@@ -7062,9 +7051,6 @@
         <Key ID="STR_Item_milkingmachine">
             <Original>착유기</Original>
         </Key>
-        <Key ID="STR_Item_ZipTies">
- 			<Original>ZipTie</Original>
-		</Key>
     </Package>
     <Package name="Life_License">
         <Key ID="STR_License_Driver">
@@ -10809,7 +10795,7 @@
             <German>Raub</German>
         </Key>
         <Key ID="STR_Crime_207">
-            <Original>시민불법체포 </Original>
+            <Original>납치</Original>
             <Czech>Únos</Czech>
             <French>Enlèvement</French>
             <Spanish>Secuestro</Spanish>
@@ -10820,7 +10806,7 @@
             <German>Entführung</German>
         </Key>
         <Key ID="STR_Crime_207A">
-            <Original>납치</Original>
+            <Original>납치미수</Original>
             <Czech>pokus o únos</Czech>
             <French>Tentative de kidnapping</French>
             <Spanish>Atentado: Secuestro</Spanish>
@@ -12122,7 +12108,7 @@
 		<Key ID="STR_Bounty_License">
             <Original>현상금 라이센스</Original>
         </Key>
-    	<Key ID="STR_License_bountyH">
+    <Key ID="STR_License_bountyH">
             <Original>현상금 사냥꾼</Original>
         </Key>
 	</Package>

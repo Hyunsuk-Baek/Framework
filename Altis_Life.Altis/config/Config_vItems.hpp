@@ -987,15 +987,4 @@ class VirtualItems {
         edible = -1;
         icon = "icons\Custom\ico_mlikingmachine.png";
     };
-
-    class zipties {
-		variable = "zipties";
-		displayName = "STR_Item_ZipTies";
-		weight = 0;
-		buyPrice = 1200;
-		sellPrice = -1;
-		illegal = true;
-		edible = -1;
-		icon = "icons\Custom\ziptie.paa";
-	};
 };
