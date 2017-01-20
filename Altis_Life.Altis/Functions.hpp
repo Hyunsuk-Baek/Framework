@@ -96,6 +96,7 @@ class Life_Client_Core {
         class robPerson {};
         class robReceive {};
         class tazed {};
+		class civInteractionMenu {}; // ziptie
     };
 
     class Config {

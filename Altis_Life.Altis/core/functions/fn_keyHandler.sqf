@@ -86,6 +86,25 @@ switch (_code) do {
                 [] spawn life_fnc_surrender;
             };
             _handled = true;
+        } else {
+			if (_ctrlkey) then {
+			    if(playerSide in [west,independent]) exitWith {};//Makes it so police and EMS cant zip tie people
+			    if !(license_civ_rebel) exitWith { hintSilent "ziptie를 사용하기위한 rebel training 라이센스가 없습니다."; };//Add required license's. Remove the whole line if you dont want any checks
+
+			    if(playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && 
+			        (isPlayer cursorTarget) && (side cursorTarget in [civilian]) && alive cursorTarget && 
+			            cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") &&
+			                !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then {
+
+			        if([false,"zipties",1] call life_fnc_handleInv) then//Removes the zipties from the inventory
+			        {
+			            [] call life_fnc_restrainAction;
+			            hintSilent "ziptie 로  꽁꽁 묶었습니다! ";
+			        } else {
+			            hintSilent "ziptie 가 없습니다";
+			        };
+			    };
+			};
         };
     };
 
