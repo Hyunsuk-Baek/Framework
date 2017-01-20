@@ -27,7 +27,7 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "zipties", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "turtle_raw"};
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge", "turtle_raw"};
     };
 
     class gang {
@@ -991,8 +991,8 @@ class VirtualItems {
     class zipties {
 		variable = "zipties";
 		displayName = "STR_Item_ZipTies";
-		weight = 1;
-		buyPrice = 30000;
+		weight = 0;
+		buyPrice = 1200;
 		sellPrice = -1;
 		illegal = true;
 		edible = -1;
