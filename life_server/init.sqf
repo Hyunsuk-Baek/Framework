@@ -220,78 +220,7 @@ publicVariable "life_attachment_point";
 [] execVM "\life_server\Functions\DynMarket\fn_config.sqf";
 
 //Map Object Delete by AOS
-_markername1="del_obj_1";
-_terrainobjects1=nearestTerrainObjects [(getMarkerPos _markername1),[],(getmarkersize _markername1)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects1;
-
-_markername2="del_obj_2";
-_terrainobjects2=nearestTerrainObjects [(getMarkerPos _markername2),[],(getmarkersize _markername2)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects2;
-
-_markername3="del_obj_3";
-_terrainobjects3=nearestTerrainObjects [(getMarkerPos _markername3),[],(getmarkersize _markername3)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects3;
-
-_markername4="del_obj_4";
-_terrainobjects4=nearestTerrainObjects [(getMarkerPos _markername4),[],(getmarkersize _markername4)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects4;
-
-_markername5="del_obj_5";
-_terrainobjects5=nearestTerrainObjects [(getMarkerPos _markername5),[],(getmarkersize _markername5)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects5;
-
-_markername6="del_obj_6";
-_terrainobjects6=nearestTerrainObjects [(getMarkerPos _markername6),[],(getmarkersize _markername6)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects6;
-
-_markername7="del_obj_7";
-_terrainobjects7=nearestTerrainObjects [(getMarkerPos _markername7),[],(getmarkersize _markername7)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects7;
-
-_markername8="del_obj_8";
-_terrainobjects8=nearestTerrainObjects [(getMarkerPos _markername8),[],(getmarkersize _markername8)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects8;
-
-_markername9="del_obj_9";
-_terrainobjects9=nearestTerrainObjects [(getMarkerPos _markername9),[],(getmarkersize _markername9)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects9;
-
-_markername10="del_obj_10";
-_terrainobjects10=nearestTerrainObjects [(getMarkerPos _markername10),[],(getmarkersize _markername10)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects10;
-
-_markername11="del_obj_11";
-_terrainobjects11=nearestTerrainObjects [(getMarkerPos _markername11),[],(getmarkersize _markername11)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects11;
-
-_markername12="del_obj_12";
-_terrainobjects12=nearestTerrainObjects [(getMarkerPos _markername12),[],(getmarkersize _markername12)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects12;
-
-_markername13="del_obj_13";
-_terrainobjects13=nearestTerrainObjects [(getMarkerPos _markername13),[],(getmarkersize _markername13)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects13;
-
-_markername14="del_obj_14";
-_terrainobjects14=nearestTerrainObjects [(getMarkerPos _markername14),[],(getmarkersize _markername14)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects14;
-
-_markername15="del_obj_15";
-_terrainobjects15=nearestTerrainObjects [(getMarkerPos _markername15),[],(getmarkersize _markername15)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects15;
-
-_markername16="del_obj_16";
-_terrainobjects16=nearestTerrainObjects [(getMarkerPos _markername16),[],(getmarkersize _markername16)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects16;
-
-_markername17="del_obj_17";
-_terrainobjects17=nearestTerrainObjects [(getMarkerPos _markername17),[],(getmarkersize _markername17)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects17;
-
-_markername18="del_obj_18";
-_terrainobjects18=nearestTerrainObjects [(getMarkerPos _markername18),[],(getmarkersize _markername18)select 0];
-{hideObjectGlobal _x} foreach _terrainobjects18;
-
+//del_obj_1 ~ del_obj_18 에드온 수정으로 집 정상적으로 나와서 삭제함
 _markername19="del_obj_19";
 _terrainobjects19=nearestTerrainObjects [(getMarkerPos _markername19),[],(getmarkersize _markername19)select 0];
 {hideObjectGlobal _x} foreach _terrainobjects19;
