@@ -183,3 +183,114 @@ DYNAMICMARKET_boughtItems = [];
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
+
+//Taskforce Radio Setting
+if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitwith {
+	
+	999999 cutText ["Task Force Radio is not running on your computer. Please re-sync and retry","BLACK FADED"];
+	999999 cutFadeOut 99999999;
+	if (player getvariable "taskfr") then {
+		player setvariable ["taskfr",false,true];
+	};
+};
+
+
+
+_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+
+if (!(_TFenabled)) then {
+
+	while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do {
+		
+		titleText ["테스크포스라디오 사용은 필수입니다!! ||카페 공지 참고 || 카페주소 http://cafe.naver.com/alflrss", "BLACK"];
+		sleep 2;
+		if (player getvariable "taskfr") then {
+		player setvariable ["taskfr",false,true];
+		};
+	};
+};
+
+Dvid_TFEnabled = true;
+Dvid_onTsServer = "In Game" == (call TFAR_fnc_getTeamSpeakServerName); /////테포라 게임 채널 이름
+Dvid_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+titleText ["Task Force Radio loaded succesfully","BLACK IN"];
+
+[] spawn {
+
+	while {true} do {
+	
+				_isadmin = false;
+				if (!(isNil "life_adminlevel")) then {
+					_adminlvl = life_adminlevel call BIS_fnc_parseNumber;
+					
+					if (_adminlvl > 0) then {
+						_isadmin = true;
+					};
+				};
+				
+				
+				
+					_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+					if ((!(_TFenabled)) && (Dvid_TFEnabled)) then {
+					if (!(_isadmin)) then {
+						titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
+						Dvid_TFEnabled = false;
+					};
+							if (player getvariable "taskfr") then {
+								player setvariable ["taskfr",false,true];
+							};
+					};
+					
+					_onTsServer = "same as Dvid_onTsServer variable " == (call TFAR_fnc_getTeamSpeakServerName); //////////////////////Edit too pls, or dont but it wont work if you dont
+					if (!(_onTsServer)) then {
+					if (!(_isadmin)) then {
+						titleText ["Please join the teamspeak server! Adress: here", "BLACK"];
+						Dvid_onTsServer = false;
+					};
+						if (player getvariable "taskfr") then {
+							player setvariable ["taskfr",false,true];
+						};
+					} else {
+						if (!(Dvid_onTsServer)) then {
+						if (!(_isadmin)) then {
+							titleText ["TS server check completed. Welcome!","BLACK IN"];
+							Dvid_onTsServer = true;
+							};
+						if (!(player getvariable "taskfr")) then {
+							player setvariable ["taskfr",true,true];
+						};
+						};
+					};
+					
+					_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+					if (!(_onChannel)) then {
+					if (!(_isadmin)) then {
+						titleText ["테스크포스 라디오 플러그인을 확인하세요.", "BLACK"];
+						Dvid_onChannel = false;
+					};
+						if (player getvariable "taskfr") then {
+							player setvariable ["taskfr",false,true];
+						};
+					} else {
+						if (!(Dvid_onChannel)) then {
+							titleText ["테포라 인게임 채널에 접속했습니다. 환영합니다.","BLACK IN"];
+							Dvid_onChannel = true;
+						if (!(player getvariable "taskfr")) then {
+							player setvariable ["taskfr",true,true];
+						};
+						};
+					};
+					
+					
+					if ((_TFenabled) && (!(Dvid_TFEnabled))) then {
+						titleText ["Plugin enabled, welcome back!","BLACK IN"];
+						Dvid_TFEnabled = true;
+						if (!(player getvariable "taskfr")) then {
+							player setvariable ["taskfr",true,true];
+						};
+					};
+				
+				sleep 2;	
+			};
+
+};
