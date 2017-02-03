@@ -202,7 +202,7 @@ if (!(_TFenabled)) then {
 
 	while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do {
 		
-		titleText ["테스크포스라디오 사용은 필수입니다!! ||카페 공지 참고 || 카페주소 http://cafe.naver.com/alflrss", "BLACK"];
+		titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
 		sleep 2;
 		if (player getvariable "taskfr") then {
 		player setvariable ["taskfr",false,true];
@@ -211,9 +211,9 @@ if (!(_TFenabled)) then {
 };
 
 Dvid_TFEnabled = true;
-Dvid_onTsServer = "In Game" == (call TFAR_fnc_getTeamSpeakServerName); /////테포라 게임 채널 이름
-Dvid_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
-titleText ["Task Force Radio loaded succesfully","BLACK IN"];
+Dvid_onTsServer = "[Republic of Korea] AoSoul LIFE Server" == (call TFAR_fnc_getTeamSpeakServerName); ///////////////////////Edit This line (the channel at the top of your TS (where you right click and "Edit Virtual Server"), yes, get the name of that goes here)
+Dvid_onChannel = "In Game" == (call TFAR_fnc_getTeamSpeakChannelName);
+titleText ["테스크 포스 라디오 접속에 성공했습니다.","BLACK IN"];
 
 [] spawn {
 
@@ -233,7 +233,7 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 					_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
 					if ((!(_TFenabled)) && (Dvid_TFEnabled)) then {
 					if (!(_isadmin)) then {
-						titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
+						titleText ["테스크 포스 라디오 사용은 필수입니다. 카페 공지를 확인하세요!!|| http://cafe.naver.com/alflrss", "BLACK"];
 						Dvid_TFEnabled = false;
 					};
 							if (player getvariable "taskfr") then {
@@ -241,10 +241,10 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 							};
 					};
 					
-					_onTsServer = "same as Dvid_onTsServer variable " == (call TFAR_fnc_getTeamSpeakServerName); //////////////////////Edit too pls, or dont but it wont work if you dont
+					_onTsServer = "[Republic of Korea] AoSoul LIFE Server" == (call TFAR_fnc_getTeamSpeakServerName); //////////////////////Edit too pls, or dont but it wont work if you dont
 					if (!(_onTsServer)) then {
 					if (!(_isadmin)) then {
-						titleText ["Please join the teamspeak server! Adress: here", "BLACK"];
+						titleText ["팀스피크 서버에 접속하세요!! 팀스픽 주소 : aosoul.net", "BLACK"];
 						Dvid_onTsServer = false;
 					};
 						if (player getvariable "taskfr") then {
@@ -253,7 +253,7 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 					} else {
 						if (!(Dvid_onTsServer)) then {
 						if (!(_isadmin)) then {
-							titleText ["TS server check completed. Welcome!","BLACK IN"];
+							titleText ["팀스피크 서버 확인 완료. 환영합니다!!","BLACK IN"];
 							Dvid_onTsServer = true;
 							};
 						if (!(player getvariable "taskfr")) then {
@@ -262,10 +262,10 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 						};
 					};
 					
-					_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+					_onChannel = "In Game" == (call TFAR_fnc_getTeamSpeakChannelName);
 					if (!(_onChannel)) then {
 					if (!(_isadmin)) then {
-						titleText ["테스크포스 라디오 플러그인을 확인하세요.", "BLACK"];
+						titleText ["플러그인을 다시 로드 해주세요. || Tool -> Options -> Addons -> Reload All", "BLACK"];
 						Dvid_onChannel = false;
 					};
 						if (player getvariable "taskfr") then {
@@ -273,7 +273,7 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 						};
 					} else {
 						if (!(Dvid_onChannel)) then {
-							titleText ["테포라 인게임 채널에 접속했습니다. 환영합니다.","BLACK IN"];
+							titleText ["팀스픽 채널 확인이 완료되었습니다. 환영합니다!!","BLACK IN"];
 							Dvid_onChannel = true;
 						if (!(player getvariable "taskfr")) then {
 							player setvariable ["taskfr",true,true];
@@ -283,7 +283,7 @@ titleText ["Task Force Radio loaded succesfully","BLACK IN"];
 					
 					
 					if ((_TFenabled) && (!(Dvid_TFEnabled))) then {
-						titleText ["Plugin enabled, welcome back!","BLACK IN"];
+						titleText ["플러그인이 활성화 되었습니다.","BLACK IN"];
 						Dvid_TFEnabled = true;
 						if (!(player getvariable "taskfr")) then {
 							player setvariable ["taskfr",true,true];
