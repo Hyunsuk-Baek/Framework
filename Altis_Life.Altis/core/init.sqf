@@ -187,7 +187,7 @@ diag_log "----------------------------------------------------------------------
 //Taskforce Radio Setting
 if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitwith {
 	
-	999999 cutText ["Task Force Radio is not running on your computer. Please re-sync and retry","BLACK FADED"];
+	999999 cutText ["테스크포스라디오가 실행중이지 않습니다!! 팀스픽 접속해주세요!!","BLACK FADED"];
 	999999 cutFadeOut 99999999;
 	if (player getvariable "taskfr") then {
 		player setvariable ["taskfr",false,true];
@@ -202,7 +202,7 @@ if (!(_TFenabled)) then {
 
 	while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do {
 		
-		titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
+		titleText ["팀스픽 설정에서 테스크포스라디오 플러그인을 활성화 해주세요!! || Tools -> Options -> Addons -> TS3 -> Settings -> Task Force Arma3 Radio Enable", "BLACK"];
 		sleep 2;
 		if (player getvariable "taskfr") then {
 		player setvariable ["taskfr",false,true];
