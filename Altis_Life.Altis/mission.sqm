@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8873.7344,25,6048.7544};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={385.08084,125.36926,426.75348};
+		dir[]={0.3725214,-0.32709196,0.86847967};
+		up[]={0.12894085,0.94498986,0.3006092};
+		aside[]={0.91903061,-5.9197191e-008,-0.39420533};
 	};
 };
 binarizationWanted=0;
@@ -7071,7 +7071,6 @@ class Mission
 						angles[]={0,1.8784513,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -7081,6 +7080,7 @@ class Mission
 					};
 					id=1660;
 					type="C_man_polo_3_F";
+					atlOffset=0.41114807;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -13810,7 +13810,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupID [_value];";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
 					class Value
 					{
 						class data
@@ -15294,7 +15294,7 @@ class Mission
 		class Item303
 		{
 			dataType="Marker";
-			position[]={8525.3877,4.1525359,6929.2881};
+			position[]={8541.5361,4.1525359,6901.8408};
 			name="ATM_Maker_2";
 			type="loc_Tourism";
 			colorName="ColorGreen";
@@ -15306,8 +15306,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8525.4336,5.438684,6929.2827};
-				angles[]={0,1.754046,0};
+				position[]={8541.4316,5.4386525,6901.6914};
+				angles[]={0,0.18324965,0};
 			};
 			side="Empty";
 			flags=4;
@@ -15318,6 +15318,7 @@ class Mission
 			};
 			id=2056;
 			type="Land_Atm_02_F";
+			atlOffset=-3.1471252e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18537,9 +18538,9 @@ class Mission
 		class Item484
 		{
 			dataType="Marker";
-			position[]={3535.5459,-7.8210957e-022,7146.5532};
+			position[]={3535.5459,-7.3331787e-038,7146.5532};
 			name="gun_fire_1";
-			text="사격장";
+			text="Shooting Zone";
 			type="mil_box";
 			colorName="ColorRed";
 			id=2541;
@@ -38629,13 +38630,13 @@ class Mission
 		class Item1613
 		{
 			dataType="Marker";
-			position[]={2837.5,1.2243652,689.75};
+			position[]={2837.5,4.261467e+034,689.75};
 			name="Extreme_shop_maker";
-			text="레저 용품점";
+			text="Extreme Shop";
 			type="hd_warning";
 			colorName="ColorRed";
 			id=4892;
-			atlOffset=-493.90106;
+			atlOffset=4.261467e+034;
 		};
 		class Item1614
 		{
@@ -39533,13 +39534,13 @@ class Mission
 		class Item1665
 		{
 			dataType="Marker";
-			position[]={8740.625,4.125,6770.875};
+			position[]={8740.625,-7.3309187e-038,6770.875};
 			name="marker_nightclub";
-			text="메트로 나이트클럽";
+			text="NightClub";
 			type="mil_join";
 			colorName="ColorRedAlpha";
 			id=5020;
-			atlOffset=-0.027535915;
+			atlOffset=-4.1525359;
 		};
 		class Item1666
 		{
@@ -40017,35 +40018,35 @@ class Mission
 		class Item1694
 		{
 			dataType="Marker";
-			position[]={207.5,-0.125,5257.375};
+			position[]={207.5,1.2478479e+009,5257.375};
 			name="marker_43";
-			text="어획구역";
+			text="Fishing Zone";
 			type="mil_box";
 			colorName="ColorBlue";
 			id=5114;
-			atlOffset=0.38346577;
+			atlOffset=1.2478479e+009;
 		};
 		class Item1695
 		{
 			dataType="Marker";
-			position[]={6497.875,11.5,298.5};
+			position[]={6497.875,1.248364e+009,298.5};
 			name="marker_44";
-			text="어획구역";
+			text="Fishing Zone";
 			type="mil_box";
 			colorName="ColorBlue";
 			id=5115;
-			atlOffset=23.015339;
+			atlOffset=1.248364e+009;
 		};
 		class Item1696
 		{
 			dataType="Marker";
-			position[]={9595.375,-0.25,5846.625};
+			position[]={9595.375,-2.9079157e-036,5846.625};
 			name="marker_45";
-			text="어획구역";
+			text="Fishing Zone";
 			type="mil_box";
 			colorName="ColorBlue";
 			id=5116;
-			atlOffset=0.17362785;
+			atlOffset=0.42362785;
 		};
 		class Item1697
 		{
@@ -40503,13 +40504,13 @@ class Mission
 		class Item1724
 		{
 			dataType="Marker";
-			position[]={-3.5,4.1414601e+037,0.125};
+			position[]={-3.5,-4.6079965e-018,0.125};
 			name="marker_dan";
-			text="접근금지";
+			text="Warrning Zone";
 			type="mil_box";
 			colorName="ColorRed";
 			id=5313;
-			atlOffset=4.1414601e+037;
+			atlOffset=1.49436;
 		};
 		class Item1725
 		{
@@ -41562,7 +41563,7 @@ class Mission
 			};
 			id=5504;
 			type="Land_LampAirport_F";
-			atlOffset=0.0510602;
+			atlOffset=0.084453583;
 		};
 		class Item1784
 		{
@@ -44110,24 +44111,24 @@ class Mission
 		class Item1922
 		{
 			dataType="Marker";
-			position[]={1696.125,2.1693573e+024,3106.875};
+			position[]={1696.125,-2.9079157e-036,3106.875};
 			name="milk_1";
-			text="젖소농장";
+			text="Cow Farm";
 			type="mil_box";
 			colorName="ColorWhite";
 			id=5770;
-			atlOffset=2.1693573e+024;
+			atlOffset=-5.1758833;
 		};
 		class Item1923
 		{
 			dataType="Marker";
-			position[]={1948.25,-1,4508.625};
+			position[]={1948.25,1.0635354e+009,4508.625};
 			name="market_milk_workshop";
-			text="우유 가공소";
+			text="Milk Processing";
 			type="mil_box";
 			colorName="ColorWhite";
 			id=5775;
-			atlOffset=-6.1758833;
+			atlOffset=1.0635354e+009;
 		};
 		class Item1924
 		{
@@ -49078,23 +49079,24 @@ class Mission
 		class Item2199
 		{
 			dataType="Marker";
-			position[]={9184.3037,54.959999,6650.9985};
+			position[]={9184.3037,-7.3331787e-038,6650.999};
 			name="marker_70";
-			text="현상금 사냥 본부";
+			text="Bounty Hunter HQ";
 			type="mil_dot";
 			colorName="ColorOrange";
 			id=6416;
+			atlOffset=-54.959999;
 		};
 		class Item2200
 		{
 			dataType="Marker";
-			position[]={6856.3481,3.255321e+031,4524.8521};
+			position[]={6856.3481,-1.9524807e-029,4524.8521};
 			name="Casino_Maker_1";
-			text="카지노";
+			text="Casino";
 			type="pop_casino_Icon";
 			colorName="ColorRed";
 			id=6426;
-			atlOffset=3.255321e+031;
+			atlOffset=-8.7718458;
 		};
 	};
 };
