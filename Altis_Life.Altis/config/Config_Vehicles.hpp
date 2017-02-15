@@ -3064,15 +3064,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		textures[] = {};
 	};
 
-
-	// 경찰 BMW
-	class pop_bmw8 {
-		vItemSpace = 50;
-		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-		price = 700000;
-		textures[] = {};
-	};
-
 	// 포르쉐 918 오픈카
 	class pop_porche918 {
 		vItemSpace = 50;
