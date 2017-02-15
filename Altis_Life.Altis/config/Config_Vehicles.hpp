@@ -175,6 +175,8 @@ class CarShops {
             ///// addon
             { "bv_e60_m5_cop_emt", "" },    //Patrol EMT
             { "shounka_nemo_pompier", "" }, // 귀여운 사각2인
+			{ "nopixel_guardacostas", "call life_donorlevel >= 1" }, // 라이프가드 밴  기부자 1
+			{ "POP_Mercedes_Sprinter_summa", "call life_donorlevel >= 2" }, // 스프린터밴 기부자 2
             { "shounka_a3_pompier_sprinter", "" }, // 벤츠 스프린터 기부자용
             { "bv_the_crowner_cop_emt", "" },    //경찰차 비슷한 빨간차
             { "ivory_suburban_ems", "" },       //Suburban SUV(Medic)
@@ -274,6 +276,7 @@ class CarShops {
 //            { "max_CrownVic_lapd", "call life_donorlevel >= 1" },// 크라운빅 Crownvic 옛날 경찰 차 검흰// 기부자
             { "77FuryShr", "call life_donorlevel >= 1" },// 77년대 플리마우스 퓨리 크루져 (경찰 SHERIFF ) 흰색// 기부자
             { "77FuryCop", "call life_coplevel >= 4" },// " 검정
+            { "pop_toyota_gt86_policia", "call life_donorlevel >= 1" },//도요타86 / 기부자
             { "shounka_a3_gendsprinter", "call life_donorlevel >= 2" },// 벤츠 스프린터 경찰// 기부자
 //            { "max_FBI_van", "call life_donorlevel >= 2" },  // 경찰 FBI 장갑 밴// 기부자
             { "Mrshounka_agera_gend_p", "call life_donorlevel >= 2" },// 아제라 스포츠카 // 기부자
@@ -281,6 +284,7 @@ class CarShops {
             { "bv_caressa_gt_cop_patrol", "call life_donorlevel >= 1" }, //Patrol Borsche Caressa GT Cop
             { "bv_458_cop_patrol", "call life_donorlevel >= 2" }, //Patrol Perrari 458 Cop
             { "bv_shelly_cop_patrol", "call life_donorlevel >= 1" }, //Patrol Shelly Cop
+			{ "bv_458_cop_patrol", "call life_donorlevel >= 3" },//페라리458 기부자
             { "bv_the_crowner_cop_patrol", "" }, //Patrol The Crowner
             { "bv_the_crowner_uc", "" }, //Patrol The Black Crowner
             { "bv_the_crowner_cop_patrol_interceptor", "" }, // 인터셉터 경찰차
@@ -488,6 +492,10 @@ class CarShops {
             { "ivory_c", "call life_donorlevel >= 2" },      //벤틀리 스포츠
             { "ivory_supra", "call life_donorlevel >= 1" },      //Toyota Supra
             { "ivory_supra_topsecret", "call life_donorlevel >= 1" },        //Toyota Supra(Top Secret) Donation
+            { "pop_porche918", "call life_donorlevel >= 3" },        //포르쉐 918 오픈카
+            { "POP_Ferrari_Enzo_rojo", "call life_donorlevel >= 2" },        //엔초 페라리
+            { "pop_megane_GT3_1", "call life_donorlevel >= 1" },        //레이싱 GT3
+            { "pop_GT3", "call life_donorlevel >= 1" },        //레이싱 닛산 GTR
             { "Skyline_Bus_01_F", "call life_donorlevel >= 3" }   //버스
              //             { "max_charger_black", "call life_donorlevel >= 1" },            //닷지 차져
              //             { "max_charger_blue", "call life_donorlevel >= 1" },            //닷지 차져
@@ -608,7 +616,8 @@ class CarShops {
             { "ivory_isf", "" },        //Lexus IS-F
             { "ivory_evox", "" },       //Mitsubishi Lancer Evolution X
             { "ivory_r34", "" },        //Nissan Skyline GT-R
-            { "ivory_gti", "" }       //Volkswagen Golf GTI
+            { "ivory_gti", "" },       //Volkswagen Golf GTI
+			{ "pop_mustang_civ", "" }       //머스탱
         };
     };
 };
@@ -3044,6 +3053,96 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		vItemSpace = 50;
 		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
 		price = 4500000;
+		textures[] = {};
+	};
+
+	// bmwi8 경매차량 ( 샵에 등록 x )
+	class pop_bmw8 {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 10000000;
+		textures[] = {};
+	};
+
+
+	// 경찰 BMW
+	class pop_bmw8 {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 700000;
+		textures[] = {};
+	};
+
+	// 포르쉐 918 오픈카
+	class pop_porche918 {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 10000000;
+		textures[] = {};
+	};
+
+	// 엔초페라리
+	class POP_Ferrari_Enzo_rojo {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 9000000;
+		textures[] = {};
+	};
+
+	// 머스탱
+	class pop_mustang_civ {
+		vItemSpace = 50;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 2100000;
+		textures[] = {};
+	};
+
+
+	//경찰 페라리 458
+	class bv_458_cop_patrol {
+		vItemSpace = 150;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 4000000;
+		textures[] = {};
+	};
+
+	//경찰 도요타
+	class pop_toyota_gt86_policia {
+		vItemSpace = 70;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 500000;
+		textures[] = {};
+	};
+
+	//메딕 라이프가드 밴
+	class nopixel_guardacostas {
+		vItemSpace = 80;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 1500000;
+		textures[] = {};
+	};
+
+	//메딕 밴
+	class POP_Mercedes_Sprinter_summa {
+		vItemSpace = 100;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 2100000;
+		textures[] = {};
+	};
+
+	//레이싱용 gt3
+	class pop_megane_GT3_1 {
+		vItemSpace = 70;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 6800000;
+		textures[] = {};
+	};
+
+	//레이싱용 닛산 GTR
+	class pop_GT3 {
+		vItemSpace = 70;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 7500000;
 		textures[] = {};
 	};
 };
