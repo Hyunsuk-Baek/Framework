@@ -3088,15 +3088,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		textures[] = {};
 	};
 
-
-	//경찰 페라리 458
-	class bv_458_cop_patrol {
-		vItemSpace = 150;
-		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
-		price = 4000000;
-		textures[] = {};
-	};
-
 	//경찰 도요타
 	class pop_toyota_gt86_policia {
 		vItemSpace = 70;
