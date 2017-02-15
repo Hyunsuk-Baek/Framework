@@ -184,7 +184,7 @@ diag_log "----------------------------------------------------------------------
 diag_log format ["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
 
-//Taskforce Radio Setting
+/*Taskforce Radio Setting
 if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitwith {
 	
 	999999 cutText ["테스크포스라디오가 실행중이지 않습니다!! 팀스픽 접속해주세요!!","BLACK FADED"];
@@ -293,4 +293,4 @@ titleText ["테스크 포스 라디오 접속에 성공했습니다.","BLACK IN"
 				sleep 2;	
 			};
 
-};
+}; */
