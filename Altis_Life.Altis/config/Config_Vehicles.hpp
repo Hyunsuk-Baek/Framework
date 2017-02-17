@@ -3063,6 +3063,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		price = 10000000;
 		textures[] = {};
 	};
+	class pop_bmw8_blanco : pop_bmw8{};
+	class pop_bmw8_rojo : pop_bmw8{};
 
 	// 포르쉐 918 오픈카
 	class pop_porche918 {
@@ -3127,4 +3129,16 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		price = 7500000;
 		textures[] = {};
 	};
+
+	//현대 투싼
+	class pop_hyundai_x35 {
+		vItemSpace = 70;
+		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
+		price = 1500000;
+		textures[] = {};
+	};
+
+	class pop_hyundai_x351 : pop_hyundai_x35{};
+	class pop_hyundai_x352 : pop_hyundai_x35{};
+	class pop_hyundai_x353 : pop_hyundai_x35{};
 };
