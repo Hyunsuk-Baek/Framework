@@ -3130,7 +3130,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 		textures[] = {};
 	};
 
-	//현대 투싼
+	//현대 투싼(경매용, 샵 등록 x)
 	class pop_hyundai_x35 {
 		vItemSpace = 70;
 		conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
