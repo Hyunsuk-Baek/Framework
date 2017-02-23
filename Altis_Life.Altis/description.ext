@@ -272,6 +272,13 @@ class CfgSounds {
 		sound[] = {\Sounds\Custom\Volcano\tunet_v_9.ogg, db+15, 1.0};
 		titles[] = {0, ""};
 	};
+	//UseLockpick
+	class Lockpick
+	{
+		name = "Lockpick";
+		sound[] = {"\sounds\Custom\lockpick.ogg", 0.5, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing {
