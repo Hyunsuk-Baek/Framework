@@ -224,6 +224,8 @@ class CarShops {
             { "O_Heli_Transport_04_medevac_F",  "" },
             { "I_Heli_light_03_unarmed_F",  "" },
 			{ "ej_UH60M_MEV",  "" },
+			{ "ej_UH60M_MEV_NOESSS",  "" },
+			{ "ej_MH60S",  "" },
 			{ "ej_UH92_MEV",  "" }
         };
     };
@@ -325,6 +327,8 @@ class CarShops {
             { "O_Heli_Attack_02_black_F", "call life_coplevel >= 5" },  //카이만
             { "B_Plane_CAS_01_F", "call life_coplevel >= 5" },  //와이프아웃
 			{ "kyo_MH47E_HC", "" },   //치누크 노어드밴스
+			{ "ec135_policia_F", "" },
+			{ "ej_AH96_USA", "call life_coplevel >= 4" },
 			{ "C_hh60j_unarmed_F", ""}
         };
     };
@@ -2906,12 +2910,10 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class ej_S94 { //UH-60 시리즈 노 어드밴스(미래형,시민,메딕)
         vItemSpace = 400;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 55000000;
+        price = 15000000;
         textures[] = {};
     };
 	class ej_UH60M_UT : ej_S94{};
-	class ej_UH60M_MEV : ej_S94{};
-	class ej_UH92_MEV : ej_S94{};
 
 	class kyo_CH47_HC3 { //치누크 갈색 노 어드밴스(경찰&반군)
         vItemSpace = 350;
@@ -2965,7 +2967,72 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 2000000;
         textures[] = {};
     };
+
+
+	class ej_AH96_USA { // 코요태 검정 usa //경찰
+        vItemSpace = 100;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 4000000;
+        textures[] = {};
+    };
+
+	class ec135_policia_F { // 경찰 (무장X, )
+        vItemSpace = 100;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 1000000;
+        textures[] = {};
+    };
+
+	class ej_AH96 { // 코요태 회색 ( 무기 없음)
+        vItemSpace = 100;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 3000000;
+        textures[] = {};
+    };
+
+	class ej_MH60S { // 메딕 수송 MH60 //노어드벤스
+        vItemSpace = 150;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 2000000;
+        textures[] = {};
+    };
+
+	class ej_UH60M_MEV {
+        vItemSpace = 150;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 1800000;
+        textures[] = {};
+    };
+
+	class ej_UH60M_MEV_NOESSS {
+        vItemSpace = 150;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 3000000;
+        textures[] = {};
+    };
+
+	class ej_UH92_MEV {
+        vItemSpace = 150;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 4000000;
+        textures[] = {};
+    };
+
+	class ej_UH60M { //DE
+        vItemSpace = 150;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 4000000;
+        textures[] = {};
+    };
+//HSBAKE
+	class ej_S94U { //DE
+        vItemSpace = 150;
+        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        price = 4000000;
+        textures[] = {};
+    };
     
+
 	/// 경매 특별 // 카샵에는 안팔고 디비로만 넣어줄차
 	class bv_458_skin_camo { // 카모 페라리
          vItemSpace = 60;
