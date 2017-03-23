@@ -13,7 +13,6 @@ if (hasInterface) then {
 [] execVM "KRON_Strings.sqf";
 
 //Custom Script
-[] execVM "Custom\randomWeather2.sqf";
 [] execVM "Custom\statusbar_loop.sqf";  //Status Bar Loop
 [] execVM "Custom\safezone.sqf";
 [] execVM "Custom\CL.sqf";
