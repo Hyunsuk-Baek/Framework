@@ -1,4 +1,4 @@
-﻿﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="AOSoul Life RPG">
     <Package name="Init">
         <Key ID="STR_Init_ClientSetup">
