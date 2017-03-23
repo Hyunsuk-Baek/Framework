@@ -702,19 +702,19 @@ class Mission
 	{
 		timeOfChanges=1800.0002;
 		startWeather=0;
-		startWind=0.1;
-		startWaves=0.1;
+		startWind=0;
+		startWaves=0;
 		forecastWeather=0;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
+		forecastWind=0;
+		forecastWaves=0;
+		forecastLightnings=0;
 		year=2035;
 		month=8;
 		day=3;
 		hour=6;
 		minute=0;
 		startFogDecay=0;
-		forecastFogDecay=0.017681215;
+		forecastFogDecay=0;
 	};
 	class Entities
 	{
