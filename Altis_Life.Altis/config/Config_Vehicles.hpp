@@ -1297,7 +1297,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Rebel Camo", "reb", {
                 "\a3\soft_f_gamma\Quadbike_01\data\quadbike_01_indp_hunter_co.paa"
-            }, "" }
+            }, "" },
+			{ "EMS", "med", {"textures\ems\quad_med.paa"}, "" }
         };
     };
 

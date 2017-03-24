@@ -332,9 +332,6 @@
 		<Key ID="STR_Shops_wood">
             <Original>The Carpentry Shop</Original>
         </Key>
-        <Key ID="STR_Shops_milk">
-            <Original>The Milk Shop</Original>
-        </Key>
     </Package>
     <Package name="Global">
         <Key ID="STR_Global_Close">
