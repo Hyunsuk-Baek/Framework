@@ -2789,6 +2789,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
         price = 50000;
         textures[] = {};
     };
+
     class Skyline_Bus_01_F {
         vItemSpace = 300;
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
@@ -2982,7 +2983,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class ej_S94 { //UH-60 시리즈 노 어드밴스(미래형,시민,메딕)
         vItemSpace = 400;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 15000000;
+        price = 12000000;
         textures[] = {};
     };
 	class ej_UH60M_UT : ej_S94{};
@@ -2990,7 +2991,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class kyo_CH47_HC3 { //치누크 갈색 노 어드밴스(경찰&반군)
         vItemSpace = 350;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 40000000;
+        price = 10000000;
         textures[] = {};
     };
 
@@ -2999,7 +3000,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 	class sab_falcon { //팔콘
         vItemSpace = 200;
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
-        price = 4800000;
+        price = 3800000;
         textures[] = {};
     };
 
