@@ -150,7 +150,6 @@ class CarShops {
             { "O_Heli_Light_02_F",  "" },
             { "O_Heli_Transport_04_covered_F",  "" },
             { "O_Heli_Transport_04_bench_F",  "" },
-            { "O_T_LSV_02_armed_F",  "" },
             { "Boeing_CH_47_F_T", "" },  //addon //치누크갈색
 			{ "kyo_CH47_HC3",  "" }	//반군 치누크(국방색) 노 어드밴스
             //addon
