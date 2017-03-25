@@ -166,6 +166,8 @@ class CfgRemoteExec {
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
         F(BIS_fnc_effectKilledSecondaries,ANYONE)
+        F(bis_fnc_setfog,ANYONE)
+        F(bis_fnc_setovercast,ANYONE)
         F(life_fnc_animSync,ANYONE)
         F(life_fnc_broadcast,ANYONE)
         F(life_fnc_colorVehicle,ANYONE)
