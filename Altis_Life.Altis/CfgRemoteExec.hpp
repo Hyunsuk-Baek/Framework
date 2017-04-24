@@ -181,8 +181,31 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
-        F(bis_fnc_setdate,ANYONE)
-        F(bis_fnc_setppeffecttemplate,ANYONE)
+		//BIS Functions
+		F(bis_fnc_setdate,ANYONE)
+		F(bis_fnc_setppeffecttemplate,ANYONE)
+		F(bis_fnc_setidentity,ANYONE)
+		F(bis_fnc_curatorrespawn,ANYONE)
+		F(bis_fnc_setfog,ANYONE)
+		F(bis_fnc_setovercast,ANYONE)
+		F(bis_fnc_bloodeffect,ANYONE)
+		F(bis_fnc_saymessage)
+		//Addon Functions
+		F(SA_Simulate_Towing,ANYONE)
+		F(SA_Attach_Tow_Ropes,ANYONE)
+		F(SA_Take_Tow_Ropes,ANYONE)
+		F(SA_Put_Away_Tow_Ropes,ANYONE)
+		F(SA_Pickup_Tow_Ropes,ANYONE)
+		F(SA_Drop_Tow_Ropes,ANYONE)
+		F(SA_Hint,ANYONE)
+		F(sa_hide_object_global,ANYONE)
+		F(AUR_Enable_Rappelling_Animation_Global,ANYONE)
+		F(AUR_Hide_Object_Global,ANYONE)
+		F(AUR_Play_Rappelling_Sounds_Global,ANYONE)
+		F(mocap_fnc_strokeeffects,ANYONE)
+		F(mocap_fnc_PlayAnimation,ANYONE)
+		F(mocap_fnc_KeyAntispam,ANYONE)
+		F(mocap_fnc_Call,ANYONE)
     };
 
     class Commands {
