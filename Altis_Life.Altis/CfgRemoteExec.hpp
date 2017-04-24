@@ -68,9 +68,9 @@ class CfgRemoteExec {
         F(TON_fnc_clientGetKey,CLIENT)
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
-		F(life_fnc_bountyHunterReceive,CLIENT)//Bountyhunter
-		F(life_fnc_bountyList,CLIENT)//Bountyhunter
-		F(life_fnc_markers,CLIENT)//Bountyhunter
+        F(life_fnc_bountyHunterReceive,CLIENT)//Bountyhunter
+        F(life_fnc_bountyList,CLIENT)//Bountyhunter
+        F(life_fnc_markers,CLIENT)//Bountyhunter
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -113,19 +113,19 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
-		F(TON_fnc_playerLogged,SERVER) //DynMarket
-		F(TON_fnc_getUpdate,SERVER) //DynMarket
-		F(TON_fnc_changePrice, SERVER) //DynMarket
-		F(life_fnc_update,CLIENT) //DynMarket
-		F(life_fnc_bountyAdd,SERVER)//Bountyhunter
-		F(life_fnc_amountBounty,SERVER)//Bountyhunter
-		F(life_fnc_bountyFetch,SERVER)//Bountyhunter
-		F(life_fnc_bountyPerson,SERVER)//Bountyhunter
-		F(life_fnc_bountyProfUpdate,SERVER)//Bountyhunter
-		F(life_fnc_bountyRemove,SERVER)//Bountyhunter
-		F(life_fnc_bountyAlter,SERVER)//Bountyhunter
-		F(life_fnc_bountyCrimes,SERVER)//Bountyhunter
-		F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
+        F(TON_fnc_playerLogged,SERVER) //DynMarket
+        F(TON_fnc_getUpdate,SERVER) //DynMarket
+        F(TON_fnc_changePrice, SERVER) //DynMarket
+        F(life_fnc_update,CLIENT) //DynMarket
+        F(life_fnc_bountyAdd,SERVER)//Bountyhunter
+        F(life_fnc_amountBounty,SERVER)//Bountyhunter
+        F(life_fnc_bountyFetch,SERVER)//Bountyhunter
+        F(life_fnc_bountyPerson,SERVER)//Bountyhunter
+        F(life_fnc_bountyProfUpdate,SERVER)//Bountyhunter
+        F(life_fnc_bountyRemove,SERVER)//Bountyhunter
+        F(life_fnc_bountyAlter,SERVER)//Bountyhunter
+        F(life_fnc_bountyCrimes,SERVER)//Bountyhunter
+        F(life_fnc_bountyAmountGather,SERVER)//Bountyhunter
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -166,8 +166,6 @@ class CfgRemoteExec {
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
         F(BIS_fnc_effectKilledSecondaries,ANYONE)
-        F(BIS_fnc_setfog,ANYONE)
-        F(BIS_fnc_setovercast,ANYONE)
         F(life_fnc_animSync,ANYONE)
         F(life_fnc_broadcast,ANYONE)
         F(life_fnc_colorVehicle,ANYONE)
@@ -181,31 +179,31 @@ class CfgRemoteExec {
         F(life_fnc_setFuel,ANYONE)
         F(life_fnc_simDisable,ANYONE)
         F(SPY_fnc_notifyAdmins,ANYONE)
-		//BIS Functions
-		F(bis_fnc_setdate,ANYONE)
-		F(bis_fnc_setppeffecttemplate,ANYONE)
-		F(bis_fnc_setidentity,ANYONE)
-		F(bis_fnc_curatorrespawn,ANYONE)
-		F(bis_fnc_setfog,ANYONE)
-		F(bis_fnc_setovercast,ANYONE)
-		F(bis_fnc_bloodeffect,ANYONE)
-		F(bis_fnc_saymessage)
-		//Addon Functions
-		F(SA_Simulate_Towing,ANYONE)
-		F(SA_Attach_Tow_Ropes,ANYONE)
-		F(SA_Take_Tow_Ropes,ANYONE)
-		F(SA_Put_Away_Tow_Ropes,ANYONE)
-		F(SA_Pickup_Tow_Ropes,ANYONE)
-		F(SA_Drop_Tow_Ropes,ANYONE)
-		F(SA_Hint,ANYONE)
-		F(sa_hide_object_global,ANYONE)
-		F(AUR_Enable_Rappelling_Animation_Global,ANYONE)
-		F(AUR_Hide_Object_Global,ANYONE)
-		F(AUR_Play_Rappelling_Sounds_Global,ANYONE)
-		F(mocap_fnc_strokeeffects,ANYONE)
-		F(mocap_fnc_PlayAnimation,ANYONE)
-		F(mocap_fnc_KeyAntispam,ANYONE)
-		F(mocap_fnc_Call,ANYONE)
+        //BIS Functions
+        F(bis_fnc_setdate,ANYONE)
+        F(bis_fnc_setppeffecttemplate,ANYONE)
+        F(bis_fnc_setidentity,ANYONE)
+        F(bis_fnc_curatorrespawn,ANYONE)
+        F(bis_fnc_setfog,ANYONE)
+        F(bis_fnc_setovercast,ANYONE)
+        F(bis_fnc_bloodeffect,ANYONE)
+        F(bis_fnc_saymessage)
+        //Addon Functions
+        F(SA_Simulate_Towing,ANYONE)
+        F(SA_Attach_Tow_Ropes,ANYONE)
+        F(SA_Take_Tow_Ropes,ANYONE)
+        F(SA_Put_Away_Tow_Ropes,ANYONE)
+        F(SA_Pickup_Tow_Ropes,ANYONE)
+        F(SA_Drop_Tow_Ropes,ANYONE)
+        F(SA_Hint,ANYONE)
+        F(sa_hide_object_global,ANYONE)
+        F(AUR_Enable_Rappelling_Animation_Global,ANYONE)
+        F(AUR_Hide_Object_Global,ANYONE)
+        F(AUR_Play_Rappelling_Sounds_Global,ANYONE)
+        F(mocap_fnc_strokeeffects,ANYONE)
+        F(mocap_fnc_PlayAnimation,ANYONE)
+        F(mocap_fnc_KeyAntispam,ANYONE)
+        F(mocap_fnc_Call,ANYONE)
     };
 
     class Commands {
@@ -217,7 +215,7 @@ class CfgRemoteExec {
         F(addPrimaryWeaponItem,ANYONE)
         F(addWeapon,ANYONE)
         F(setFuel,ANYONE)
-		F(call,ANYONE)
+        F(call,ANYONE)
         F(enableSimulationGlobal,ANYONE)
     };
 };
