@@ -1126,9 +1126,7 @@ class LifeCfgVehicles {
         conditions = "license_civ_driver || {call life_coplevel >=1} || {call life_mediclevel >=1}";
         price = 102500;
         textures[] = {
-            { "US Police", "cop", {"textures\cop\police_offroad.paa"}, "" },
-            { "London Police", "cop", {"textures\cop\police_uk_offroad.paa"}, "" },
-            { "SWAT", "cop", {"textures\cop\swat_offroad.paa"}, "" },
+
             { "EMS", "med", {
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa",
                 "\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa"
@@ -1156,11 +1154,14 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
-            { "Met cop", "cop", {"textures\cop\met_police_offroader.paa"}, "" },
-            { "London 911", "cop", {"textures\cop\lincpol_offroader.paa"}, "" },
+            { "Met cop", "cop", {"textures\cop\offroad_met_cop.paa"}, "" },
+            { "UKPD", "cop", {"textures\cop\offroad_uk.paa"}, "" },
             { "EMS Red", "med", {"textures\ems\med_offroad.paa"}, "" },
             { "Hello kitty", "civ", {"textures\civ\kitty_offroad.paa"}, "" },
-            { "Traffic police", "cop", {"textures\cop\heto_offroader.paa"}, "" }
+            { "Traffic police", "cop", {"textures\cop\heto_offroader.paa"}, "" },
+            { "US Police", "cop", {"textures\cop\police_offroad.paa"}, "" },
+            { "London Police", "cop", {"textures\cop\police_uk_offroad.paa"}, "" },
+            { "SWAT", "cop", {"textures\cop\swat_offroad.paa"}, "" }
         };
     };
 
